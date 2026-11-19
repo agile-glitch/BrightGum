@@ -5,9 +5,11 @@ Each stick wrapper has two sides:
 - **Outside** (seen before you open it): a short teaser.
 - **Inside** (seen after): the message. Keep it under ~120 characters.
 
-**Wrapper material:** foil-lined paper is preferred (foil/paper laminate). It
-keeps the gum fresh and flavorful, and both sides of the message still print on
-the paper.
+**Wrapper material:** two options. Foil-lined paper on every stick keeps the gum
+freshest. A lower-cost option is plain paper with the message printed on the
+inside, with the whole pack sealed in foil or film. Plain paper makes it much
+cheaper to print many different messages. Details are under "Wrapper options" in
+`formula-sheets.md`.
 
 Your idea doc lists two kinds of message, Bible verses and general positive
 messages. A good way to sell both is as **two editions**, so each buyer gets the

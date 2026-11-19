@@ -37,7 +37,7 @@ simple.
 | Sugar | 0 g (sugar-free) |
 | Colors | None |
 | Major allergens | None |
-| **Wrapper** | **Foil-lined paper preferred** (foil/paper laminate). Keeps flavor in and moisture out; the message prints on the paper side. |
+| **Wrapper** | **Foil-lined paper** keeps flavor in best. **Lower-cost option:** plain paper with the message printed inside, plus a sealed foil-lined inner pack or overwrap per carton. See "Wrapper options." |
 | Target shelf life | 18 months, to be confirmed by storage tests |
 
 ---
@@ -57,7 +57,7 @@ simple.
 | Sucralose (50% free / 50% encapsulated) | Sweetness boost, long-lasting taste | 0.20 | 0.005 | 0.20 |
 | **Total** | | **100.00** | **2.700** | **100.00** |
 
-**Wrapper:** foil-lined paper preferred. It keeps flavor in and moisture out, and the message still prints on the paper side.
+**Wrapper:** foil-lined paper keeps flavor in best. A lower-cost option is plain paper with the message printed on the inside, plus a sealed foil-lined inner pack or clear overwrap around the carton. See "Wrapper options" below.
 
 **Label ingredient line:**
 Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors,
@@ -83,7 +83,7 @@ Spearmint is sweeter and softer than peppermint, so it uses less menthol.
 | Sucralose (50/50 free/encapsulated) | Sweetness | 0.20 | 0.005 | 0.20 |
 | **Total** | | **100.00** | **2.700** | **100.00** |
 
-**Wrapper:** foil-lined paper preferred. It keeps flavor in and moisture out, and the message still prints on the paper side.
+**Wrapper:** foil-lined paper keeps flavor in best. A lower-cost option is plain paper with the message printed on the inside, plus a sealed foil-lined inner pack or clear overwrap around the carton. See "Wrapper options" below.
 
 **Label ingredient line:**
 Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors,
@@ -113,7 +113,7 @@ saliva from chewing buffers it. Encapsulated acid releases while you chew instea
 of sitting on your teeth. Ask the flavor supplier for a **"low-acid"
 blue-raspberry profile** built for gum.
 
-**Wrapper:** foil-lined paper preferred. It keeps flavor in and moisture out, and the message still prints on the paper side.
+**Wrapper:** foil-lined paper keeps flavor in best. A lower-cost option is plain paper with the message printed on the inside, plus a sealed foil-lined inner pack or clear overwrap around the carton. See "Wrapper options" below.
 
 **Label ingredient line:**
 Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural and Artificial
@@ -147,7 +147,7 @@ label can say "Natural Flavors."
 jammy berry, not candy. Low-acid profile, heat-stable to 60 °C." Like every bright
 gum it's **white, with no color added**; the red lives on the box.
 
-**Wrapper:** foil-lined paper preferred. It keeps flavor in and moisture out, and the message still prints on the paper side.
+**Wrapper:** foil-lined paper keeps flavor in best. A lower-cost option is plain paper with the message printed on the inside, plus a sealed foil-lined inner pack or clear overwrap around the carton. See "Wrapper options" below.
 
 **Label ingredient line:**
 Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors,
@@ -177,7 +177,7 @@ cucumber and brine character. **No vinegar or added acid**; the sour impression
 should come from the flavor itself. Heat-stable to 60 °C." Calcium carbonate is
 cut slightly because the baking soda also polishes.
 
-**Wrapper:** foil-lined paper preferred. It keeps flavor in and moisture out, and the message still prints on the paper side.
+**Wrapper:** foil-lined paper keeps flavor in best. A lower-cost option is plain paper with the message printed on the inside, plus a sealed foil-lined inner pack or clear overwrap around the carton. See "Wrapper options" below.
 
 **Label ingredient line:**
 Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors,
@@ -212,11 +212,35 @@ WS-23 is a common flavor-industry cooling compound that adds freshness without
 mint flavor. It's synthetic, so the label says "Natural and Artificial Flavors."
 To keep "Natural Flavors" on the box, leave the cooling agent out. Like every bright gum, it's **white, with no color added**.
 
-**Wrapper:** foil-lined paper preferred. It keeps flavor in and moisture out, and the message still prints on the paper side.
+**Wrapper:** foil-lined paper keeps flavor in best. A lower-cost option is plain paper with the message printed on the inside, plus a sealed foil-lined inner pack or clear overwrap around the carton. See "Wrapper options" below.
 
 **Label ingredient line:**
 Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural and Artificial
 Flavors, Sodium Tripolyphosphate, Malic Acid, Sunflower Lecithin, Sucralose.
+
+---
+
+## Wrapper options
+
+Two ways to wrap the sticks. Get a quote for both; the right choice depends on
+the price difference at your order size.
+
+| | Option A: foil-lined paper on every stick | Option B: plain paper, message printed inside |
+|---|---|---|
+| What it is | Each stick wrapped in a foil/paper laminate, message printed on the paper side | Each stick wrapped in plain (blank outside) paper with the message printed on the inside. One sealed foil-lined inner pack or clear overwrap goes around all 15 sticks to keep them fresh. |
+| Freshness and flavor | Best: every stick is protected until it's unwrapped | Good while the pack is sealed; sticks lose flavor faster once it's opened |
+| Cost | Higher: fifteen printed foil wrappers per carton | Lower: paper is cheap, and there's one piece of foil or film per carton instead of fifteen |
+| Many different messages | Each new set of messages needs new printing plates on a costlier material | Much cheaper to change and expand the message set, especially with digital printing (no plates) |
+| The reveal | Message is visible on the paper side | Message is hidden until the stick is unwrapped, which suits the commercials |
+
+**Suggested approach:** start with **Option B** if foil quotes come back high. It
+keeps the cost of printing many different messages low, and most stick gum on
+shelves is already packed this way (paper-wrapped sticks inside a sealed pack).
+Move to Option A later if chew tests or customer feedback show the flavor fading
+after the pack is opened.
+
+Either way, the inside print touches the gum, so it needs **food-safe,
+low-migration inks**. The wrapper printer will specify these.
 
 ---
 

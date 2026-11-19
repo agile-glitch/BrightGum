@@ -105,8 +105,9 @@ Search for **"private label sugar-free gum manufacturer"** or
 4. Do you have **whitening data** (stain-removal lab tests) for any base? You
    need this to print "whitening."
 5. Can you print **custom stick wrappers with a different message on each
-   stick**, inside and out, with a print repeat of 15, on **foil-lined paper**?
-   Which food-safe inks?
+   stick**, with a print repeat of 15? Quote both **foil-lined paper** and
+   **plain paper printed on the inside with a sealed inner pack**. Which
+   food-safe inks?
 6. Can you pack into **my carton design** (3.00 × 2.40 × 0.35 in, 15 sticks)?
 7. Food-safety certification? Look for **SQF, BRCGS or FSSC 22000**.
 8. Shelf life? Gum is typically 12–24 months.
@@ -117,9 +118,11 @@ Search for **"private label sugar-free gum manufacturer"** or
 - Wrappers print on a continuous roll. "A different message on every stick"
   comes from a **print repeat**: a set of 15 messages that repeats down the
   roll, so each carton gets all 15. Your list is in `wrapper-messages.md`.
-- **Foil-lined paper wrappers are preferred** (foil/paper laminate). Plain paper
-  lets flavor escape and lets the gum dry out. The message prints on the paper
-  side.
+- **Wrapper material, two options:** foil-lined paper on every stick keeps
+  flavor in best. A lower-cost option is plain paper with the message printed
+  on the inside, plus one sealed foil-lined inner pack or overwrap per carton.
+  Plain paper also makes it much cheaper to print many different messages. See
+  "Wrapper options" in `formula-sheets.md`.
 - Keep inside text **≤ 120 characters** so it's readable on a stick wrapper.
 - The kids' origami idea: a stick wrapper is too small for instructions, so
   print them **inside the carton** or on an insert card.

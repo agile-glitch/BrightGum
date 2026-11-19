@@ -21,7 +21,7 @@ sweetness in two stages.
 | **Long-flavor-release gum base** | Gum bases differ a lot in how tightly they hold flavor |
 | **More encapsulated flavor in the fruit recipes** than in the mints | Fruit flavors fade fastest |
 | **Encapsulated menthol in the mints** | Cooling keeps the gum feeling fresh after the mint oil fades |
-| **Foil-lined wrappers** (preferred for every bright gum) | Plain paper lets flavor escape in storage and lets the gum dry out |
+| **Foil protection:** foil-lined wrappers, or plain paper wrappers inside a sealed foil-lined pack (see "Wrapper options") | Unprotected paper lets flavor escape in storage and lets the gum dry out |
 
 What stays the same: **1.08 g xylitol per stick as the first ingredient**, the
 whitening system, no colors, no major allergens, 2.70 g sticks.
@@ -36,7 +36,7 @@ whitening system, no colors, no major allergens, 2.70 g sticks.
 | Whitening system | Calcium carbonate + sodium tripolyphosphate |
 | Colors | None |
 | Major allergens | None |
-| **Wrapper** | **Foil-lined paper preferred** (foil/paper laminate). Keeps flavor in and moisture out; the message prints on the paper side. |
+| **Wrapper** | **Foil-lined paper** keeps flavor in best. **Lower-cost option:** plain paper with the message printed inside, plus a sealed foil-lined inner pack or overwrap per carton. See "Wrapper options." |
 | Target shelf life | 18 months, to be confirmed by storage tests |
 
 **About the encapsulated ingredients.** They're bought ready-made from flavor
@@ -68,7 +68,7 @@ weight of the coated ingredient including its coating:
 | Encapsulated acesulfame potassium (as supplied, about 30% active) | Slow-release sweetness; works with sucralose | 0.50 | 0.014 | 0.50 |
 | **Total** | | **100.00** | **2.700** | **100.00** |
 
-**Wrapper:** foil-lined paper preferred. It keeps flavor in and moisture out, and the message still prints on the paper side.
+**Wrapper:** foil-lined paper keeps flavor in best. A lower-cost option is plain paper with the message printed on the inside, plus a sealed foil-lined inner pack or clear overwrap around the carton. See "Wrapper options" below.
 
 **Label ingredient line:**
 Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors, Sodium Tripolyphosphate, Gum Arabic, Sunflower Lecithin, Sucralose, Acesulfame Potassium.
@@ -93,7 +93,7 @@ Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors, Sodiu
 | Encapsulated acesulfame potassium (as supplied, about 30% active) | Slow-release sweetness; works with sucralose | 0.50 | 0.014 | 0.50 |
 | **Total** | | **100.00** | **2.700** | **100.00** |
 
-**Wrapper:** foil-lined paper preferred. It keeps flavor in and moisture out, and the message still prints on the paper side.
+**Wrapper:** foil-lined paper keeps flavor in best. A lower-cost option is plain paper with the message printed on the inside, plus a sealed foil-lined inner pack or clear overwrap around the carton. See "Wrapper options" below.
 
 **Label ingredient line:**
 Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors, Sodium Tripolyphosphate, Gum Arabic, Sunflower Lecithin, Sucralose, Acesulfame Potassium.
@@ -121,7 +121,7 @@ Fruit flavors fade fastest, so the fruit sheets carry more encapsulated flavor t
 | Encapsulated acesulfame potassium (as supplied, about 30% active) | Slow-release sweetness; works with sucralose | 0.50 | 0.014 | 0.50 |
 | **Total** | | **100.00** | **2.700** | **100.00** |
 
-**Wrapper:** foil-lined paper preferred. It keeps flavor in and moisture out, and the message still prints on the paper side.
+**Wrapper:** foil-lined paper keeps flavor in best. A lower-cost option is plain paper with the message printed on the inside, plus a sealed foil-lined inner pack or clear overwrap around the carton. See "Wrapper options" below.
 
 **Label ingredient line:**
 Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural and Artificial Flavors, Gum Arabic, Sodium Tripolyphosphate, Malic Acid, Sunflower Lecithin, Sucralose, Acesulfame Potassium.
@@ -147,7 +147,7 @@ Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural and Artificial
 | Encapsulated acesulfame potassium (as supplied, about 30% active) | Slow-release sweetness; works with sucralose | 0.50 | 0.014 | 0.50 |
 | **Total** | | **100.00** | **2.700** | **100.00** |
 
-**Wrapper:** foil-lined paper preferred. It keeps flavor in and moisture out, and the message still prints on the paper side.
+**Wrapper:** foil-lined paper keeps flavor in best. A lower-cost option is plain paper with the message printed on the inside, plus a sealed foil-lined inner pack or clear overwrap around the carton. See "Wrapper options" below.
 
 **Label ingredient line:**
 Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors, Gum Arabic, Sodium Tripolyphosphate, Malic Acid, Sunflower Lecithin, Sucralose, Acesulfame Potassium.
@@ -176,7 +176,7 @@ Pickle keeps its lighter sweetness: savory flavors taste wrong when too sweet.
 | Encapsulated acesulfame potassium (as supplied, about 30% active) | Slow-release sweetness; works with sucralose | 0.40 | 0.011 | 0.40 |
 | **Total** | | **100.00** | **2.700** | **100.00** |
 
-**Wrapper:** foil-lined paper preferred. It keeps flavor in and moisture out, and the message still prints on the paper side.
+**Wrapper:** foil-lined paper keeps flavor in best. A lower-cost option is plain paper with the message printed on the inside, plus a sealed foil-lined inner pack or clear overwrap around the carton. See "Wrapper options" below.
 
 **Label ingredient line:**
 Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors, Sodium Tripolyphosphate, Gum Arabic, Sodium Bicarbonate, Salt, Sunflower Lecithin, Sucralose, Acesulfame Potassium.
@@ -205,10 +205,34 @@ The cooling agent is a synthetic flavor ingredient, so the label says "Natural a
 | Encapsulated acesulfame potassium (as supplied, about 30% active) | Slow-release sweetness; works with sucralose | 0.50 | 0.014 | 0.50 |
 | **Total** | | **100.00** | **2.700** | **100.00** |
 
-**Wrapper:** foil-lined paper preferred. It keeps flavor in and moisture out, and the message still prints on the paper side.
+**Wrapper:** foil-lined paper keeps flavor in best. A lower-cost option is plain paper with the message printed on the inside, plus a sealed foil-lined inner pack or clear overwrap around the carton. See "Wrapper options" below.
 
 **Label ingredient line:**
 Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural and Artificial Flavors, Gum Arabic, Sodium Tripolyphosphate, Malic Acid, Sunflower Lecithin, Sucralose, Acesulfame Potassium.
+
+---
+
+## Wrapper options
+
+Two ways to wrap the sticks. Get a quote for both; the right choice depends on
+the price difference at your order size.
+
+| | Option A: foil-lined paper on every stick | Option B: plain paper, message printed inside |
+|---|---|---|
+| What it is | Each stick wrapped in a foil/paper laminate, message printed on the paper side | Each stick wrapped in plain (blank outside) paper with the message printed on the inside. One sealed foil-lined inner pack or clear overwrap goes around all 15 sticks to keep them fresh. |
+| Freshness and flavor | Best: every stick is protected until it's unwrapped | Good while the pack is sealed; sticks lose flavor faster once it's opened |
+| Cost | Higher: fifteen printed foil wrappers per carton | Lower: paper is cheap, and there's one piece of foil or film per carton instead of fifteen |
+| Many different messages | Each new set of messages needs new printing plates on a costlier material | Much cheaper to change and expand the message set, especially with digital printing (no plates) |
+| The reveal | Message is visible on the paper side | Message is hidden until the stick is unwrapped, which suits the commercials |
+
+**Suggested approach:** start with **Option B** if foil quotes come back high. It
+keeps the cost of printing many different messages low, and most stick gum on
+shelves is already packed this way (paper-wrapped sticks inside a sealed pack).
+Move to Option A later if chew tests or customer feedback show the flavor fading
+after the pack is opened.
+
+Either way, the inside print touches the gum, so it needs **food-safe,
+low-migration inks**. The wrapper printer will specify these.
 
 ---
 
