@@ -33,8 +33,9 @@ FLAVORS = [
      "parts": [("Cotton", "#6EC6F5"), ("Candy", "#FF8DC7")]},
 ]
 
-DARK_BG = "#14237E"      # deep blue (caffeinated line)
+DARK_BG = "#2B2F36"      # charcoal grey (caffeinated line)
 DARK_INK = "#F4F6FB"
+DARK_LINE = "#40454E"     # swirl lines on the dark box
 CAFFEINE_NOTE = ("Not recommended for children, people who are pregnant or nursing, or anyone "
                  "sensitive to caffeine. Limit 5 pieces a day.")
 
@@ -133,7 +134,7 @@ def front(f, v=None):
     dark = is_dark(f)
     badge = f'<p class="caf">CAFFEINATED · {f["caffeine"]}</p>' if f.get("caffeine") else ""
     return f'''<div class="label front{' dark' if dark else ''}" style="--flavor:{f['color']}">
-{swirls("#2C3C99" if dark else "#E3E6EC")}
+{swirls(DARK_LINE if dark else "#E3E6EC")}
 <div class="f-top">
   <div class="brand">{logo(f['color'], 1.62, DARK_INK if dark else INK)}<span class="tm">TM</span></div>
   <div class="claims"><b>Whitening</b><b>Sugar-Free</b>{badge}</div>
@@ -250,10 +251,10 @@ body {{ font-family: 'Lato', 'Inter', Arial, sans-serif; color: {INK}; backgroun
 /* Dark (caffeinated) boxes: inverted colors */
 .label.dark {{ background: {DARK_BG}; color: {DARK_INK}; border-color: #777; }}
 .dark .tm {{ border-color: {DARK_INK}; }}
-.dark .claims span, .dark .count em {{ color: #C6CDF2; }}
+.dark .claims span, .dark .count em {{ color: #C9CDD4; }}
 .dark .flavor > span {{ color: {DARK_INK}; }}
-.dark .b-head {{ border-bottom-color: #3546A6; }}
-.dark .warn {{ color: #D3D8F5; }}
+.dark .b-head {{ border-bottom-color: #4A505A; }}
+.dark .warn {{ color: #D5D8DE; }}
 .dark .upc {{ background: #fff; color: {INK}; padding: 2pt 3pt; align-self: flex-start; border-radius: 1.5pt; }}
 .dark .nf {{ background: #fff; color: {INK}; border-color: #fff; }}
 .caf {{ margin-top: 4pt; font-size: 5.4pt; font-weight: 900; letter-spacing: 0.08em; color: {DARK_BG};
@@ -287,7 +288,7 @@ def lineup_page(v):
     fronts = "".join(f'<div>{front(f, v)}</div>' for f in FLAVORS)
     return f'''<section class="page">
 <p class="pt">BRIGHT GUM &nbsp;|&nbsp; FLAVOR LINEUP &nbsp;|&nbsp; ALL FRONTS</p>
-<p class="ps">The eye matches the flavor: Peppermint royal blue, Spearmint emerald, Blue Raspberry azure, Raspberry red, Watermelon melon red, Pickle dill green. Deep-blue boxes are the caffeinated line: Cotton Candy has a sky-blue eye, with "Cotton" in sky blue and "Candy" in pink.</p>
+<p class="ps">The eye matches the flavor: Peppermint royal blue, Spearmint emerald, Blue Raspberry azure, Raspberry red, Watermelon melon red, Pickle dill green. Dark grey boxes are the caffeinated line: Cotton Candy has a sky-blue eye, with "Cotton" in sky blue and "Candy" in pink.</p>
 <p class="pn">Preview only, shown at 78% size. Print the flavor pages that follow for true 1:1 labels.</p>
 <div class="stack zoom">{fronts}</div>
 </section>'''
