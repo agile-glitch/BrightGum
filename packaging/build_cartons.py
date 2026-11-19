@@ -105,8 +105,6 @@ def back(f):
     <p class="h">INGREDIENTS</p>
     <p class="ing">{f['ingredients']}</p>
     <p class="xy">1 g+ xylitol in every piece.</p>
-    <p class="warn"><b>Keep away from dogs.</b> Xylitol is toxic to dogs. Excess consumption may have a laxative effect.</p>
-    <p class="warn">Distributed by bright gum Co., [City, ST ZIP]</p>
     <p class="web">BrightGumCo.com</p>
     <div class="upc">{barcode(f['id'])}<span>SAMPLE 0 00000 00000 0</span></div>
   </div>

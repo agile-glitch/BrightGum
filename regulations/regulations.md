@@ -27,6 +27,13 @@ It's organized as a checklist so you can tick items off.
 | Soy lecithin | Soy is a major allergen and would need a "Contains: Soy" line | The v1 formula uses **sunflower lecithin** instead, so there are no major allergens |
 | No company address | Required | Add *"Distributed by bright gum Co., City, ST ZIP."* |
 
+### Current mockup choices (packaging/bright-cartons.pdf)
+
+The mockup cartons deliberately leave off "Does not promote tooth decay," the dog
+warning, the laxative statement and the "Distributed by" line, to keep them
+clean. The first three are optional. **The "Distributed by" name and address is
+required** (21 CFR 101.5) and must be on every production carton.
+
 ## 2. Ingredients must be approved for food
 
 Your co-packer will handle most of this, but you should know what to ask for.

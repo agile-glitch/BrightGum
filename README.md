@@ -29,8 +29,9 @@
 
 ## Top 3 things to do next
 
-1. **Change "Anti-Cavity" on the carton** to "Does not promote tooth decay."
-   "Anti-cavity" is a drug claim that gum can't use (see `regulations/regulations.md`).
+1. **Before printing production cartons,** add the required "Distributed by"
+   company name and address to the back (left off the mockups on purpose; see
+   `regulations/regulations.md`). "Anti-Cavity" is already removed.
 2. **Contact 5–10 gum co-packers** with the questions in `product/formula.md`
    and order stock samples.
 3. **Run a trademark search** for "bright gum" and claim the social handles.
