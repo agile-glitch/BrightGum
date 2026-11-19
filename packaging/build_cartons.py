@@ -27,6 +27,13 @@ FLAVORS = [
         "sodium": ("15mg", "1%"),
     },
     {
+        "id": "raspberry", "name": "Raspberry", "color": "#C2185B",
+        "ingredients": "Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, "
+                       "Natural Flavors, Sodium Tripolyphosphate, Malic Acid, "
+                       "Sunflower Lecithin, Sucralose.",
+        "sodium": ("15mg", "1%"),
+    },
+    {
         "id": "pickle", "name": "Pickle", "color": "#5B7046",
         "ingredients": "Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, "
                        "Natural Flavors, Sodium Tripolyphosphate, Sodium Bicarbonate, Salt, "
@@ -77,7 +84,7 @@ def front(f):
 {swirls()}
 <div class="f-top">
   <div class="brand">{logo(f['color'], 1.62)}<span class="tm">TM</span></div>
-  <div class="claims"><b>Whitening</b><b>Sugar-Free</b><span>Does not promote<br>tooth decay</span></div>
+  <div class="claims"><b>Whitening</b><b>Sugar-Free</b></div>
 </div>
 <div class="f-bottom">
   <div class="count"><b>15 PK</b><span>XYLITOL</span><em>15 STICKS · NET WT 1.43 OZ (40.5 g)</em></div>
@@ -132,7 +139,7 @@ body {{ font-family: 'Lato', 'Inter', Arial, sans-serif; color: {INK}; backgroun
 .ps {{ font-size: 9.5pt; margin-top: 4pt; }}
 .pn {{ font-size: 8pt; color: #777; margin-top: 3pt; }}
 .pair {{ display: flex; gap: 0.5in; margin-top: 2.6in; justify-content: center; }}
-.stack {{ display: flex; flex-direction: column; gap: 0.3in; align-items: center; margin-top: 0.45in; }}
+.stack {{ display: grid; grid-template-columns: 3in 3in; gap: 0.35in 0.4in; justify-content: center; margin-top: 1.2in; }}
 .cap {{ font-size: 8.5pt; font-weight: 700; margin-top: 7pt; }}
 .calib {{ position: absolute; left: 0.75in; bottom: 1.05in; display: flex; align-items: center; gap: 10pt; font-size: 8pt; font-weight: 700; }}
 .calib i {{ display: block; width: 1in; height: 7pt; border-left: 1px solid {INK}; border-right: 1px solid {INK}; position: relative; }}
@@ -210,7 +217,7 @@ def lineup_page():
     fronts = "".join(f'<div>{front(f)}</div>' for f in FLAVORS)
     return f'''<section class="page">
 <p class="pt">BRIGHT GUM &nbsp;|&nbsp; FLAVOR LINEUP &nbsp;|&nbsp; ALL FRONTS</p>
-<p class="ps">The eye matches the flavor: Peppermint royal blue, Blue Raspberry azure, Pickle dill green.</p>
+<p class="ps">The eye matches the flavor: Peppermint royal blue, Blue Raspberry azure, Raspberry red, Pickle dill green.</p>
 <div class="stack">{fronts}</div>
 {FOOT_NOTE}
 </section>'''
