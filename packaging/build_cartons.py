@@ -3,57 +3,67 @@
 Each flavor's color is used for the logo's eye, the flavor name and the
 accent text, so the eye always matches the flavor.
 
-Usage:  python3 packaging/build_cartons.py
-Writes: packaging/bright-cartons.html (print with Chromium -> PDF, see render.js)
+Two versions of the cartons, written to separate files:
+  xylitol     -> packaging/bright-cartons.html
+  no-xylitol  -> packaging/no-xylitol/bright-cartons-no-xylitol.html
+
+Usage:  python3 packaging/build_cartons.py [xylitol|no-xylitol|all]
+Then:   node packaging/render.js   (HTML -> print PDF and PNG previews)
 """
 import random
+import sys
 from pathlib import Path
 
 INK = "#0D1117"
 OUT = Path(__file__).parent
 
 FLAVORS = [
-    {
-        "id": "peppermint", "name": "Peppermint", "color": "#1428DC",
-        "ingredients": "Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, "
-                       "Natural Flavors, Sodium Tripolyphosphate, Sunflower Lecithin, Sucralose.",
-        "sodium": ("15mg", "1%"),
-    },
-    {
-        "id": "spearmint", "name": "Spearmint", "color": "#046A4A",
-        "ingredients": "Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, "
-                       "Natural Flavors, Sodium Tripolyphosphate, Sunflower Lecithin, Sucralose.",
-        "sodium": ("15mg", "1%"),
-    },
-    {
-        "id": "blue-raspberry", "name": "Blue Raspberry", "color": "#0085C7",
-        "ingredients": "Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, "
-                       "Natural and Artificial Flavors, Sodium Tripolyphosphate, Malic Acid, "
-                       "Sunflower Lecithin, Sucralose.",
-        "sodium": ("15mg", "1%"),
-    },
-    {
-        "id": "raspberry", "name": "Raspberry", "color": "#C2185B",
-        "ingredients": "Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, "
-                       "Natural Flavors, Sodium Tripolyphosphate, Malic Acid, "
-                       "Sunflower Lecithin, Sucralose.",
-        "sodium": ("15mg", "1%"),
-    },
-    {
-        "id": "watermelon", "name": "Watermelon", "color": "#D62839",
-        "ingredients": "Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, "
-                       "Natural and Artificial Flavors, Sodium Tripolyphosphate, Malic Acid, "
-                       "Sunflower Lecithin, Sucralose.",
-        "sodium": ("15mg", "1%"),
-    },
-    {
-        "id": "pickle", "name": "Pickle", "color": "#5B7046",
-        "ingredients": "Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, "
-                       "Natural Flavors, Sodium Tripolyphosphate, Sodium Bicarbonate, Salt, "
-                       "Sunflower Lecithin, Sucralose.",
-        "sodium": ("25mg", "1%"),
-    },
+    {"id": "peppermint", "name": "Peppermint", "color": "#1428DC", "sodium": ("15mg", "1%")},
+    {"id": "spearmint", "name": "Spearmint", "color": "#046A4A", "sodium": ("15mg", "1%")},
+    {"id": "blue-raspberry", "name": "Blue Raspberry", "color": "#0085C7", "sodium": ("15mg", "1%")},
+    {"id": "raspberry", "name": "Raspberry", "color": "#C2185B", "sodium": ("15mg", "1%")},
+    {"id": "watermelon", "name": "Watermelon", "color": "#D62839", "sodium": ("15mg", "1%")},
+    {"id": "pickle", "name": "Pickle", "color": "#5B7046", "sodium": ("25mg", "1%")},
 ]
+
+X = "Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, "
+N = "Sorbitol, Gum Base, Mannitol, Glycerin, Calcium Carbonate, "
+N_END = "Sunflower Lecithin, Sucralose, Acesulfame Potassium."
+
+VARIANTS = {
+    "xylitol": {
+        "dir": OUT, "stem": "bright-cartons", "sheet": "product/formula-sheets.md (v1)",
+        "front_sub": "XYLITOL", "back_sub": "XYLITOL GUM",
+        "back_line": "1 g+ xylitol in every piece.", "calories": "0",
+        "ingredients": {
+            "peppermint": X + "Natural Flavors, Sodium Tripolyphosphate, Sunflower Lecithin, Sucralose.",
+            "spearmint": X + "Natural Flavors, Sodium Tripolyphosphate, Sunflower Lecithin, Sucralose.",
+            "blue-raspberry": X + "Natural and Artificial Flavors, Sodium Tripolyphosphate, Malic Acid, "
+                              "Sunflower Lecithin, Sucralose.",
+            "raspberry": X + "Natural Flavors, Sodium Tripolyphosphate, Malic Acid, Sunflower Lecithin, Sucralose.",
+            "watermelon": X + "Natural and Artificial Flavors, Sodium Tripolyphosphate, Malic Acid, "
+                          "Sunflower Lecithin, Sucralose.",
+            "pickle": X + "Natural Flavors, Sodium Tripolyphosphate, Sodium Bicarbonate, Salt, "
+                      "Sunflower Lecithin, Sucralose.",
+        },
+    },
+    "no-xylitol": {
+        "dir": OUT / "no-xylitol", "stem": "bright-cartons-no-xylitol",
+        "sheet": "product/formula-sheets-no-xylitol.md",
+        "front_sub": "A MESSAGE IN<br>EVERY WRAPPER", "back_sub": "SUGAR-FREE GUM",
+        "back_line": "A positive message inside every wrapper.", "calories": "5",
+        "ingredients": {
+            "peppermint": N + "Natural Flavors, Sodium Tripolyphosphate, Gum Arabic, " + N_END,
+            "spearmint": N + "Natural Flavors, Sodium Tripolyphosphate, Gum Arabic, " + N_END,
+            "blue-raspberry": N + "Natural and Artificial Flavors, Gum Arabic, Sodium Tripolyphosphate, "
+                              "Malic Acid, " + N_END,
+            "raspberry": N + "Natural Flavors, Gum Arabic, Sodium Tripolyphosphate, Malic Acid, " + N_END,
+            "watermelon": N + "Natural and Artificial Flavors, Gum Arabic, Sodium Tripolyphosphate, "
+                          "Malic Acid, " + N_END,
+            "pickle": N + "Natural Flavors, Sodium Tripolyphosphate, Gum Arabic, Sodium Bicarbonate, Salt, " + N_END,
+        },
+    },
+}
 
 
 def logo(eye, width_in):
@@ -92,7 +102,8 @@ def barcode(seed):
     return f'<svg viewBox="0 0 100 40" class="bars" aria-hidden="true"><g fill="{INK}">{"".join(bars)}</g></svg>'
 
 
-def front(f):
+def front(f, v=None):
+    v = v or VARIANTS["xylitol"]
     return f'''<div class="label front" style="--flavor:{f['color']}">
 {swirls()}
 <div class="f-top">
@@ -100,31 +111,32 @@ def front(f):
   <div class="claims"><b>Whitening</b><b>Sugar-Free</b></div>
 </div>
 <div class="f-bottom">
-  <div class="count"><b>15 PK</b><span>XYLITOL</span><em>15 STICKS · NET WT 1.43 OZ (40.5 g)</em></div>
+  <div class="count"><b>15 PK</b><span>{v['front_sub']}</span><em>15 STICKS · NET WT 1.43 OZ (40.5 g)</em></div>
   <div class="flavor"><b>{f['name']}</b><span>SUGAR-FREE GUM</span></div>
 </div>
 </div>'''
 
 
-def back(f):
+def back(f, v=None):
+    v = v or VARIANTS["xylitol"]
     na, na_dv = f["sodium"]
     return f'''<div class="label back" style="--flavor:{f['color']}">
 <div class="b-head">
   <div class="brand small">{logo(f['color'], 0.95)}<span class="tm">TM</span></div>
-  <p class="sub">{f['name'].upper()} &nbsp;|&nbsp; XYLITOL GUM</p>
+  <p class="sub">{f['name'].upper()} &nbsp;|&nbsp; {v['back_sub']}</p>
 </div>
 <div class="b-body">
   <div class="b-left">
     <p class="h">INGREDIENTS</p>
-    <p class="ing">{f['ingredients']}</p>
-    <p class="xy">1 g+ xylitol in every piece.</p>
+    <p class="ing">{v['ingredients'][f['id']]}</p>
+    <p class="xy">{v['back_line']}</p>
     <div class="b-foot"><p class="web">BrightGumCo.com</p>
     <div class="upc">{barcode(f['id'])}<span>SAMPLE 0 00000 00000 0</span></div></div>
   </div>
   <div class="nf">
     <p class="nf-t">Nutrition Facts</p>
     <p class="nf-s">Serving size <b>1 piece (2.7g)</b></p>
-    <div class="nf-cal"><b>Calories</b><b>0</b></div>
+    <div class="nf-cal"><b>Calories</b><b>{v['calories']}</b></div>
     <p class="nf-dv">% Daily Value*</p>
     <div class="r"><span><b>Total Fat</b> 0g</span><b>0%</b></div>
     <div class="r"><span><b>Sodium</b> {na}</span><b>{na_dv}</b></div>
@@ -171,7 +183,7 @@ body {{ font-family: 'Lato', 'Inter', Arial, sans-serif; color: {INK}; backgroun
 .claims b {{ font-size: 10pt; font-weight: 900; line-height: 1.15; }}
 .claims span {{ font-size: 5.5pt; line-height: 1.25; margin-top: 3pt; color: #3A4150; }}
 .count b {{ display: block; font-size: 17pt; font-weight: 900; line-height: 1; }}
-.count span {{ display: block; font-size: 6.5pt; font-weight: 900; margin-top: 2pt; letter-spacing: 0.04em; }}
+.count span {{ display: block; font-size: 6.5pt; font-weight: 900; margin-top: 2pt; letter-spacing: 0.04em; line-height: 1.2; }}
 .count em {{ display: block; font-style: normal; font-size: 5pt; margin-top: 3pt; color: #3A4150; }}
 .flavor {{ text-align: right; }}
 .flavor b {{ display: block; font-size: 15pt; font-weight: 900; color: var(--flavor); line-height: 1.05; }}
@@ -212,21 +224,21 @@ FOOT_NOTE = ('<div class="calib"><i></i>1-inch print calibration</div>'
              'Cut the rectangular outlines and paste onto a 15-stick carton.</p>')
 
 
-def flavor_page(f):
+def flavor_page(f, v):
     return f'''<section class="page">
 <p class="pt">BRIGHT GUM &nbsp;|&nbsp; {f['name'].upper()} &nbsp;|&nbsp; FRONT + BACK LABELS</p>
 <p class="ps">Each face is exactly 3.00 x 2.40 in at 100% scale. Flavor color {f['color']} is used for the eye, the flavor name and the accents.</p>
-<p class="pn">Mockup: nutrition values are calculated estimates; ingredients follow product/formula-sheets.md (v1). Barcode is decorative and will not scan.</p>
+<p class="pn">Mockup: nutrition values are calculated estimates; ingredients follow {v['sheet']}. Barcode is decorative and will not scan.</p>
 <div class="pair">
-  <div>{front(f)}<p class="cap">FRONT · 3.00 x 2.40 in</p></div>
-  <div>{back(f)}<p class="cap">BACK · 3.00 x 2.40 in</p></div>
+  <div>{front(f, v)}<p class="cap">FRONT · 3.00 x 2.40 in</p></div>
+  <div>{back(f, v)}<p class="cap">BACK · 3.00 x 2.40 in</p></div>
 </div>
 {FOOT_NOTE}
 </section>'''
 
 
-def lineup_page():
-    fronts = "".join(f'<div>{front(f)}</div>' for f in FLAVORS)
+def lineup_page(v):
+    fronts = "".join(f'<div>{front(f, v)}</div>' for f in FLAVORS)
     return f'''<section class="page">
 <p class="pt">BRIGHT GUM &nbsp;|&nbsp; FLAVOR LINEUP &nbsp;|&nbsp; ALL FRONTS</p>
 <p class="ps">The eye matches the flavor: Peppermint royal blue, Spearmint emerald, Blue Raspberry azure, Raspberry red, Watermelon melon red, Pickle dill green.</p>
@@ -235,6 +247,16 @@ def lineup_page():
 </section>'''
 
 
-html = HEAD + lineup_page() + "".join(flavor_page(f) for f in FLAVORS) + "</body></html>"
-(OUT / "bright-cartons.html").write_text(html)
-print("wrote", OUT / "bright-cartons.html")
+def build(name):
+    v = VARIANTS[name]
+    v["dir"].mkdir(exist_ok=True)
+    html = HEAD + lineup_page(v) + "".join(flavor_page(f, v) for f in FLAVORS) + "</body></html>"
+    path = v["dir"] / (v["stem"] + ".html")
+    path.write_text(html)
+    print("wrote", path)
+
+
+if __name__ == "__main__":
+    which = sys.argv[1] if len(sys.argv) > 1 else "all"
+    for name in (VARIANTS if which == "all" else [which]):
+        build(name)
