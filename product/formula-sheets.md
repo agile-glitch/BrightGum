@@ -171,6 +171,43 @@ Sodium Tripolyphosphate, Sodium Bicarbonate, Salt, Sunflower Lecithin, Sucralose
 
 ---
 
+## Sheet 6: Watermelon (eye color: to be chosen)
+
+Same base as Raspberry, with a watermelon flavor. Watermelon tastes best a little
+less tart than berry, so it uses less acid, plus a touch of cooling to make it
+taste "juicy."
+
+| Ingredient | Function | % | g per stick | kg per 100 kg batch |
+|---|---|---:|---:|---:|
+| Xylitol | Main sweetener, dental benefit | 40.00 | 1.080 | 40.00 |
+| Gum base | Chew | 30.00 | 0.810 | 30.00 |
+| Sorbitol (powder) | Bulking sweetener | 18.00 | 0.486 | 18.00 |
+| Calcium carbonate | Polish (whitening) | 4.00 | 0.108 | 4.00 |
+| Glycerin | Flexibility | 3.00 | 0.081 | 3.00 |
+| Natural watermelon flavor (heat-stable, for gum) | Flavor | 2.70 | 0.073 | 2.70 |
+| Sodium tripolyphosphate | Whitening | 1.50 | 0.041 | 1.50 |
+| Malic acid, encapsulated | Light tart note | 0.20 | 0.005 | 0.20 |
+| Sunflower lecithin | Mixing aid | 0.30 | 0.008 | 0.30 |
+| Sucralose (50/50 free/encapsulated) | Sweetness | 0.20 | 0.005 | 0.20 |
+| Cooling agent (WS-23, flavor-grade) | "Juicy," refreshing finish with no mint taste | 0.10 | 0.003 | 0.10 |
+| **Total** | | **100.00** | **2.700** | **100.00** |
+
+**Flavor brief for the supplier:** "Natural watermelon for chewing gum. Fresh-cut
+melon, juicy and green-rind fresh, not candy. Low-acid, heat-stable to 60 °C."
+WS-23 is a common flavor-industry cooling compound that adds freshness without
+mint flavor. Many flavor houses supply it pre-blended in the flavor, in which
+case it's part of "Natural Flavors" or "Flavors" on the label; confirm with the
+supplier. Like every bright gum, it's **white, with no color added**.
+
+**Label ingredient line:**
+Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors,
+Sodium Tripolyphosphate, Malic Acid, Sunflower Lecithin, Sucralose.
+
+*(If the cooling agent isn't part of the flavor blend, the co-packer will tell
+you how it has to be listed.)*
+
+---
+
 ## Estimated nutrition (per stick, 2.7 g)
 
 How it's calculated: xylitol 2.4 kcal/g, sorbitol 2.6 kcal/g, glycerin
@@ -178,16 +215,16 @@ How it's calculated: xylitol 2.4 kcal/g, sorbitol 2.6 kcal/g, glycerin
 STPP (31% sodium), baking soda (27%) and salt (39%). Calcium comes from calcium
 carbonate (40% calcium).
 
-| | Peppermint | Spearmint | Blue Raspberry | Raspberry | Pickle |
-|---|---:|---:|---:|---:|---:|
-| Calories (calculated) | 4.2 | 4.2 | 4.2 | 4.2 | 4.2 |
-| **Calories on label** (under 5 rounds to 0) | **0** | **0** | **0** | **0** | **0** |
-| Total carbohydrate | 1.7 g → **2 g** | 1.7 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** |
-| Sugar alcohols | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** |
-| Total sugars | **0 g** | **0 g** | **0 g** | **0 g** | **0 g** |
-| Sodium | 12.7 mg → **15 mg** | 12.7 mg → **15 mg** | 12.7 mg → **15 mg** | 12.7 mg → **15 mg** | 23.3 mg → **25 mg** |
-| Calcium | 43 mg → **40 mg (3% DV)** | 43 mg → **40 mg (3% DV)** | 43 mg → **40 mg (3% DV)** | 43 mg → **40 mg (3% DV)** | 38 mg → **40 mg (3% DV)** |
-| Total fat, protein | 0 g | 0 g | 0 g | 0 g | 0 g |
+| | Peppermint | Spearmint | Blue Raspberry | Raspberry | Pickle | Watermelon |
+|---|---:|---:|---:|---:|---:|---:|
+| Calories (calculated) | 4.2 | 4.2 | 4.2 | 4.2 | 4.2 | 4.2 |
+| **Calories on label** (under 5 rounds to 0) | **0** | **0** | **0** | **0** | **0** | **0** |
+| Total carbohydrate | 1.7 g → **2 g** | 1.7 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** |
+| Sugar alcohols | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** |
+| Total sugars | **0 g** | **0 g** | **0 g** | **0 g** | **0 g** | **0 g** |
+| Sodium | 12.7 mg → **15 mg** | 12.7 mg → **15 mg** | 12.7 mg → **15 mg** | 12.7 mg → **15 mg** | 23.3 mg → **25 mg** | 12.7 mg → **15 mg** |
+| Calcium | 43 mg → **40 mg (3% DV)** | 43 mg → **40 mg (3% DV)** | 43 mg → **40 mg (3% DV)** | 43 mg → **40 mg (3% DV)** | 38 mg → **40 mg (3% DV)** | 43 mg → **40 mg (3% DV)** |
+| Total fat, protein | 0 g | 0 g | 0 g | 0 g | 0 g | 0 g |
 
 Two things to confirm with your label reviewer:
 
@@ -201,20 +238,21 @@ Two things to confirm with your label reviewer:
 Example: **10,000 cartons** = 150,000 sticks = **405 kg** of finished gum
 (order about 5% extra to cover production losses).
 
-| Ingredient | Peppermint (kg) | Spearmint (kg) | Blue Raspberry (kg) | Raspberry (kg) | Pickle (kg) |
-|---|---:|---:|---:|---:|---:|
-| Xylitol | 162.0 | 162.0 | 162.0 | 162.0 | 162.0 |
-| Gum base | 121.5 | 121.5 | 121.5 | 121.5 | 121.5 |
-| Sorbitol | 74.9 | 74.9 | 72.5 | 72.5 | 71.9 |
-| Calcium carbonate | 16.2 | 16.2 | 16.2 | 16.2 | 14.2 |
-| Glycerin | 12.2 | 12.2 | 12.2 | 12.2 | 12.2 |
-| Flavor | 10.1 | 10.1 | 11.3 | 11.3 | 10.1 |
-| STPP | 6.1 | 6.1 | 6.1 | 6.1 | 6.1 |
-| Sodium bicarbonate | — | — | — | — | 4.1 |
-| Malic acid (encap.) | — | — | 1.2 | 1.2 | — |
-| Salt | — | — | — | — | 1.2 |
-| Sunflower lecithin | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
-| Sucralose | 0.8 | 0.8 | 0.8 | 0.8 | 0.6 |
+| Ingredient | Peppermint (kg) | Spearmint (kg) | Blue Raspberry (kg) | Raspberry (kg) | Pickle (kg) | Watermelon (kg) |
+|---|---:|---:|---:|---:|---:|---:|
+| Xylitol | 162.0 | 162.0 | 162.0 | 162.0 | 162.0 | 162.0 |
+| Gum base | 121.5 | 121.5 | 121.5 | 121.5 | 121.5 | 121.5 |
+| Sorbitol | 74.9 | 74.9 | 72.5 | 72.5 | 71.9 | 72.9 |
+| Calcium carbonate | 16.2 | 16.2 | 16.2 | 16.2 | 14.2 | 16.2 |
+| Glycerin | 12.2 | 12.2 | 12.2 | 12.2 | 12.2 | 12.2 |
+| Flavor | 10.1 | 10.1 | 11.3 | 11.3 | 10.1 | 10.9 |
+| STPP | 6.1 | 6.1 | 6.1 | 6.1 | 6.1 | 6.1 |
+| Sodium bicarbonate | — | — | — | — | 4.1 | — |
+| Malic acid (encap.) | — | — | 1.2 | 1.2 | — | 0.8 |
+| Salt | — | — | — | — | 1.2 | — |
+| Sunflower lecithin | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
+| Sucralose | 0.8 | 0.8 | 0.8 | 0.8 | 0.6 | 0.8 |
+| Cooling agent (WS-23) | — | — | — | — | — | 0.4 |
 
 ## How stick gum is made (what to expect at the co-packer)
 

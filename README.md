@@ -9,8 +9,8 @@
 
 | Folder | File | What it covers |
 |---|---|---|
-| `brand/logo/` | `bright-logo-primary.svg` | **The official logo** (black wordmark, blue eye, transparent background), as a vector you can scale to any size |
-| | `bright-logo-on-blue.svg`, `-on-green.svg`, `-reversed.svg` | The same logo recolored for the Blue Raspberry, Pickle and dark packs |
+| `brand/logo/` | `bright-logo-primary.svg` | **The official logo, use it first:** black wordmark with the Peppermint-blue eye, on white. Vector, any size. On flavor boxes the eye takes that flavor's color. |
+| | `bright-logo-on-blue.svg`, `-on-green.svg`, `-reversed.svg` | Backup versions for colored or dark backgrounds only |
 | `packaging/` | `bright-cartons.pdf` | **Print-ready 1:1 carton labels** (front + back) for Peppermint, Spearmint, Blue Raspberry, Raspberry and Pickle, plus a lineup page. The eye color matches each flavor. |
 | | `build_cartons.py`, `render.js` | Regenerate the labels: `python3 packaging/build_cartons.py && node packaging/render.js` |
 | `product/` | `formula-sheets.md` | **v1 recipes for every flavor**: grams per stick, batch quantities, label ingredient lines, calculated nutrition |
