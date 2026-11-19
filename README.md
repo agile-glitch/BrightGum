@@ -11,7 +11,10 @@
 |---|---|---|
 | `brand/logo/` | `bright-logo-primary.svg` | **The official logo** (black wordmark, blue eye, transparent background), as a vector you can scale to any size |
 | | `bright-logo-on-blue.svg`, `-on-green.svg`, `-reversed.svg` | The same logo recolored for the Blue Raspberry, Pickle and dark packs |
-| `product/` | `formula.md` | Draft recipe (xylitol ≥ 1 g/stick + whitening), flavor variations, questions for co-packers |
+| `packaging/` | `bright-cartons.pdf` | **Print-ready 1:1 carton labels** (front + back) for Peppermint, Blue Raspberry and Pickle, plus a lineup page. The eye color matches each flavor. |
+| | `build_cartons.py`, `render.js` | Regenerate the labels: `python3 packaging/build_cartons.py && node packaging/render.js` |
+| `product/` | `formula-sheets.md` | **v1 recipes for all three flavors**: grams per stick, batch quantities, label ingredient lines, calculated nutrition |
+| | `formula.md` | Draft recipe (xylitol ≥ 1 g/stick + whitening), flavor variations, questions for co-packers |
 | | `wrapper-messages.md` | 54 wrapper messages: the **bright faith** edition (KJV verses) and the **bright** everyday edition |
 | `regulations/` | `regulations.md` | US food-law checklist: label requirements, allowed claims, warnings, Prop 65, business setup, trademark |
 | `marketing/` | `marketing-plan.md` | Audience, positioning, pricing, phased launch, content ideas, metrics |

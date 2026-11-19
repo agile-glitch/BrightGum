@@ -24,7 +24,7 @@ It's organized as a checklist so you can tick items off.
 | **"Whitening"** | ⚠️ Allowed, but **only if you can prove it** (FTC "competent and reliable scientific evidence"). | Keep it once the co-packer provides stain-removal test data for your formula. Until then, keep calling it a concept. |
 | Ingredient list includes **gum arabic + carnauba wax** | These are coating ingredients for pellet gum. A stick gum usually doesn't have them. | Use the co-packer's real ingredient list. |
 | Sample barcode | Placeholder | Buy a real UPC from **GS1 US**. Retailers require it. |
-| No allergen line | Soy lecithin = **soy**, a major allergen | Add **"Contains: Soy."** |
+| Soy lecithin | Soy is a major allergen and would need a "Contains: Soy" line | The v1 formula uses **sunflower lecithin** instead, so there are no major allergens |
 | No company address | Required | Add *"Distributed by bright gum Co., City, ST ZIP."* |
 
 ## 2. Ingredients must be approved for food
@@ -50,7 +50,7 @@ Every carton needs:
 - [ ] **Net quantity** on the bottom 30% of the front: *"15 Sticks / Net Wt 1.4 oz (40.5 g)."*
       (Use the real weight from the co-packer.)
 - [ ] **Ingredient list** in descending order by weight.
-- [ ] **Allergen statement**: "Contains: Soy" (FALCPA; sesame added by the FASTER Act).
+- [ ] **Allergen statement** if any major allergen is present (FALCPA; sesame added by the FASTER Act). The v1 formula has none, but confirm the gum base and flavors with the supplier.
 - [ ] **Name and place of business** of the manufacturer, packer or distributor.
 - [ ] **Nutrition Facts.** On a small carton you can use the **tabular or linear
       (side-by-side) format** to save space (21 CFR 101.9(j)(13)). Your
@@ -132,9 +132,9 @@ color rules differ. Treat each new country as a new label review.
 > Does not promote tooth decay · 15 Sticks · Net Wt __ oz (__ g)
 
 **Back:**
-> Ingredients: Xylitol, gum base, sorbitol, calcium carbonate, glycerin, natural
-> and artificial flavors, sodium tripolyphosphate, soy lecithin, sucralose.
-> **Contains: Soy.** · Keep away from dogs. Xylitol is toxic to dogs. · Excess
+> Ingredients: Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural
+> Flavors, Sodium Tripolyphosphate, Sunflower Lecithin, Sucralose.
+> · Keep away from dogs. Xylitol is toxic to dogs. · Excess
 > consumption may have a laxative effect. · Distributed by bright gum Co., City,
 > ST ZIP · BrightGumCo.com · [Nutrition Facts] · [UPC]
 

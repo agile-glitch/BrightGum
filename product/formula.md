@@ -5,6 +5,11 @@ Gum is made on specialized mixing, extruding and rolling lines, and almost every
 new gum brand starts this way: you own the brand, the recipe targets and the
 packaging, and they make it.
 
+> **Updated:** the finished v1 recipes for all three flavors (exact grams, batch
+> quantities, label ingredient lines and nutrition) are in
+> [`formula-sheets.md`](formula-sheets.md). Where the two differ, the sheets win:
+> they drop all colors and use sunflower lecithin instead of soy.
+
 **These percentages are a development starting point, not a finished recipe.**
 The co-packer will adjust them on their equipment, run shelf-life tests and give
 you the official ingredient list and Nutrition Facts.
@@ -49,7 +54,7 @@ Per 2.7 g stick.
 | **Sodium tripolyphosphate** | Loosens stains, stops new ones sticking (whitening) | **1.5** | 0.04 |
 | Glycerin | Keeps the stick flexible, not crumbly | 3.0 | 0.08 |
 | Peppermint flavor (peppermint oil + menthol) | Flavor and cooling | 2.5 | 0.07 |
-| Soy lecithin | Helps mix and soften | 0.3 | 0.01 |
+| Sunflower lecithin | Helps mix and soften (allergen-free) | 0.3 | 0.01 |
 | Sucralose (half free, half encapsulated) | Sweetness boost; encapsulated part makes flavor last longer | 0.2 | 0.005 |
 | **Total** | | **100.0** | **2.70** |
 
@@ -71,7 +76,7 @@ Start from the Peppermint base and swap only the parts below.
 |---|---|---|
 | Swap peppermint for blue-raspberry flavor | 2.5–3.0% | |
 | Add malic acid | **≤ 0.3%** | A little tang. Keep it low: acid fights the dental message. Ask the co-packer for a **"low-acid / buffered"** fruit profile. |
-| Color | | **Use spirulina blue, not Blue No. 1 dye.** A gum sold on *whitening* shouldn't turn your tongue blue. Spirulina extract is an FDA-approved natural color for gum. |
+| Color | None | The gum stays white; the flavor color goes on the box. A gum sold on *whitening* shouldn't turn your tongue blue. |
 
 ### Pickle
 
@@ -81,7 +86,7 @@ Start from the Peppermint base and swap only the parts below.
 | Add salt | ~0.3% | Real pickle taste |
 | Add sodium bicarbonate (baking soda) | ~1.0% | Salty-friendly, neutralizes acid, adds extra polish |
 | Sour note | From flavor, **not** vinegar/acid | Same dental reason as above |
-| Color | Light green from spirulina + turmeric/safflower, or no color | |
+| Color | None | Natural green options (like turmeric) stain teeth |
 
 Pickle is your **attention-getter**. People will film themselves trying it.
 Peppermint is what most customers will buy again. Launch Peppermint first, or all
