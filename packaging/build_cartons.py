@@ -40,6 +40,13 @@ FLAVORS = [
         "sodium": ("15mg", "1%"),
     },
     {
+        "id": "watermelon", "name": "Watermelon", "color": "#D62839",
+        "ingredients": "Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, "
+                       "Natural Flavors, Sodium Tripolyphosphate, Malic Acid, "
+                       "Sunflower Lecithin, Sucralose.",
+        "sodium": ("15mg", "1%"),
+    },
+    {
         "id": "pickle", "name": "Pickle", "color": "#5B7046",
         "ingredients": "Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, "
                        "Natural Flavors, Sodium Tripolyphosphate, Sodium Bicarbonate, Salt, "
@@ -222,7 +229,7 @@ def lineup_page():
     fronts = "".join(f'<div>{front(f)}</div>' for f in FLAVORS)
     return f'''<section class="page">
 <p class="pt">BRIGHT GUM &nbsp;|&nbsp; FLAVOR LINEUP &nbsp;|&nbsp; ALL FRONTS</p>
-<p class="ps">The eye matches the flavor: Peppermint royal blue, Spearmint emerald, Blue Raspberry azure, Raspberry red, Pickle dill green.</p>
+<p class="ps">The eye matches the flavor: Peppermint royal blue, Spearmint emerald, Blue Raspberry azure, Raspberry red, Watermelon melon red, Pickle dill green.</p>
 <div class="stack">{fronts}</div>
 {FOOT_NOTE}
 </section>'''

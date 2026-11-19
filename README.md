@@ -11,7 +11,7 @@
 |---|---|---|
 | `brand/logo/` | `bright-logo-primary.svg` | **The official logo, use it first:** black wordmark with the Peppermint-blue eye, on white. Vector, any size. On flavor boxes the eye takes that flavor's color. |
 | | `bright-logo-on-blue.svg`, `-on-green.svg`, `-reversed.svg` | Backup versions for colored or dark backgrounds only |
-| `packaging/` | `bright-cartons.pdf` | **Print-ready 1:1 carton labels** (front + back) for Peppermint, Spearmint, Blue Raspberry, Raspberry and Pickle, plus a lineup page. The eye color matches each flavor. |
+| `packaging/` | `bright-cartons.pdf` | **Print-ready 1:1 carton labels** (front + back) for Peppermint, Spearmint, Blue Raspberry, Raspberry, Watermelon and Pickle, plus a lineup page. The eye color matches each flavor. |
 | | `build_cartons.py`, `render.js` | Regenerate the labels: `python3 packaging/build_cartons.py && node packaging/render.js` |
 | `product/` | `formula-sheets.md` | **v1 recipes for every flavor**: grams per stick, batch quantities, label ingredient lines, calculated nutrition |
 | | `formula.md` | Draft recipe (xylitol ≥ 1 g/stick + whitening), flavor variations, questions for co-packers |
@@ -23,7 +23,7 @@
 ## Product snapshot
 
 - **Format:** 15-stick carton, 3.00 × 2.40 × 0.35 in
-- **Flavors:** Peppermint · Spearmint · Blue Raspberry · Raspberry · Pickle
+- **Flavors:** Peppermint · Spearmint · Blue Raspberry · Raspberry · Watermelon · Pickle
 - **Sugar-free**, xylitol as the first ingredient, stain-lifting whitening polish
 - **Every wrapper:** a teaser outside, a message inside
 

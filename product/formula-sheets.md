@@ -171,7 +171,7 @@ Sodium Tripolyphosphate, Sodium Bicarbonate, Salt, Sunflower Lecithin, Sucralose
 
 ---
 
-## Sheet 6: Watermelon (eye color: to be chosen)
+## Sheet 6: Watermelon (eye color: melon red `#D62839`)
 
 Same base as Raspberry, with a watermelon flavor. Watermelon tastes best a little
 less tart than berry, so it uses less acid, plus a touch of cooling to make it
