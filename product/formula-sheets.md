@@ -229,13 +229,15 @@ the price difference at your order size.
 |---|---|---|
 | What it is | Each stick wrapped in a foil/paper laminate, message printed on the paper side | Each stick wrapped in plain (blank outside) paper with the message printed on the inside. One sealed foil-lined inner pack or clear overwrap goes around all 15 sticks to keep them fresh. |
 | Freshness and flavor | Best: every stick is protected until it's unwrapped | Good while the pack is sealed; sticks lose flavor faster once it's opened |
-| Cost | Higher: fifteen printed foil wrappers per carton | Lower: paper is cheap, and there's one piece of foil or film per carton instead of fifteen |
-| Many different messages | Each new set of messages needs new printing plates on a costlier material | Much cheaper to change and expand the message set, especially with digital printing (no plates) |
+| Cost | Material is cheap, about 1 to 3 cents a carton on supplier listings. The hurdles are a large minimum order (300 to 500 kg, enough for about 100,000 cartons) and printing plates at $200 to $800 per color. | Likely a cent or two less per carton, with much smaller minimum orders. One piece of foil or film per carton instead of fifteen. |
+| Many different messages | Each new set of messages needs new printing plates | Cheap to change and expand the message set, especially with digital printing (no plates) |
 | The reveal | Message is visible on the paper side | Message is hidden until the stick is unwrapped, which suits the commercials |
 
-**Suggested approach:** start with **Option B** if foil quotes come back high. It
-keeps the cost of printing many different messages low, and most stick gum on
-shelves is already packed this way (paper-wrapped sticks inside a sealed pack).
+**Suggested approach:** start with **Option B** for the first runs. Its small
+minimum orders and plate-free printing suit a launch with many different
+messages, and most stick gum on shelves is already packed this way
+(paper-wrapped sticks inside a sealed pack). Cost figures are from
+`finance/bright-gum-cost-study.pdf`.
 Move to Option A later if chew tests or customer feedback show the flavor fading
 after the pack is opened.
 

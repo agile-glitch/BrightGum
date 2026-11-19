@@ -19,6 +19,9 @@
 | | `formula-sheets-no-xylitol.md` | **No-xylitol versions** of every recipe (sorbitol-based, built long-lasting), with an honest comparison |
 | | `formula.md` | Draft recipe (xylitol ≥ 1 g/stick + whitening), flavor variations, questions for co-packers |
 | | `wrapper-messages.md` | **120 positive messages** for the inside of the wrapper (current focus), plus the Bible-verse edition saved for later |
+| `finance/` | `bright-gum-cost-study.pdf` | **Cost and pricing study** (6 pages): cost to start, cost per carton, own factory vs. contract manufacturer, what to charge, break-even |
+| | `bright-gum-cost-study.pptx` | The same study as a 12-slide PowerPoint |
+| | `cost_model.py` | Every assumption in one place. Change a number, then rebuild: `python3 finance/cost_model.py && python3 finance/build_pdf.py && node finance/render_pdf.js && node finance/build_pptx.js` (the PowerPoint build needs `npm install pptxgenjs sharp`) |
 | `regulations/` | `regulations.md` | US food-law checklist: label requirements, allowed claims, warnings, Prop 65, business setup, trademark |
 | `marketing/` | `marketing-plan.md` | Audience, positioning, pricing, phased launch, content ideas, metrics |
 | | `commercials.md` | Shot-by-shot scripts for "Pass It On" (campus) and "Lift" (rec center, two endings) |
