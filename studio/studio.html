@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bright studio</title>
+<style>
+/* Layout: sidebar file list | viewer/editor; toolbar on top. Brand ink + royal blue on toned white. */
+:root {
+  --bg: #F7F8FC; --panel: #FFFFFF; --ink: #0D1117; --soft: #4A5263; --line: #DFE3EF;
+  --accent: #1428DC; --accent-soft: #E8EBFC; --good: #046A4A; --bad: #C0262D; --warn: #9A5B00;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0F131A; --panel: #161B24; --ink: #E8EBF2; --soft: #A3ABBD; --line: #2A3242;
+    --accent: #8C9BFF; --accent-soft: #1E2547; --good: #5CC49A; --bad: #FF7A7F; --warn: #E6B35C; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { background: var(--bg); color: var(--ink); font: 14px/1.5 var(--sans); display: grid; grid-template-rows: auto 1fr; }
+button, input, textarea, select { font: inherit; color: inherit; }
+button { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 6px 12px; cursor: pointer; }
+button:hover { border-color: var(--accent); }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+@media (prefers-color-scheme: dark) { button.primary { color: #0F131A; } }
+button.danger { color: var(--bad); }
+button:disabled { opacity: .5; cursor: default; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+header { display: flex; align-items: center; gap: 12px; padding: 10px 16px; background: var(--panel); border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; margin-right: auto; }
+.brand svg { width: 88px; height: 29px; }
+.brand span { color: var(--soft); font-weight: 500; }
+.tools { display: flex; gap: 8px; flex-wrap: wrap; }
+.git-chip { font-size: 12px; color: var(--soft); }
+
+main { display: grid; grid-template-columns: 300px 1fr; min-height: 0; }
+aside { border-right: 1px solid var(--line); background: var(--panel); display: flex; flex-direction: column; min-height: 0; }
+.side-head { padding: 10px; display: flex; gap: 6px; border-bottom: 1px solid var(--line); }
+.side-head input { flex: 1; min-width: 0; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
+#tree { overflow: auto; padding: 6px 0 20px; flex: 1; }
+.folder { padding: 10px 14px 4px; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--soft); }
+.file { display: flex; align-items: center; gap: 8px; width: 100%; text-align: left; border: 0; border-radius: 0; padding: 5px 14px; background: none; }
+.file:hover { background: var(--bg); }
+.file.active { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.file .ic { width: 34px; flex: none; font-size: 10px; font-weight: 700; text-align: center; border-radius: 4px; padding: 1px 0; background: var(--bg); color: var(--soft); }
+.file .nm { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.file .dot { margin-left: auto; width: 7px; height: 7px; border-radius: 50%; background: var(--warn); flex: none; }
+
+#view { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+.view-head { display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-bottom: 1px solid var(--line); background: var(--panel); flex-wrap: wrap; }
+.view-head h1 { font-size: 15px; margin: 0 auto 0 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.view-head .meta { font-size: 12px; color: var(--soft); }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.seg button { border: 0; border-radius: 0; }
+.seg button.on { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.body { flex: 1; overflow: auto; min-height: 0; }
+.empty { max-width: 640px; margin: 60px auto; padding: 0 20px; color: var(--soft); }
+.empty h2 { color: var(--ink); }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; margin-top: 18px; }
+.cards button { text-align: left; padding: 12px; }
+.cards b { display: block; color: var(--ink); }
+.cards span { font-size: 12px; color: var(--soft); }
+
+textarea.editor { width: 100%; height: 100%; border: 0; resize: none; padding: 16px 20px; background: var(--panel); font: 13px/1.6 var(--mono); tab-size: 2; outline: none; }
+.split { display: grid; grid-template-columns: 1fr 1fr; height: 100%; }
+.split > * { min-width: 0; overflow: auto; }
+.split > textarea { border-right: 1px solid var(--line); }
+iframe.doc { width: 100%; height: 100%; border: 0; background: #fff; }
+.img-wrap { padding: 24px; display: grid; place-items: center; min-height: 100%; background: repeating-conic-gradient(var(--line) 0 25%, transparent 0 50%) 0 0 / 20px 20px; }
+.img-wrap img { max-width: 100%; height: auto; background: transparent; box-shadow: 0 2px 12px rgba(0,0,0,.12); }
+.note-box { max-width: 560px; margin: 60px auto; padding: 0 20px; color: var(--soft); }
+
+/* Rendered Markdown */
+.md { max-width: 860px; margin: 0 auto; padding: 24px 28px 60px; }
+.md h1 { font-size: 26px; line-height: 1.2; margin: 0 0 14px; }
+.md h2 { font-size: 20px; margin: 28px 0 10px; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+.md h3 { font-size: 16px; margin: 20px 0 8px; }
+.md p, .md ul, .md ol { margin: 0 0 12px; }
+.md li { margin: 3px 0; }
+.md code { font: 12.5px var(--mono); background: var(--bg); padding: 1px 5px; border-radius: 4px; }
+.md pre { background: var(--bg); padding: 12px; border-radius: 8px; overflow: auto; }
+.md pre code { padding: 0; }
+.md blockquote { margin: 0 0 12px; padding: 8px 14px; border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 0 8px 8px 0; }
+.md blockquote p:last-child { margin: 0; }
+.md hr { border: 0; border-top: 1px solid var(--line); margin: 24px 0; }
+.md a { color: var(--accent); }
+.md .tbl { overflow-x: auto; margin: 0 0 14px; }
+.md table { border-collapse: collapse; font-size: 13px; min-width: 50%; }
+.md th, .md td { border-bottom: 1px solid var(--line); padding: 6px 10px 6px 0; text-align: left; vertical-align: top; }
+.md th { font-size: 12px; color: var(--soft); border-bottom-color: var(--ink); }
+.md td.r, .md th.r { text-align: right; font-variant-numeric: tabular-nums; }
+.md img { max-width: 100%; background: #fff; border-radius: 6px; padding: 6px; }
+
+/* Panels */
+.drawer { position: fixed; right: 16px; bottom: 16px; width: min(560px, calc(100vw - 32px)); max-height: 70vh; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,.18); display: flex; flex-direction: column; z-index: 20; }
+.drawer-head { display: flex; align-items: center; gap: 8px; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+.drawer-head b { margin-right: auto; }
+.drawer-body { padding: 12px 14px; overflow: auto; }
+pre.log { font: 12px/1.5 var(--mono); white-space: pre-wrap; margin: 0; }
+.changes { list-style: none; padding: 0; margin: 0 0 12px; max-height: 220px; overflow: auto; }
+.changes li { display: flex; gap: 8px; align-items: center; padding: 3px 0; font-size: 13px; }
+.changes .st { font: 11px var(--mono); width: 22px; color: var(--warn); }
+.drawer input[type=text] { width: 100%; padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); margin-bottom: 10px; }
+.row { display: flex; gap: 8px; flex-wrap: wrap; }
+.hint { font-size: 12px; color: var(--soft); margin: 8px 0 0; }
+.toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 8px 16px; border-radius: 8px; z-index: 30; font-size: 13px; }
+.modal-bg { position: fixed; inset: 0; background: rgba(0,0,0,.35); display: grid; place-items: center; z-index: 40; padding: 16px; }
+.modal { background: var(--panel); border-radius: 12px; padding: 18px; width: min(420px, 100%); }
+.modal h3 { margin: 0 0 8px; }
+.modal input { width: 100%; padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); margin: 8px 0 14px; }
+
+@media (max-width: 760px) {
+  main { grid-template-columns: 1fr; grid-template-rows: 40vh 1fr; }
+  aside { border-right: 0; border-bottom: 1px solid var(--line); }
+  .split { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <svg viewBox="20 20 880 290" aria-label="bright logo"><g fill="none" stroke="currentColor" stroke-width="24" stroke-linejoin="round"><path d="M74,58 V200"/><circle cx="112" cy="150" r="38"/><path d="M202,200 V130 Q202,112 220,112 H246"/><path d="M286,100 V200"/><circle cx="376" cy="150" r="38"/><path d="M414,100 V222 A38,38 0 0 1 343.1,241"/><path d="M466,58 V200"/><path d="M466,150 A38,38 0 0 1 542,150 V200"/><path d="M594,72 V170 Q594,188 612,188 H632"/><path d="M594,112 H632"/><path d="M820,154 V142 A22,22 0 0 1 864,142 V154"/><path d="M706,194 A88,88 0 0 0 874,194"/></g><circle cx="286" cy="68" r="14" fill="currentColor"/><rect x="712" y="118" width="40" height="40" rx="9" fill="#1428DC"/></svg>
+    <span>studio</span>
+  </div>
+  <div class="tools" id="taskButtons"></div>
+  <button id="gitBtn" type="button">Save to GitHub <span class="git-chip" id="gitChip"></span></button>
+</header>
+<main>
+  <aside>
+    <div class="side-head">
+      <input id="search" type="search" placeholder="Find a file" aria-label="Find a file">
+      <button id="newBtn" type="button" title="Create a new file">New</button>
+    </div>
+    <nav id="tree" aria-label="Project files"></nav>
+  </aside>
+  <section id="view"></section>
+</main>
+
+<script>
+const TOKEN = "__STUDIO_TOKEN__";
+const state = { files: [], tasks: {}, current: null, mode: "view", dirty: false, original: "", git: null };
+const $ = (s, el = document) => el.querySelector(s);
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+// ---------- server calls ----------
+async function api(path, body) {
+  const opt = { headers: { "X-Studio-Token": TOKEN } };
+  if (body !== undefined) { opt.method = "POST"; opt.headers["Content-Type"] = "application/json"; opt.body = JSON.stringify(body); }
+  const r = await fetch(path, opt);
+  const data = await r.json().catch(() => ({ error: "The studio server didn't answer. Is it still running?" }));
+  if (!r.ok) throw new Error(data.error || "Something went wrong.");
+  return data;
+}
+const rawUrl = (p, dl) => `/api/raw?path=${encodeURIComponent(p)}&t=${TOKEN}${dl ? "&download=1" : ""}&v=${Date.now()}`;
+
+function toast(msg) {
+  const t = document.createElement("div"); t.className = "toast"; t.textContent = msg; document.body.appendChild(t);
+  setTimeout(() => t.remove(), 2600);
+}
+
+// ---------- small modal helpers (the page can't use browser dialogs reliably) ----------
+function modal({ title, text, input, okLabel = "OK", danger = false }) {
+  return new Promise((resolve) => {
+    const bg = document.createElement("div"); bg.className = "modal-bg";
+    bg.innerHTML = `<div class="modal" role="dialog" aria-modal="true"><h3>${esc(title)}</h3>${text ? `<p>${esc(text)}</p>` : ""}
+      ${input !== undefined ? `<input id="mIn" type="text" value="${esc(input)}">` : ""}
+      <div class="row" style="justify-content:flex-end"><button type="button" id="mNo">Cancel</button>
+      <button type="button" id="mOk" class="${danger ? "danger" : "primary"}">${esc(okLabel)}</button></div></div>`;
+    document.body.appendChild(bg);
+    const inp = $("#mIn", bg); (inp || $("#mOk", bg)).focus(); if (inp) inp.select();
+    const done = (v) => { bg.remove(); resolve(v); };
+    $("#mNo", bg).onclick = () => done(null);
+    $("#mOk", bg).onclick = () => done(inp ? inp.value.trim() : true);
+    bg.addEventListener("keydown", (e) => { if (e.key === "Escape") done(null); if (e.key === "Enter") done(inp ? inp.value.trim() : true); });
+  });
+}
+
+// ---------- file list ----------
+const ICON = { md: "TEXT", pdf: "PDF", png: "IMG", jpg: "IMG", jpeg: "IMG", webp: "IMG", svg: "SVG", pptx: "PPT", html: "HTML", py: "PY", js: "JS", json: "DATA", csv: "DATA" };
+const ext = (p) => (p.includes(".") ? p.split(".").pop().toLowerCase() : "");
+const FOLDER_NAMES = { "": "Project", brand: "Brand", "brand/logo": "Logo", packaging: "Packaging (boxes)", "packaging/no-xylitol": "Packaging: no xylitol", product: "Product (recipes, messages)", finance: "Finance (cost study)", regulations: "Regulations", marketing: "Marketing", studio: "Studio (this app)" };
+
+function renderTree() {
+  const q = $("#search").value.trim().toLowerCase();
+  const changed = new Set((state.git?.changes || []).map((c) => c.path));
+  const groups = {};
+  for (const f of state.files) {
+    if (q && !f.path.toLowerCase().includes(q)) continue;
+    const dir = f.path.includes("/") ? f.path.slice(0, f.path.lastIndexOf("/")) : "";
+    (groups[dir] = groups[dir] || []).push(f);
+  }
+  const order = Object.keys(groups).sort((a, b) => (a === "" ? -1 : b === "" ? 1 : a.localeCompare(b)));
+  $("#tree").innerHTML = order.map((dir) => `<div class="folder">${esc(FOLDER_NAMES[dir] || dir)}</div>` +
+    groups[dir].map((f) => `<button type="button" class="file${state.current === f.path ? " active" : ""}" data-path="${esc(f.path)}" title="${esc(f.path)}">
+      <span class="ic">${ICON[ext(f.path)] || (f.text ? "TEXT" : "FILE")}</span><span class="nm">${esc(f.path.split("/").pop())}</span>
+      ${changed.has(f.path) ? '<span class="dot" title="Changed, not yet saved to GitHub"></span>' : ""}</button>`).join("")).join("")
+    || `<p class="hint" style="padding:0 14px">No files match “${esc(q)}”.</p>`;
+}
+$("#tree").addEventListener("click", (e) => { const b = e.target.closest(".file"); if (b) openFile(b.dataset.path); });
+$("#search").addEventListener("input", renderTree);
+
+// ---------- Markdown (built in, so no internet is needed) ----------
+function inline(s) {
+  s = esc(s);
+  s = s.replace(/`([^`]+)`/g, "<code>$1</code>");
+  s = s.replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, (m, alt, src) => `<img alt="${alt}" src="${/^https?:/.test(src) ? src : rawUrl(resolveRel(src))}">`);
+  s = s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (m, t, href) => /^https?:/.test(href) ? `<a href="${href}" target="_blank" rel="noopener">${t}</a>` : `<a href="#" data-open="${esc(resolveRel(href))}">${t}</a>`);
+  s = s.replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>").replace(/(^|[^*\w])\*([^*\n]+)\*(?!\w)/g, "$1<i>$2</i>");
+  return s;
+}
+function resolveRel(href) {
+  if (!state.current || href.startsWith("/")) return href.replace(/^\//, "");
+  const parts = state.current.split("/").slice(0, -1);
+  for (const seg of href.split("/")) { if (seg === "..") parts.pop(); else if (seg !== ".") parts.push(seg); }
+  return parts.join("/");
+}
+function markdown(src) {
+  const lines = src.replace(/\r/g, "").split("\n"); let out = "", i = 0;
+  const isTableSep = (l) => /^\s*\|?\s*:?-{2,}:?\s*(\|\s*:?-{2,}:?\s*)*\|?\s*$/.test(l);
+  const cells = (l) => l.trim().replace(/^\|/, "").replace(/\|$/, "").split("|").map((c) => c.trim());
+  while (i < lines.length) {
+    const l = lines[i];
+    if (/^```/.test(l)) { let code = []; i++; while (i < lines.length && !/^```/.test(lines[i])) code.push(lines[i++]); i++; out += `<pre><code>${esc(code.join("\n"))}</code></pre>`; continue; }
+    if (/^#{1,6}\s/.test(l)) { const n = l.match(/^#+/)[0].length; out += `<h${Math.min(n, 3)}>${inline(l.slice(n).trim())}</h${Math.min(n, 3)}>`; i++; continue; }
+    if (/^\s*(-{3,}|\*{3,})\s*$/.test(l)) { out += "<hr>"; i++; continue; }
+    if (/^\s*\|/.test(l) && i + 1 < lines.length && isTableSep(lines[i + 1])) {
+      const head = cells(l); const align = cells(lines[i + 1]).map((c) => (c.endsWith(":") ? "r" : "")); i += 2;
+      let rows = ""; while (i < lines.length && /^\s*\|/.test(lines[i])) { rows += "<tr>" + cells(lines[i]).map((c, j) => `<td class="${align[j] || ""}">${inline(c)}</td>`).join("") + "</tr>"; i++; }
+      out += `<div class="tbl"><table><thead><tr>${head.map((c, j) => `<th class="${align[j] || ""}">${inline(c)}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`; continue;
+    }
+    if (/^>\s?/.test(l)) { let q = []; while (i < lines.length && /^>\s?/.test(lines[i])) q.push(lines[i++].replace(/^>\s?/, "")); out += `<blockquote>${markdown(q.join("\n"))}</blockquote>`; continue; }
+    if (/^\s*([-*]|\d+\.)\s+/.test(l)) {
+      const ordered = /^\s*\d+\./.test(l); let items = [];
+      while (i < lines.length && (/^\s*([-*]|\d+\.)\s+/.test(lines[i]) || (/^\s{2,}\S/.test(lines[i]) && items.length))) {
+        if (/^\s*([-*]|\d+\.)\s+/.test(lines[i])) items.push(lines[i].replace(/^\s*([-*]|\d+\.)\s+/, "")); else items[items.length - 1] += " " + lines[i].trim();
+        i++;
+      }
+      const start = ordered ? parseInt(l, 10) : 1;
+      out += `<${ordered ? `ol start="${start}"` : "ul"}>${items.map((t) => `<li>${inline(t.replace(/^\[ \]\s*/, "☐ ").replace(/^\[x\]\s*/i, "☑ "))}</li>`).join("")}</${ordered ? "ol" : "ul"}>`; continue;
+    }
+    if (!l.trim()) { i++; continue; }
+    let para = []; while (i < lines.length && lines[i].trim() && !/^(#|```|>|\s*\||\s*([-*]|\d+\.)\s)/.test(lines[i])) para.push(lines[i++].trim());
+    if (!para.length) para.push(lines[i++].trim());
+    out += `<p>${inline(para.join(" "))}</p>`;
+  }
+  return out;
+}
+
+// ---------- viewer / editor ----------
+async function openFile(path, force) {
+  if (state.dirty && !force && path !== state.current) {
+    const ok = await modal({ title: "Leave without saving?", text: "Your edits to this file haven't been saved.", okLabel: "Discard edits", danger: true });
+    if (!ok) return;
+  }
+  const f = state.files.find((x) => x.path === path); if (!f) return;
+  state.current = path; state.dirty = false;
+  const e = ext(path);
+  state.mode = e === "md" ? "view" : ["svg", "html"].includes(e) ? "view" : f.text ? "edit" : "view";
+  try { localStorage.setItem("studio:last", path); } catch {}
+  renderTree(); await renderView();
+}
+
+async function renderView() {
+  const v = $("#view"); const path = state.current;
+  if (!path) return renderHome();
+  const f = state.files.find((x) => x.path === path); const e = ext(path);
+  const canEdit = f.text; const canView = ["md", "svg", "html"].includes(e) || !f.text;
+  const size = f.size > 1e6 ? (f.size / 1e6).toFixed(1) + " MB" : Math.max(1, Math.round(f.size / 1000)) + " KB";
+  v.innerHTML = `<div class="view-head"><h1 title="${esc(path)}">${esc(path)}</h1><span class="meta">${size}</span>
+    ${canEdit && canView ? `<div class="seg" role="group" aria-label="Mode">
+      <button type="button" data-mode="view" class="${state.mode === "view" ? "on" : ""}">View</button>
+      <button type="button" data-mode="split" class="${state.mode === "split" ? "on" : ""}">Side by side</button>
+      <button type="button" data-mode="edit" class="${state.mode === "edit" ? "on" : ""}">Edit</button></div>` : ""}
+    ${canEdit ? `<button type="button" id="saveBtn" class="primary" disabled>Save</button>` : ""}
+    ${e === "pdf" ? `<button type="button" id="tabBtn">Open in new tab</button>` : ""}
+    <button type="button" id="dlBtn">Download</button>
+    <div class="seg"><button type="button" id="renBtn">Rename</button><button type="button" id="delBtn" class="danger">Delete</button></div></div>
+    <div class="body" id="body"></div>`;
+  v.querySelectorAll("[data-mode]").forEach((b) => (b.onclick = () => { syncFromEditor(); state.mode = b.dataset.mode; renderView(); }));
+  $("#dlBtn").onclick = () => { const a = document.createElement("a"); a.href = rawUrl(path, true); a.click(); };
+  if ($("#tabBtn")) $("#tabBtn").onclick = () => window.open(rawUrl(path), "_blank", "noopener");
+  $("#renBtn").onclick = renameFile; $("#delBtn").onclick = deleteFile;
+  const body = $("#body");
+
+  if (canEdit) {
+    if (!state.dirty) state.original = state.text = (await api(`/api/text?path=${encodeURIComponent(path)}`)).content;
+    const preview = () => (e === "md" ? `<div class="md">${markdown(state.text)}</div>` : e === "svg" ? `<div class="img-wrap"><img alt="" src="data:image/svg+xml;charset=utf-8,${encodeURIComponent(state.text)}"></div>` : `<iframe class="doc" sandbox srcdoc="${esc(state.text)}"></iframe>`);
+    if (state.mode === "edit" || !canView) body.innerHTML = `<textarea class="editor" spellcheck="${e === "md"}" aria-label="File contents"></textarea>`;
+    else if (state.mode === "split") body.innerHTML = `<div class="split"><textarea class="editor" spellcheck="${e === "md"}" aria-label="File contents"></textarea><div id="pv">${preview()}</div></div>`;
+    else body.innerHTML = preview();
+    const ta = $("textarea", body);
+    if (ta) {
+      ta.value = state.text;
+      ta.addEventListener("input", () => { state.text = ta.value; setDirty(ta.value !== state.original); if (state.mode === "split") { clearTimeout(ta._t); ta._t = setTimeout(() => ($("#pv").innerHTML = preview()), 250); } });
+      ta.addEventListener("keydown", (ev) => { if (ev.key === "Tab") { ev.preventDefault(); const s = ta.selectionStart; ta.setRangeText("  ", s, ta.selectionEnd, "end"); ta.dispatchEvent(new Event("input")); } });
+    }
+    setDirty(state.dirty);
+    $("#saveBtn").onclick = save;
+  } else if (["png", "jpg", "jpeg", "webp", "gif"].includes(e)) {
+    body.innerHTML = `<div class="img-wrap"><img alt="${esc(path)}" src="${rawUrl(path)}"></div>`;
+  } else if (e === "pdf") {
+    body.innerHTML = `<iframe class="doc" title="${esc(path)}" src="${rawUrl(path)}"></iframe>`;
+  } else if (e === "pptx") {
+    body.innerHTML = `<div class="note-box"><h2>PowerPoint file</h2><p>Browsers can't show PowerPoint files. Use <b>Download</b> to open it in PowerPoint, Keynote or Google Slides.</p>
+      ${state.files.some((x) => x.path === path.replace(/\.pptx$/, ".pdf")) ? `<p>The same content is in <a href="#" data-open="${esc(path.replace(/\.pptx$/, ".pdf"))}">${esc(path.replace(/\.pptx$/, ".pdf").split("/").pop())}</a>, which shows here.</p>` : ""}</div>`;
+  } else {
+    body.innerHTML = `<div class="note-box"><p>This kind of file can't be shown here. Use <b>Download</b> to open it.</p></div>`;
+  }
+}
+function syncFromEditor() { const ta = $("textarea.editor"); if (ta) state.text = ta.value; }
+function setDirty(d) { state.dirty = d; const b = $("#saveBtn"); if (b) { b.disabled = !d; b.textContent = d ? "Save" : "Saved"; } }
+
+async function save() {
+  syncFromEditor();
+  try { await api("/api/save", { path: state.current, content: state.text }); state.original = state.text; setDirty(false); toast("Saved"); refresh(); }
+  catch (e) { toast(e.message); }
+}
+document.addEventListener("keydown", (e) => { if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "s") { e.preventDefault(); if (state.dirty) save(); } });
+window.addEventListener("beforeunload", (e) => { if (state.dirty) { e.preventDefault(); e.returnValue = ""; } });
+document.addEventListener("click", (e) => { const a = e.target.closest("[data-open]"); if (a) { e.preventDefault(); if (state.files.some((f) => f.path === a.dataset.open)) openFile(a.dataset.open); else toast("That file isn't in the project."); } });
+
+async function newFile() {
+  const dir = state.current && state.current.includes("/") ? state.current.slice(0, state.current.lastIndexOf("/") + 1) : "";
+  const name = await modal({ title: "New file", text: "Type a name. Use folder/name.md to put it in a folder.", input: dir + "notes.md", okLabel: "Create" });
+  if (!name) return;
+  try { await api("/api/new", { path: name, content: name.endsWith(".md") ? `# ${name.split("/").pop().replace(/\.md$/, "")}\n\n` : "" }); await refresh(); openFile(name, true); toast("Created"); }
+  catch (e) { toast(e.message); }
+}
+async function renameFile() {
+  const to = await modal({ title: "Rename or move", input: state.current, okLabel: "Rename" });
+  if (!to || to === state.current) return;
+  try { await api("/api/rename", { path: state.current, to }); state.dirty = false; await refresh(); openFile(to, true); toast("Renamed"); }
+  catch (e) { toast(e.message); }
+}
+async function deleteFile() {
+  const ok = await modal({ title: `Delete ${state.current.split("/").pop()}?`, text: "It's removed from your computer. If it was already saved to GitHub, the old version can still be recovered there.", okLabel: "Delete", danger: true });
+  if (!ok) return;
+  try { await api("/api/delete", { path: state.current }); state.current = null; state.dirty = false; await refresh(); renderHome(); toast("Deleted"); }
+  catch (e) { toast(e.message); }
+}
+$("#newBtn").onclick = newFile;
+
+// ---------- home ----------
+function renderHome() {
+  const pick = [["README.md", "Start here", "A guide to every folder"], ["packaging/bright-cartons.pdf", "Box labels", "Print-ready, six flavors"], ["product/formula-sheets.md", "Recipes", "Standard xylitol formulas"], ["product/wrapper-messages.md", "Wrapper messages", "120 positive messages"], ["finance/bright-gum-cost-study.pdf", "Cost study", "Costs, prices, break-even"], ["marketing/marketing-plan.md", "Marketing plan", "Audience, launch, pricing"]]
+    .filter(([p]) => state.files.some((f) => f.path === p));
+  $("#view").innerHTML = `<div class="empty"><h2>Pick a file to look at or edit</h2>
+    <p>Choose any file on the left. Text files open ready to read. Use <b>Edit</b> to change them and <b>Save</b> (or Ctrl+S / ⌘S) to keep your changes.
+    When you're happy, use <b>Save to GitHub</b> so your changes are backed up.</p>
+    <div class="cards">${pick.map(([p, t, s]) => `<button type="button" data-open="${esc(p)}"><b>${esc(t)}</b><span>${esc(s)}</span></button>`).join("")}</div></div>`;
+}
+
+// ---------- rebuild tasks ----------
+function drawer(title, html) {
+  document.querySelectorAll(".drawer").forEach((d) => d.remove());
+  const d = document.createElement("div"); d.className = "drawer"; d.setAttribute("role", "dialog"); d.setAttribute("aria-label", title);
+  d.innerHTML = `<div class="drawer-head"><b>${esc(title)}</b><button type="button" class="x">Close</button></div><div class="drawer-body">${html}</div>`;
+  document.body.appendChild(d); $(".x", d).onclick = () => d.remove(); return d;
+}
+async function runTask(key, btn) {
+  if (state.dirty) { const ok = await modal({ title: "Save first?", text: "You have unsaved edits. Rebuilding uses the saved files.", okLabel: "Save and rebuild" }); if (!ok) return; await save(); }
+  btn.disabled = true; const label = btn.textContent; btn.textContent = "Working…";
+  const d = drawer(state.tasks[key], `<pre class="log">Running. Box labels take about 20 seconds; the cost study takes about a minute.</pre>`);
+  try {
+    const r = await api("/api/run", { task: key });
+    $(".log", d).textContent = (r.ok ? "Done. The files have been updated.\n\n" : "This didn't finish. The details are below.\n\n") + r.log;
+    toast(r.ok ? "Rebuilt" : "Rebuild failed: see the details");
+    await refresh(); if (state.current) renderView();
+  } catch (e) { $(".log", d).textContent = e.message; }
+  btn.disabled = false; btn.textContent = label;
+}
+
+// ---------- GitHub ----------
+async function loadGit() {
+  try { state.git = await api("/api/git"); } catch { state.git = null; }
+  const n = state.git?.changes?.length || 0;
+  $("#gitChip").textContent = !state.git?.available ? "" : n ? `· ${n} changed` : state.git.unpushed ? `· ${state.git.unpushed} to upload` : "· all saved";
+  $("#gitBtn").hidden = !state.git?.available;
+}
+function gitPanel() {
+  const g = state.git; const n = g.changes.length;
+  const d = drawer("Save to GitHub", `
+    <p style="margin-top:0">Branch: <b>${esc(g.branch)}</b></p>
+    ${n ? `<ul class="changes">${g.changes.map((c) => `<li><span class="st">${esc(c.state)}</span>${esc(c.path)}</li>`).join("")}</ul>
+      <input type="text" id="msg" placeholder="What did you change? (for example: Edited Pickle recipe)" aria-label="Describe your changes">
+      <div class="row"><button type="button" class="primary" id="commitBtn">Save changes and upload</button></div>`
+      : `<p>${g.unpushed ? `${g.unpushed} saved change(s) haven't been uploaded yet.` : "Everything is saved and uploaded."}</p>
+      ${g.unpushed ? `<div class="row"><button type="button" class="primary" id="pushBtn">Upload to GitHub</button></div>` : ""}`}
+    <p class="hint">M = changed, ?? = new file, D = deleted. Uploading needs GitHub access set up on this computer.</p>
+    <pre class="log" id="gitLog"></pre>`);
+  const log = (t) => ($("#gitLog", d).textContent = t);
+  const push = async () => { log("Uploading…"); const p = await api("/api/push", {}); log(p.ok ? "Uploaded to GitHub.\n\n" + p.log : "Saved on this computer, but the upload didn't work.\n\n" + p.log); await loadGit(); renderTree(); };
+  const cb = $("#commitBtn", d); if (cb) cb.onclick = async () => {
+    const msg = $("#msg", d).value.trim(); if (!msg) { $("#msg", d).focus(); return toast("Describe your changes first"); }
+    cb.disabled = true; log("Saving…");
+    try { const r = await api("/api/commit", { message: msg }); if (!r.ok) { log(r.log); cb.disabled = false; return; } await push(); } catch (e) { log(e.message); cb.disabled = false; }
+  };
+  const pb = $("#pushBtn", d); if (pb) pb.onclick = async () => { pb.disabled = true; try { await push(); } catch (e) { log(e.message); } };
+}
+$("#gitBtn").onclick = async () => { if (state.dirty) await save(); await loadGit(); if (state.git?.available) gitPanel(); };
+
+// ---------- start ----------
+async function refresh() {
+  const t = await api("/api/tree"); state.files = t.files; state.tasks = t.tasks;
+  if (state.current && !state.files.some((f) => f.path === state.current)) state.current = null;
+  await loadGit(); renderTree();
+}
+(async () => {
+  try {
+    await refresh();
+    $("#taskButtons").innerHTML = Object.entries(state.tasks).map(([k, label]) => `<button type="button" data-task="${k}">${esc(label)}</button>`).join("");
+    document.querySelectorAll("[data-task]").forEach((b) => (b.onclick = () => runTask(b.dataset.task, b)));
+    let last = null; try { last = localStorage.getItem("studio:last"); } catch {}
+    if (last && state.files.some((f) => f.path === last)) openFile(last); else renderHome();
+  } catch (e) {
+    $("#view").innerHTML = `<div class="empty"><h2>Can't reach the studio</h2><p>${esc(e.message)}</p><p>Start it again with <code>python3 studio/bright_studio.py</code> and reload this page.</p></div>`;
+  }
+})();
+</script>
+</body>
+</html>

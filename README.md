@@ -5,6 +5,13 @@
 
 ![bright logo](brand/logo/bright-logo-primary.svg)
 
+## Look at and edit everything: bright studio
+
+Run `python3 studio/bright_studio.py` from this folder. A page opens in your
+browser where you can browse every file, read and edit documents, view the boxes
+and PDFs, rebuild the labels and cost study, and save to GitHub. See
+[`studio/README.md`](studio/README.md).
+
 ## What's here
 
 | Folder | File | What it covers |
@@ -23,6 +30,7 @@
 | | `bright-gum-cost-study.pptx` | The same study as a 12-slide PowerPoint |
 | | `cost_model.py` | Every assumption in one place. Change a number, then rebuild: `python3 finance/cost_model.py && python3 finance/build_pdf.py && node finance/render_pdf.js && node finance/build_pptx.js` (the PowerPoint build needs `npm install pptxgenjs sharp`) |
 | `regulations/` | `regulations.md` | US food-law checklist: label requirements, allowed claims, warnings, Prop 65, business setup, trademark |
+| `studio/` | `bright_studio.py` | **bright studio**: the browser app for viewing, editing and rebuilding these files |
 | `marketing/` | `marketing-plan.md` | Audience, positioning, pricing, phased launch, content ideas, metrics |
 | | `commercials.md` | Shot-by-shot scripts for "Pass It On" (campus) and "Lift" (rec center, two endings) |
 
