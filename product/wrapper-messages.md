@@ -1,9 +1,11 @@
 # bright gum: wrapper messages
 
-Each stick wrapper has two sides:
+**Current focus: positive messages, printed on the inside of each wrapper.**
+You unwrap the stick and the message is there.
 
-- **Outside** (seen before you open it): a short teaser.
-- **Inside** (seen after): the message. Keep it under ~120 characters.
+Below are **120 draft messages** to pick from, grouped by feel. All are short
+enough for a stick wrapper (the longest is under 80 characters), and all are
+original except a few classic sayings, which are centuries old and free to use.
 
 **Wrapper material:** two options. Foil-lined paper on every stick keeps the gum
 freshest. A lower-cost option is plain paper with the message printed on the
@@ -11,22 +13,212 @@ inside, with the whole pack sealed in foil or film. Plain paper makes it much
 cheaper to print many different messages. Details are under "Wrapper options" in
 `formula-sheets.md`.
 
-Your idea doc lists two kinds of message, Bible verses and general positive
-messages. A good way to sell both is as **two editions**, so each buyer gets the
-one they want:
+---
 
-- **bright** (everyday): positive messages for everyone. Fits mainstream stores,
-  gyms and campus.
-- **bright faith**: Bible verses. The outside shows the reference
-  (e.g. *Matthew 5:14*), the inside shows the verse. Fits Christian bookstores,
-  churches, youth groups and gift shops.
+## A suggested first carton (15 sticks, 15 messages)
 
-Each set below has 15 core messages (one full carton, one print repeat) plus
-extras to rotate in for new runs.
+One message per stick, mixed so no two in a row feel the same.
+
+1. *Carpe diem.* Seize the day.
+2. Somebody is really glad you exist.
+3. You've got this.
+4. Text someone you miss. They're probably thinking about you too.
+5. Rest is part of the work.
+6. Plot twist: today goes great.
+7. Look how far you've come. Be proud of that.
+8. Be the bright spot.
+9. Strong isn't never falling. It's getting back up.
+10. Thank someone today. It'll make both your days.
+11. You're doing better than you think.
+12. There's always a bright side. Sometimes you are it.
+13. Do one brave thing today. Small counts.
+14. This wrapper believes in you.
+15. Share a stick. Make a friend.
 
 ---
 
-## bright faith: Bible verses
+## The full list
+
+### Classic sayings (printed in italics, with the meaning beside them)
+
+1. *Carpe diem.* Seize the day.
+2. *Dum spiro, spero.* While I breathe, I hope.
+3. *Per aspera ad astra.* Through hardship to the stars.
+4. *Audentes fortuna iuvat.* Fortune favors the bold.
+5. *Amor vincit omnia.* Love conquers all.
+6. *Nil desperandum.* Never despair.
+7. *Semper ad meliora.* Always toward better things.
+8. *Festina lente.* Make haste slowly.
+
+### Short and punchy
+
+9. You've got this.
+10. Smile. It suits you.
+11. Today is yours.
+12. Keep going.
+13. You are enough.
+14. Start small. Start now.
+15. Be the bright spot.
+16. Good things are coming.
+17. One step at a time.
+18. Breathe in. Breathe out.
+19. You belong here.
+20. Proud of you.
+21. Make today count.
+22. Shine anyway.
+23. Choose joy.
+24. You matter.
+25. Look up.
+26. Begin again.
+27. Stay curious.
+28. Be bright.
+
+### Encouragement
+
+29. Somebody is really glad you exist.
+30. You're doing better than you think.
+31. Look how far you've come. Be proud of that.
+32. You've handled every hard day so far.
+33. Every expert was once a beginner. Keep going.
+34. You're more ready than you feel.
+35. Today is a good day to start the thing you keep putting off.
+36. Small progress is still progress.
+37. Your future self is cheering for you.
+38. Hard days build strong people.
+39. You don't have to be perfect to be amazing.
+40. It's okay to go slow. Just don't stop.
+41. You were made for more than a bad day.
+42. Mistakes mean you're trying.
+43. Done is better than perfect.
+44. You can do hard things.
+45. Your pace is the right pace.
+46. The fact that you're trying says a lot about you.
+47. Not there yet is still on the way.
+48. Tomorrow is a clean page.
+
+### Confidence
+
+49. Your light makes the room brighter. Don't dim it.
+50. Walk in like you belong. You do.
+51. Believe in yourself the way your best friend does.
+52. You bring something no one else can.
+53. Speak up. Your voice matters.
+54. Be yourself. It's your best look.
+55. Nobody does you better than you.
+56. You're allowed to take up space.
+57. Confidence looks good on you.
+58. Trust yourself. You know more than you think.
+59. Raise your hand. Ask the question.
+60. You're someone's good example.
+
+### Kindness and connection
+
+61. Text someone you miss. They're probably thinking about you too.
+62. Hand someone a piece of gum. Kindness is contagious.
+63. Thank someone today. It'll make both your days.
+64. Compliment a stranger. Watch what happens.
+65. Call someone who loves you.
+66. Hold the door. Start a chain reaction.
+67. Be the reason someone smiles today.
+68. Listen a little longer today.
+69. Kind words cost nothing.
+70. Sit with someone new today.
+71. Say the nice thing out loud.
+72. Someone out there is grateful for you.
+73. Share a stick. Make a friend.
+74. Tell a friend what you like about them.
+
+### Calm and rest
+
+75. Rest is part of the work.
+76. It's okay to not be okay. Better days are coming.
+77. One thing at a time. You've got this.
+78. Drop your shoulders. Breathe.
+79. You don't have to figure it all out today.
+80. Take the break. You've earned it.
+81. Slow down. You're not behind.
+82. Let today be enough.
+83. Worry less. Chew more.
+84. This too shall pass.
+85. Go outside for five minutes.
+86. Drink some water. Then take on the world.
+
+### Grit (gym, class, work)
+
+87. Strong isn't never falling. It's getting back up.
+88. Finish strong. One more rep, one more page, one more step.
+89. The weight feels lighter when you believe you can lift it.
+90. Your effort is never wasted, even when no one sees it.
+91. Do one brave thing today. Small counts.
+92. Show up. That's half of it.
+93. Discipline is remembering what you want.
+94. Sweat now. Smile later.
+95. Be stubborn about your goals.
+96. You've gotten through harder days than this.
+97. Study hard. Nap harder.
+98. The last rep is the one that counts.
+
+### Gratitude and joy
+
+99. Celebrate the small wins. They add up.
+100. Every morning is a fresh start.
+101. There's always a bright side. Sometimes you are it.
+102. Your laugh is contagious. Spread it around.
+103. Name three good things. Go.
+104. Today has something good in it. Find it.
+105. Notice something beautiful today.
+106. Joy looks good on you.
+107. Dance like the song is about you.
+108. Be glad you're here. We are.
+
+### Light and funny
+
+109. You just made a stranger smile by reading this. Probably.
+110. This wrapper believes in you.
+111. Plot twist: today goes great.
+112. You're the main character today.
+113. Fresh breath. Fresh start.
+114. Smile big. You've earned it.
+115. You + today = a good idea.
+116. Keep this wrapper. It's a good one.
+117. Chin up. Gum in.
+118. Warning: reading this may cause smiling.
+119. Dream big. Chew slowly.
+120. Unwrapped: one good day.
+
+---
+
+## Printing notes
+
+- **Italics:** the classic sayings print with the Latin in italics and the
+  English meaning in regular type, e.g. *Carpe diem.* Seize the day.
+- **How many to print:** wrappers print in a repeating set. A set of 15 gives
+  every carton all 15 messages. A set of 30 or 60 means two friends with the same
+  flavor can open different messages. Plain paper and digital printing make
+  larger sets cheap.
+- **Outside of the wrapper:** blank, or a small bright smile. An optional
+  one-word teaser on the outside ("smile," "today," "brave") is a later upgrade.
+
+## Writing new messages: house rules
+
+1. **Short.** Under about 80 characters. A few words is best.
+2. **Warm, not preachy.** It should sound like a friend talking, not a poster.
+3. **Universal.** Avoid anything that only works for one age, gender or situation.
+4. **No health or performance promises.** For example, "this gum makes you lift
+   heavier" can't be a message. "You can do hard things" can.
+5. **Avoid heavy topics.** A message like "It's okay to not be okay" is gentle.
+   Don't go further into crisis territory on a candy wrapper.
+6. **Check famous quotes before using them.** Old sayings and proverbs are free
+   to print. Lines from living authors, songs, films and brands usually aren't.
+
+---
+
+# Saved for later
+
+## bright faith edition: Bible verses
+
+On hold for now while the focus is on positive messages. Kept here so the work
+isn't lost.
 
 Verses are from the **King James Version (KJV)**, which is public domain in the
 US, so you can print it with no license. Modern translations (NIV, ESV, NLT) are
@@ -75,60 +267,3 @@ Several verses are about **light, shining faces and joy**, which fits the
 
 *Verses with "…" are shortened. Keep the ellipsis when printing so it's clear
 the verse is partial.*
-
----
-
-## bright: everyday positive messages
-
-The outside teaser is a single word that hints at the message. It makes people
-curious enough to read the inside, which is the moment your commercials are
-built around.
-
-### Core 15 (one carton)
-
-| # | Outside | Inside |
-|---|---|---|
-| 1 | smile | Somebody is really glad you exist. |
-| 2 | today | Today is a good day to start the thing you keep putting off. |
-| 3 | proud | Look how far you've come. Be proud of that. |
-| 4 | breathe | Breathe. You've handled every hard day so far. |
-| 5 | enough | You are enough, exactly as you are right now. |
-| 6 | shine | Your light makes the room brighter. Don't dim it. |
-| 7 | strong | Strong isn't never falling. It's getting back up. |
-| 8 | kind | Be kind to yourself today. You're doing better than you think. |
-| 9 | brave | Do one brave thing today. Small counts. |
-| 10 | heard | Text someone you miss. They're probably thinking about you too. |
-| 11 | rest | Rest is part of the work. |
-| 12 | grow | Every expert was once a beginner. Keep going. |
-| 13 | laugh | Your laugh is contagious. Spread it around. |
-| 14 | ready | You're more ready than you feel. |
-| 15 | pass it on | Hand someone a piece of gum. Kindness is contagious. |
-
-### Extras for rotation
-
-| Outside | Inside |
-|---|---|
-| lift | The weight feels lighter when you believe you can lift it. |
-| finish | Finish strong. One more rep, one more page, one more step. |
-| worth it | Your effort is never wasted, even when no one sees it. |
-| hello | You just made a stranger smile by reading this. Probably. |
-| win | Celebrate the small wins. They add up. |
-| new | Every morning is a fresh start. |
-| matter | You matter more than you know. |
-| bright side | There's always a bright side. Sometimes you are it. |
-| focus | One thing at a time. You've got this. |
-| believe | Believe in yourself the way your best friend does. |
-| thank you | Thank someone today. It'll make both your days. |
-| okay | It's okay to not be okay. Better days are coming. |
-
----
-
-## Writing new messages: house rules
-
-1. **Short.** Under ~120 characters inside, 1–2 words outside.
-2. **Warm, not preachy.** It should sound like a friend talking, not a poster.
-3. **Universal.** Avoid anything that only works for one age, gender or situation.
-4. **No health or performance promises.** For example, "this gum makes you lift
-   heavier" can't be a message. "You're stronger than you think" can.
-5. **Avoid heavy topics.** Messages like *okay* are gentle. Don't go further
-   into crisis territory on a candy wrapper.

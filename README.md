@@ -16,7 +16,7 @@
 | `product/` | `formula-sheets.md` | **v1 recipes for every flavor**: grams per stick, batch quantities, label ingredient lines, calculated nutrition |
 | | `formula-sheets-long-lasting.md` | **Long-lasting versions** of every recipe (two-stage flavor and sweetener release), plus a timed chew test |
 | | `formula.md` | Draft recipe (xylitol ≥ 1 g/stick + whitening), flavor variations, questions for co-packers |
-| | `wrapper-messages.md` | 54 wrapper messages: the **bright faith** edition (KJV verses) and the **bright** everyday edition |
+| | `wrapper-messages.md` | **120 positive messages** for the inside of the wrapper (current focus), plus the Bible-verse edition saved for later |
 | `regulations/` | `regulations.md` | US food-law checklist: label requirements, allowed claims, warnings, Prop 65, business setup, trademark |
 | `marketing/` | `marketing-plan.md` | Audience, positioning, pricing, phased launch, content ideas, metrics |
 | | `commercials.md` | Shot-by-shot scripts for "Pass It On" (campus) and "Lift" (rec center, two endings) |
