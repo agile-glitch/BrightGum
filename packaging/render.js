@@ -12,7 +12,7 @@ const path = require('path');
   console.log('Lato loaded:', await page.evaluate(() => document.fonts.check('900 12px Lato')));
   await page.pdf({ path: path.join(dir, 'bright-cartons.pdf'), preferCSSPageSize: true, printBackground: true });
 
-  const ids = ['peppermint', 'blue-raspberry', 'raspberry', 'pickle'];
+  const ids = ['peppermint', 'spearmint', 'blue-raspberry', 'raspberry', 'pickle'];
   const pages = await page.$$('section.page');
   for (let i = 1; i < pages.length; i++) {
     const labels = await pages[i].$$('.label');

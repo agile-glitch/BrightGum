@@ -20,6 +20,12 @@ FLAVORS = [
         "sodium": ("15mg", "1%"),
     },
     {
+        "id": "spearmint", "name": "Spearmint", "color": "#046A4A",
+        "ingredients": "Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, "
+                       "Natural Flavors, Sodium Tripolyphosphate, Sunflower Lecithin, Sucralose.",
+        "sodium": ("15mg", "1%"),
+    },
+    {
         "id": "blue-raspberry", "name": "Blue Raspberry", "color": "#0085C7",
         "ingredients": "Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, "
                        "Natural and Artificial Flavors, Sodium Tripolyphosphate, Malic Acid, "
@@ -105,8 +111,8 @@ def back(f):
     <p class="h">INGREDIENTS</p>
     <p class="ing">{f['ingredients']}</p>
     <p class="xy">1 g+ xylitol in every piece.</p>
-    <p class="web">BrightGumCo.com</p>
-    <div class="upc">{barcode(f['id'])}<span>SAMPLE 0 00000 00000 0</span></div>
+    <div class="b-foot"><p class="web">BrightGumCo.com</p>
+    <div class="upc">{barcode(f['id'])}<span>SAMPLE 0 00000 00000 0</span></div></div>
   </div>
   <div class="nf">
     <p class="nf-t">Nutrition Facts</p>
@@ -137,7 +143,7 @@ body {{ font-family: 'Lato', 'Inter', Arial, sans-serif; color: {INK}; backgroun
 .ps {{ font-size: 9.5pt; margin-top: 4pt; }}
 .pn {{ font-size: 8pt; color: #777; margin-top: 3pt; }}
 .pair {{ display: flex; gap: 0.5in; margin-top: 2.6in; justify-content: center; }}
-.stack {{ display: grid; grid-template-columns: 3in 3in; gap: 0.35in 0.4in; justify-content: center; margin-top: 1.2in; }}
+.stack {{ display: grid; grid-template-columns: 3in 3in; gap: 0.22in 0.4in; justify-content: center; margin-top: 0.3in; }}
 .cap {{ font-size: 8.5pt; font-weight: 700; margin-top: 7pt; }}
 .calib {{ position: absolute; left: 0.75in; bottom: 1.05in; display: flex; align-items: center; gap: 10pt; font-size: 8pt; font-weight: 700; }}
 .calib i {{ display: block; width: 1in; height: 7pt; border-left: 1px solid {INK}; border-right: 1px solid {INK}; position: relative; }}
@@ -164,10 +170,11 @@ body {{ font-family: 'Lato', 'Inter', Arial, sans-serif; color: {INK}; backgroun
 .flavor b {{ display: block; font-size: 15pt; font-weight: 900; color: var(--flavor); line-height: 1.05; }}
 .flavor span {{ display: block; font-size: 5.5pt; font-weight: 900; letter-spacing: 0.08em; margin-top: 2pt; }}
 
-.back {{ padding: 0.13in 0.15in 0.1in; }}
+.back {{ padding: 0.13in 0.15in 0.1in; display: flex; flex-direction: column; }}
 .b-head {{ border-bottom: 0.5pt solid #D5D9E0; padding-bottom: 3pt; }}
 .sub {{ font-size: 6.6pt; font-weight: 900; color: var(--flavor); margin-top: 3pt; letter-spacing: 0.02em; }}
-.b-body {{ display: flex; gap: 0.1in; margin-top: 4pt; }}
+.b-body {{ display: flex; gap: 0.1in; margin-top: 4pt; flex: 1; }}
+.b-foot {{ margin-top: auto; display: flex; flex-direction: column; gap: 2pt; }}
 .b-left {{ flex: 1; display: flex; flex-direction: column; gap: 2.2pt; }}
 .b-left .h {{ font-size: 5.6pt; font-weight: 900; }}
 .ing {{ font-size: 5.1pt; line-height: 1.25; }}
@@ -215,7 +222,7 @@ def lineup_page():
     fronts = "".join(f'<div>{front(f)}</div>' for f in FLAVORS)
     return f'''<section class="page">
 <p class="pt">BRIGHT GUM &nbsp;|&nbsp; FLAVOR LINEUP &nbsp;|&nbsp; ALL FRONTS</p>
-<p class="ps">The eye matches the flavor: Peppermint royal blue, Blue Raspberry azure, Raspberry red, Pickle dill green.</p>
+<p class="ps">The eye matches the flavor: Peppermint royal blue, Spearmint emerald, Blue Raspberry azure, Raspberry red, Pickle dill green.</p>
 <div class="stack">{fronts}</div>
 {FOOT_NOTE}
 </section>'''

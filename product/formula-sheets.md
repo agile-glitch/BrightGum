@@ -59,7 +59,31 @@ Sodium Tripolyphosphate, Sunflower Lecithin, Sucralose.
 
 ---
 
-## Sheet 2: Blue Raspberry (eye color: azure `#0085C7`)
+## Sheet 2: Spearmint (eye color: emerald `#046A4A`)
+
+Same recipe as Peppermint, with spearmint oil in place of peppermint oil.
+Spearmint is sweeter and softer than peppermint, so it uses less menthol.
+
+| Ingredient | Function | % | g per stick | kg per 100 kg batch |
+|---|---|---:|---:|---:|
+| Xylitol | Main sweetener, dental benefit | 40.00 | 1.080 | 40.00 |
+| Gum base | Chew | 30.00 | 0.810 | 30.00 |
+| Sorbitol (powder) | Bulking sweetener, softness | 18.50 | 0.500 | 18.50 |
+| Calcium carbonate | Polish (whitening) | 4.00 | 0.108 | 4.00 |
+| Glycerin | Flexibility | 3.00 | 0.081 | 3.00 |
+| Spearmint flavor: 2.2% spearmint oil (*Mentha spicata*) + 0.3% menthol | Flavor and light cooling | 2.50 | 0.068 | 2.50 |
+| Sodium tripolyphosphate | Whitening | 1.50 | 0.041 | 1.50 |
+| Sunflower lecithin | Mixing aid | 0.30 | 0.008 | 0.30 |
+| Sucralose (50/50 free/encapsulated) | Sweetness | 0.20 | 0.005 | 0.20 |
+| **Total** | | **100.00** | **2.700** | **100.00** |
+
+**Label ingredient line:**
+Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors,
+Sodium Tripolyphosphate, Sunflower Lecithin, Sucralose.
+
+---
+
+## Sheet 3: Blue Raspberry (eye color: azure `#0085C7`)
 
 | Ingredient | Function | % | g per stick | kg per 100 kg batch |
 |---|---|---:|---:|---:|
@@ -90,7 +114,7 @@ becomes "Natural Flavors.")*
 
 ---
 
-## Sheet 3: Raspberry (eye color: raspberry red `#C2185B`)
+## Sheet 4: Raspberry (eye color: raspberry red `#C2185B`)
 
 Same recipe as Blue Raspberry, but with a **natural raspberry flavor**, so the
 label can say "Natural Flavors."
@@ -119,7 +143,7 @@ Sodium Tripolyphosphate, Malic Acid, Sunflower Lecithin, Sucralose.
 
 ---
 
-## Sheet 4: Pickle (eye color: dill green `#5B7046`)
+## Sheet 5: Pickle (eye color: dill green `#5B7046`)
 
 | Ingredient | Function | % | g per stick | kg per 100 kg batch |
 |---|---|---:|---:|---:|
@@ -154,16 +178,16 @@ How it's calculated: xylitol 2.4 kcal/g, sorbitol 2.6 kcal/g, glycerin
 STPP (31% sodium), baking soda (27%) and salt (39%). Calcium comes from calcium
 carbonate (40% calcium).
 
-| | Peppermint | Blue Raspberry | Raspberry | Pickle |
-|---|---:|---:|---:|---:|
-| Calories (calculated) | 4.2 | 4.2 | 4.2 | 4.2 |
-| **Calories on label** (under 5 rounds to 0) | **0** | **0** | **0** | **0** |
-| Total carbohydrate | 1.7 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** |
-| Sugar alcohols | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** |
-| Total sugars | **0 g** | **0 g** | **0 g** | **0 g** |
-| Sodium | 12.7 mg → **15 mg** | 12.7 mg → **15 mg** | 12.7 mg → **15 mg** | 23.3 mg → **25 mg** |
-| Calcium | 43 mg → **40 mg (3% DV)** | 43 mg → **40 mg (3% DV)** | 43 mg → **40 mg (3% DV)** | 38 mg → **40 mg (3% DV)** |
-| Total fat, protein | 0 g | 0 g | 0 g | 0 g |
+| | Peppermint | Spearmint | Blue Raspberry | Raspberry | Pickle |
+|---|---:|---:|---:|---:|---:|
+| Calories (calculated) | 4.2 | 4.2 | 4.2 | 4.2 | 4.2 |
+| **Calories on label** (under 5 rounds to 0) | **0** | **0** | **0** | **0** | **0** |
+| Total carbohydrate | 1.7 g → **2 g** | 1.7 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** |
+| Sugar alcohols | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** |
+| Total sugars | **0 g** | **0 g** | **0 g** | **0 g** | **0 g** |
+| Sodium | 12.7 mg → **15 mg** | 12.7 mg → **15 mg** | 12.7 mg → **15 mg** | 12.7 mg → **15 mg** | 23.3 mg → **25 mg** |
+| Calcium | 43 mg → **40 mg (3% DV)** | 43 mg → **40 mg (3% DV)** | 43 mg → **40 mg (3% DV)** | 43 mg → **40 mg (3% DV)** | 38 mg → **40 mg (3% DV)** |
+| Total fat, protein | 0 g | 0 g | 0 g | 0 g | 0 g |
 
 Two things to confirm with your label reviewer:
 
@@ -177,20 +201,20 @@ Two things to confirm with your label reviewer:
 Example: **10,000 cartons** = 150,000 sticks = **405 kg** of finished gum
 (order about 5% extra to cover production losses).
 
-| Ingredient | Peppermint (kg) | Blue Raspberry (kg) | Raspberry (kg) | Pickle (kg) |
-|---|---:|---:|---:|---:|
-| Xylitol | 162.0 | 162.0 | 162.0 | 162.0 |
-| Gum base | 121.5 | 121.5 | 121.5 | 121.5 |
-| Sorbitol | 74.9 | 72.5 | 72.5 | 71.9 |
-| Calcium carbonate | 16.2 | 16.2 | 16.2 | 14.2 |
-| Glycerin | 12.2 | 12.2 | 12.2 | 12.2 |
-| Flavor | 10.1 | 11.3 | 11.3 | 10.1 |
-| STPP | 6.1 | 6.1 | 6.1 | 6.1 |
-| Sodium bicarbonate | — | — | — | 4.1 |
-| Malic acid (encap.) | — | 1.2 | 1.2 | — |
-| Salt | — | — | — | 1.2 |
-| Sunflower lecithin | 1.2 | 1.2 | 1.2 | 1.2 |
-| Sucralose | 0.8 | 0.8 | 0.8 | 0.6 |
+| Ingredient | Peppermint (kg) | Spearmint (kg) | Blue Raspberry (kg) | Raspberry (kg) | Pickle (kg) |
+|---|---:|---:|---:|---:|---:|
+| Xylitol | 162.0 | 162.0 | 162.0 | 162.0 | 162.0 |
+| Gum base | 121.5 | 121.5 | 121.5 | 121.5 | 121.5 |
+| Sorbitol | 74.9 | 74.9 | 72.5 | 72.5 | 71.9 |
+| Calcium carbonate | 16.2 | 16.2 | 16.2 | 16.2 | 14.2 |
+| Glycerin | 12.2 | 12.2 | 12.2 | 12.2 | 12.2 |
+| Flavor | 10.1 | 10.1 | 11.3 | 11.3 | 10.1 |
+| STPP | 6.1 | 6.1 | 6.1 | 6.1 | 6.1 |
+| Sodium bicarbonate | — | — | — | — | 4.1 |
+| Malic acid (encap.) | — | — | 1.2 | 1.2 | — |
+| Salt | — | — | — | — | 1.2 |
+| Sunflower lecithin | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
+| Sucralose | 0.8 | 0.8 | 0.8 | 0.8 | 0.6 |
 
 ## How stick gum is made (what to expect at the co-packer)
 
