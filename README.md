@@ -16,8 +16,9 @@ and PDFs, rebuild the labels and cost study, and save to GitHub. See
 
 | Folder | File | What it covers |
 |---|---|---|
-| `brand/logo/` | `bright-logo-primary.svg` | **The official logo, use it first:** black wordmark with the Peppermint-blue eye, on white. Vector, any size. On flavor boxes the eye takes that flavor's color. |
+| `brand/logo/` | `bright-logo-primary.svg` | **The official logo, use it first:** traced directly from the chosen logo image, so the letter shapes match it exactly. Black wordmark with the Peppermint-blue eye, on a transparent background. Vector, any size. On flavor boxes the eye takes that flavor's color. |
 | | `bright-logo-on-blue.svg`, `-on-green.svg`, `-reversed.svg` | Backup versions for colored or dark backgrounds only |
+| | `source/`, `trace_logo.py`, `logo_paths.json` | The chosen logo images, the script that traces them, and the traced shapes that the boxes, cost study and studio all draw from |
 | `packaging/` | `bright-cartons.pdf` | **Print-ready 1:1 carton labels** (front + back) for Peppermint, Spearmint, Blue Raspberry, Raspberry, Watermelon, Pickle and Cotton Candy (dark box = caffeinated), plus a lineup page. The eye color matches each flavor. |
 | | `no-xylitol/bright-cartons-no-xylitol.pdf` | The same six cartons with xylitol removed: "A message in every wrapper" takes its place |
 | | `package-dimensions.md` | Real sizes of common 15-stick gum packs, and the recommended production carton size |

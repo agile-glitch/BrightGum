@@ -8,6 +8,7 @@ const SKILL = process.env.PPTX_SKILL_DIR || '';
 
 const M = JSON.parse(fs.readFileSync(path.join(__dirname, 'cost_model.json'), 'utf8'));
 const OUT = path.join(__dirname, 'bright-gum-cost-study.pptx');
+const LOGO_RATIO = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'brand', 'logo', 'logo_paths.json'), 'utf8')).ratio;
 
 const THEME = {
   name: 'bright gum',
@@ -52,7 +53,7 @@ const INPERSON = 'In person (campus table, events)', ONLINE = 'Online 6-pack, sh
   pres.defineSlideMaster({
     title: 'TITLE', background: { color: C.background1 },
     objects: [
-      { image: { data: logo, x: 0.9, y: 1.5, w: 5.2, h: 1.714 } },
+      { image: { data: logo, x: 0.9, y: 1.5, w: 5.2, h: 5.2 / LOGO_RATIO } },
       { placeholder: { options: { name: 'title', type: 'title', x: 0.9, y: 3.7, w: 11.5, h: 1.5, fontSize: 40, bold: true, color: C.text1, align: 'left', valign: 'top', margin: 0 }, text: '' } },
       { placeholder: { options: { name: 'body', type: 'body', x: 0.9, y: 5.4, w: 11.5, h: 0.8, fontSize: 18, color: C.text2, align: 'left', valign: 'top', margin: 0 }, text: '' } },
     ],
@@ -62,7 +63,7 @@ const INPERSON = 'In person (campus table, events)', ONLINE = 'Online 6-pack, sh
     margin: [1.5, 0.6, 0.8, 0.6],
     objects: [
       { placeholder: { options: { name: 'title', type: 'title', x: 0.6, y: 0.4, w: 10.6, h: 0.9, fontSize: 32, bold: true, color: C.text1, align: 'left', valign: 'middle', margin: 0 }, text: '' } },
-      { image: { data: logo, x: 11.43, y: 0.52, w: 1.3, h: 0.428 } },
+      { image: { data: logo, x: 11.43, y: 0.52, w: 1.3, h: 1.3 / LOGO_RATIO } },
       { text: { text: FOOT, options: { x: 0.6, y: 6.98, w: 10.5, h: 0.3, fontSize: 10, color: C.text2, margin: 0 } } },
     ],
     slideNumber: { x: 12.13, y: 6.98, w: 0.6, h: 0.3, fontSize: 10, color: C.text2, align: 'right' },

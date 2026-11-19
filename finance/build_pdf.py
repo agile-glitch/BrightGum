@@ -16,7 +16,9 @@ r0 = lambda v: f"${round(v, -2):,.0f}"       # rounded to the nearest $100
 d2 = lambda v: f"${v:.2f}"
 sd2 = lambda v: f"{'+' if v >= 0 else '−'}${abs(v):.2f}"
 
-LOGO = f'''<svg viewBox="20 20 880 290" class="logo" aria-label="bright logo"><g fill="none" stroke="{INK}" stroke-width="24" stroke-linejoin="round"><path d="M74,58 V200"/><circle cx="112" cy="150" r="38"/><path d="M202,200 V130 Q202,112 220,112 H246"/><path d="M286,100 V200"/><circle cx="376" cy="150" r="38"/><path d="M414,100 V222 A38,38 0 0 1 343.1,241"/><path d="M466,58 V200"/><path d="M466,150 A38,38 0 0 1 542,150 V200"/><path d="M594,72 V170 Q594,188 612,188 H632"/><path d="M594,112 H632"/><path d="M820,154 V142 A22,22 0 0 1 864,142 V154"/><path d="M706,194 A88,88 0 0 0 874,194"/></g><circle cx="286" cy="68" r="14" fill="{INK}"/><rect x="712" y="118" width="40" height="40" rx="9" fill="{BLUE}"/></svg>'''
+_L = json.loads((OUT.parent / "brand" / "logo" / "logo_paths.json").read_text())
+LOGO = (f'<svg viewBox="0 0 {_L["viewBox"][2]} {_L["viewBox"][3]}" class="logo" aria-label="bright logo">'
+        f'<path fill="{INK}" fill-rule="evenodd" d="{_L["ink"]}"/><path fill="{BLUE}" d="{_L["eye"]}"/></svg>')
 
 cg = M["cogs"][M["base_recipe"]]
 L, S = cg["launch_total"], cg["scale_total"]
@@ -185,7 +187,7 @@ body {{ font-family: 'Lato', Arial, sans-serif; color: {INK}; font-size: 9.2pt; 
 .page {{ width: 8.5in; height: 11in; padding: 0.55in 0.6in 0.7in; position: relative; page-break-after: always; overflow: hidden; }}
 .page:last-child {{ page-break-after: auto; }}
 header {{ display: flex; align-items: center; gap: 0.22in; padding-bottom: 0.14in; border-bottom: 1pt solid {LINE}; margin-bottom: 0.16in; }}
-.logo {{ width: 1.25in; height: 0.41in; flex: none; }}
+.logo {{ width: 1.25in; height: 0.406in; flex: none; }}
 .kick {{ font-size: 7.6pt; font-weight: 900; letter-spacing: 0.12em; text-transform: uppercase; color: {BLUE}; }}
 h1 {{ font-size: 17pt; font-weight: 900; line-height: 1.15; }}
 h2 {{ font-size: 10.6pt; font-weight: 900; margin: 0.15in 0 0.06in; }}

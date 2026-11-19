@@ -13,6 +13,7 @@ Two versions of the cartons, written to separate files:
 Usage:  python3 packaging/build_cartons.py [xylitol|no-xylitol|all]
 Then:   node packaging/render.js   (HTML -> print PDF and PNG previews)
 """
+import json
 import random
 import sys
 from pathlib import Path
@@ -82,16 +83,15 @@ VARIANTS = {
 }
 
 
+LOGO = json.loads((OUT.parent / "brand" / "logo" / "logo_paths.json").read_text())
+
+
 def logo(eye, width_in, ink=INK):
-    h = width_in * 290 / 880
-    return f'''<svg class="logo" viewBox="20 20 880 290" style="width:{width_in}in;height:{h:.3f}in" aria-label="bright logo">
-<g fill="none" stroke="{ink}" stroke-width="24" stroke-linejoin="round">
-<path d="M74,58 V200"/><circle cx="112" cy="150" r="38"/><path d="M202,200 V130 Q202,112 220,112 H246"/>
-<path d="M286,100 V200"/><circle cx="376" cy="150" r="38"/><path d="M414,100 V222 A38,38 0 0 1 343.1,241"/>
-<path d="M466,58 V200"/><path d="M466,150 A38,38 0 0 1 542,150 V200"/>
-<path d="M594,72 V170 Q594,188 612,188 H632"/><path d="M594,112 H632"/>
-<path d="M820,154 V142 A22,22 0 0 1 864,142 V154"/><path d="M706,194 A88,88 0 0 0 874,194"/></g>
-<circle cx="286" cy="68" r="14" fill="{ink}"/><rect x="712" y="118" width="40" height="40" rx="9" fill="{eye}"/></svg>'''
+    """The bright logo, drawn from the traced artwork in brand/logo/logo_paths.json."""
+    _, _, w, h = LOGO["viewBox"]
+    return (f'<svg class="logo" viewBox="0 0 {w} {h}" style="width:{width_in}in;height:{width_in / LOGO["ratio"]:.3f}in" '
+            f'aria-label="bright logo"><path fill="{ink}" fill-rule="evenodd" d="{LOGO["ink"]}"/>'
+            f'<path fill="{eye}" d="{LOGO["eye"]}"/></svg>')
 
 
 def swirls(stroke="#E3E6EC"):
