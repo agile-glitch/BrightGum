@@ -33,9 +33,9 @@ FLAVORS = [
      "parts": [("Cotton", "#6EC6F5"), ("Candy", "#FF8DC7")]},
 ]
 
-DARK_BG = "#2B2F36"      # charcoal grey (caffeinated line)
+DARK_BG = "#1E2126"      # graphite grey (caffeinated line)
 DARK_INK = "#F4F6FB"
-DARK_LINE = "#40454E"     # swirl lines on the dark box
+DARK_LINE = "#353A42"     # swirl lines on the dark box
 CAFFEINE_NOTE = ("Not recommended for children, people who are pregnant or nursing, or anyone "
                  "sensitive to caffeine. Limit 5 pieces a day.")
 
@@ -253,7 +253,7 @@ body {{ font-family: 'Lato', 'Inter', Arial, sans-serif; color: {INK}; backgroun
 .dark .tm {{ border-color: {DARK_INK}; }}
 .dark .claims span, .dark .count em {{ color: #C9CDD4; }}
 .dark .flavor > span {{ color: {DARK_INK}; }}
-.dark .b-head {{ border-bottom-color: #4A505A; }}
+.dark .b-head {{ border-bottom-color: #3A3F48; }}
 .dark .warn {{ color: #D5D8DE; }}
 .dark .upc {{ background: #fff; color: {INK}; padding: 2pt 3pt; align-self: flex-start; border-radius: 1.5pt; }}
 .dark .nf {{ background: #fff; color: {INK}; border-color: #fff; }}
