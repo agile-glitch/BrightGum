@@ -10,6 +10,9 @@ simple.
 > strength, shelf life). Nutrition values are **calculated estimates**; the
 > final label uses the co-packer's lab analysis.
 
+> **Want flavor that lasts longer?** See the separate long-lasting versions of
+> every recipe in [`formula-sheets-long-lasting.md`](formula-sheets-long-lasting.md).
+
 ## What changed from the first draft
 
 1. **No colors in any flavor.** All three gums are naturally white. A whitening
@@ -34,7 +37,8 @@ simple.
 | Sugar | 0 g (sugar-free) |
 | Colors | None |
 | Major allergens | None |
-| Target shelf life | 18 months |
+| **Wrapper** | **Foil-lined paper preferred** (foil/paper laminate). Keeps flavor in and moisture out; the message prints on the paper side. |
+| Target shelf life | 18 months, to be confirmed by storage tests |
 
 ---
 
@@ -52,6 +56,8 @@ simple.
 | Sunflower lecithin | Mixing aid, softener | 0.30 | 0.008 | 0.30 |
 | Sucralose (50% free / 50% encapsulated) | Sweetness boost, long-lasting taste | 0.20 | 0.005 | 0.20 |
 | **Total** | | **100.00** | **2.700** | **100.00** |
+
+**Wrapper:** foil-lined paper preferred. It keeps flavor in and moisture out, and the message still prints on the paper side.
 
 **Label ingredient line:**
 Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors,
@@ -76,6 +82,8 @@ Spearmint is sweeter and softer than peppermint, so it uses less menthol.
 | Sunflower lecithin | Mixing aid | 0.30 | 0.008 | 0.30 |
 | Sucralose (50/50 free/encapsulated) | Sweetness | 0.20 | 0.005 | 0.20 |
 | **Total** | | **100.00** | **2.700** | **100.00** |
+
+**Wrapper:** foil-lined paper preferred. It keeps flavor in and moisture out, and the message still prints on the paper side.
 
 **Label ingredient line:**
 Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors,
@@ -104,6 +112,8 @@ against the dental promise. 0.3% gives a quick tart hit at first chew, then the
 saliva from chewing buffers it. Encapsulated acid releases while you chew instead
 of sitting on your teeth. Ask the flavor supplier for a **"low-acid"
 blue-raspberry profile** built for gum.
+
+**Wrapper:** foil-lined paper preferred. It keeps flavor in and moisture out, and the message still prints on the paper side.
 
 **Label ingredient line:**
 Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural and Artificial
@@ -137,6 +147,8 @@ label can say "Natural Flavors."
 jammy berry, not candy. Low-acid profile, heat-stable to 60 °C." Like every bright
 gum it's **white, with no color added**; the red lives on the box.
 
+**Wrapper:** foil-lined paper preferred. It keeps flavor in and moisture out, and the message still prints on the paper side.
+
 **Label ingredient line:**
 Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors,
 Sodium Tripolyphosphate, Malic Acid, Sunflower Lecithin, Sucralose.
@@ -164,6 +176,8 @@ Sodium Tripolyphosphate, Malic Acid, Sunflower Lecithin, Sucralose.
 cucumber and brine character. **No vinegar or added acid**; the sour impression
 should come from the flavor itself. Heat-stable to 60 °C." Calcium carbonate is
 cut slightly because the baking soda also polishes.
+
+**Wrapper:** foil-lined paper preferred. It keeps flavor in and moisture out, and the message still prints on the paper side.
 
 **Label ingredient line:**
 Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors,
@@ -195,16 +209,14 @@ taste "juicy."
 **Flavor brief for the supplier:** "Natural watermelon for chewing gum. Fresh-cut
 melon, juicy and green-rind fresh, not candy. Low-acid, heat-stable to 60 °C."
 WS-23 is a common flavor-industry cooling compound that adds freshness without
-mint flavor. Many flavor houses supply it pre-blended in the flavor, in which
-case it's part of "Natural Flavors" or "Flavors" on the label; confirm with the
-supplier. Like every bright gum, it's **white, with no color added**.
+mint flavor. It's synthetic, so the label says "Natural and Artificial Flavors."
+To keep "Natural Flavors" on the box, leave the cooling agent out. Like every bright gum, it's **white, with no color added**.
+
+**Wrapper:** foil-lined paper preferred. It keeps flavor in and moisture out, and the message still prints on the paper side.
 
 **Label ingredient line:**
-Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors,
-Sodium Tripolyphosphate, Malic Acid, Sunflower Lecithin, Sucralose.
-
-*(If the cooling agent isn't part of the flavor blend, the co-packer will tell
-you how it has to be listed.)*
+Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural and Artificial
+Flavors, Sodium Tripolyphosphate, Malic Acid, Sunflower Lecithin, Sucralose.
 
 ---
 

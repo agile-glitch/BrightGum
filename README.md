@@ -14,6 +14,7 @@
 | `packaging/` | `bright-cartons.pdf` | **Print-ready 1:1 carton labels** (front + back) for Peppermint, Spearmint, Blue Raspberry, Raspberry, Watermelon and Pickle, plus a lineup page. The eye color matches each flavor. |
 | | `build_cartons.py`, `render.js` | Regenerate the labels: `python3 packaging/build_cartons.py && node packaging/render.js` |
 | `product/` | `formula-sheets.md` | **v1 recipes for every flavor**: grams per stick, batch quantities, label ingredient lines, calculated nutrition |
+| | `formula-sheets-long-lasting.md` | **Long-lasting versions** of every recipe (two-stage flavor and sweetener release), plus a timed chew test |
 | | `formula.md` | Draft recipe (xylitol ≥ 1 g/stick + whitening), flavor variations, questions for co-packers |
 | | `wrapper-messages.md` | 54 wrapper messages: the **bright faith** edition (KJV verses) and the **bright** everyday edition |
 | `regulations/` | `regulations.md` | US food-law checklist: label requirements, allowed claims, warnings, Prop 65, business setup, trademark |

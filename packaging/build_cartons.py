@@ -42,7 +42,7 @@ FLAVORS = [
     {
         "id": "watermelon", "name": "Watermelon", "color": "#D62839",
         "ingredients": "Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, "
-                       "Natural Flavors, Sodium Tripolyphosphate, Malic Acid, "
+                       "Natural and Artificial Flavors, Sodium Tripolyphosphate, Malic Acid, "
                        "Sunflower Lecithin, Sucralose.",
         "sodium": ("15mg", "1%"),
     },
