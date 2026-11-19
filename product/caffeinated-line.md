@@ -1,14 +1,14 @@
 # bright gum: caffeinated line (dark boxes)
 
-**Dark boxes mean caffeinated.** The caffeinated line uses an inverted box: a
-near-black background with the white bright wordmark, so it can't be mistaken
+**Deep-blue boxes mean caffeinated.** The caffeinated line uses an inverted box: a
+deep-blue background with the white bright wordmark, so it can't be mistaken
 for the regular white boxes on a shelf.
 
 First flavor: **Cotton Candy**.
 
 | | |
 |---|---|
-| Box | Dark (`#0D1117`), white wordmark |
+| Box | Deep blue (`#14237E`), white wordmark |
 | Logo eye | Sky blue `#6EC6F5` |
 | Flavor name | "Cotton" in sky blue `#6EC6F5`, "Candy" in pink `#FF8DC7` |
 | Badge | "CAFFEINATED · 40 mg" on the front |
