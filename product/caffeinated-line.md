@@ -4,16 +4,22 @@
 dark graphite-grey background with the white bright wordmark, so it can't be mistaken
 for the regular white boxes on a shelf.
 
-First flavor: **Cotton Candy**.
+Flavors: **Cotton Candy** and **Mint** (a peppermint and spearmint blend).
 
-| | |
-|---|---|
-| Box | Graphite grey (`#1E2126`), white wordmark. Grey options: `packaging/caffeinated-grey-options.png` |
-| Logo eye | Sky blue `#6EC6F5` |
-| Flavor name | "Cotton" in sky blue `#6EC6F5`, "Candy" in pink `#FF8DC7` |
-| Badge | "CAFFEINATED · 40 mg" on the front |
-| Caffeine | **40 mg per piece** (about half a small cup of coffee) |
-| Boxes | `packaging/bright-cartons.pdf` and `packaging/no-xylitol/bright-cartons-no-xylitol.pdf` (last page of each) |
+| | Cotton Candy | Mint |
+|---|---|---|
+| Box | Graphite grey (`#1E2126`), white wordmark | Same |
+| Logo eye | Sky blue `#6EC6F5` | Peppermint blue `#6C8CFF` |
+| Flavor name | "Cotton" in sky blue, "Candy" in pink `#FF8DC7` | "Peppermint" in blue `#6C8CFF`, "Spearmint" in green `#3CC08E` |
+| Background lines | Sky blue and pink | Blue and green |
+| Badge | "CAFFEINATED, 40 mg per piece" | Same |
+| Caffeine | **40 mg per piece** (about half a small cup of coffee) | Same |
+
+The blue and green on the Mint box are lighter versions of the regular
+Peppermint and Spearmint colors, so they stay readable on the dark box. Both
+boxes are the last pages of `packaging/bright-cartons.pdf` and
+`packaging/no-xylitol/bright-cartons-no-xylitol.pdf`. Grey options are in
+`packaging/caffeinated-grey-options.png`.
 
 > **Status: untested.** Like the other sheets, this is a development formula on
 > paper for a manufacturer to fine-tune.
@@ -49,6 +55,35 @@ tastes milder, but its coating may add an ingredient to the label.
 **Wrapper:** foil-lined paper keeps flavor in best. A lower-cost option is plain
 paper with the message printed on the inside, plus a sealed inner pack. See
 "Wrapper options" in `formula-sheets.md`.
+
+## Sheet: Mint, caffeinated (xylitol)
+
+A blend of the two mint flavors. Mint also covers caffeine's bitterness better
+than a sweet flavor does.
+
+| Ingredient | Function | % | g per stick | kg per 100 kg batch |
+|---|---|---:|---:|---:|
+| Xylitol | Main sweetener, dental benefit | 40.00 | 1.080 | 40.00 |
+| Gum base | Chew | 30.00 | 0.810 | 30.00 |
+| Sorbitol (powder) | Bulking sweetener | 17.00 | 0.459 | 17.00 |
+| Calcium carbonate | Polish (whitening) | 4.00 | 0.108 | 4.00 |
+| Glycerin | Flexibility | 3.00 | 0.081 | 3.00 |
+| Mint flavor: 1.3% peppermint oil + 0.9% spearmint oil + 0.3% menthol | Flavor and cooling | 2.50 | 0.068 | 2.50 |
+| Sodium tripolyphosphate | Whitening | 1.50 | 0.041 | 1.50 |
+| **Caffeine (anhydrous, food grade)** | **40 mg per piece** | **1.50** | **0.0405** | **1.50** |
+| Sunflower lecithin | Mixing aid | 0.30 | 0.008 | 0.30 |
+| Sucralose (50/50 free/encapsulated) | Sweetness; also masks bitterness | 0.20 | 0.005 | 0.20 |
+| **Total** | | **100.00** | **2.700** | **100.00** |
+
+**Label ingredient line:**
+Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors,
+Sodium Tripolyphosphate, Caffeine, Sunflower Lecithin, Sucralose.
+
+**No-xylitol version:** use the Cotton Candy no-xylitol sheet below with the mint
+flavor in place of cotton candy (2.0% liquid mint flavor plus 1.5% encapsulated
+mint flavor). Label line: Sorbitol, Gum Base, Mannitol, Glycerin, Calcium
+Carbonate, Natural Flavors, Sodium Tripolyphosphate, Caffeine, Gum Arabic,
+Sunflower Lecithin, Sucralose, Acesulfame Potassium.
 
 ## Sheet: Cotton Candy, caffeinated (no xylitol)
 
@@ -96,7 +131,8 @@ Ways to lower that risk:
 - Market it to adults only: college students, gyms, people studying or working
   late. No cartoon characters, no kid-focused ads, no sampling to minors.
 - Consider a less childlike name for the caffeinated version, or launch the
-  caffeinated line with a mint flavor first and keep Cotton Candy caffeine-free.
+  caffeinated line with **Mint** first and keep Cotton Candy caffeine-free. Mint
+  doesn't read as a kids' flavor, so it carries much less of this risk.
 
 **2. Caffeine's FDA status in gum needs checking.** Caffeine is listed as
 generally recognized as safe only for cola-type drinks at up to 0.02%

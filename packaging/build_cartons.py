@@ -32,6 +32,10 @@ FLAVORS = [
     {"id": "cotton-candy", "name": "Cotton Candy", "color": "#6EC6F5", "sodium": ("15mg", "1%"),
      "theme": "dark", "caffeine": "40 mg",
      "parts": [("Cotton", "#6EC6F5"), ("Candy", "#FF8DC7")]},
+    # Caffeinated Mint: peppermint + spearmint blend. Lighter blue and green so they read on the dark box.
+    {"id": "mint", "name": "Mint", "color": "#6C8CFF", "sodium": ("15mg", "1%"),
+     "theme": "dark", "caffeine": "40 mg", "stack": True,
+     "parts": [("Peppermint", "#6C8CFF"), ("Spearmint", "#3CC08E")]},
 ]
 
 DARK_BG = "#1E2126"      # graphite grey (caffeinated line)
@@ -61,6 +65,7 @@ VARIANTS = {
                       "Sunflower Lecithin, Sucralose.",
             "cotton-candy": X + "Natural and Artificial Flavors, Sodium Tripolyphosphate, Caffeine, "
                             "Sunflower Lecithin, Sucralose.",
+            "mint": X + "Natural Flavors, Sodium Tripolyphosphate, Caffeine, Sunflower Lecithin, Sucralose.",
         },
     },
     "no-xylitol": {
@@ -78,6 +83,7 @@ VARIANTS = {
                           "Malic Acid, " + N_END,
             "pickle": N + "Natural Flavors, Sodium Tripolyphosphate, Gum Arabic, Sodium Bicarbonate, Salt, " + N_END,
             "cotton-candy": N + "Natural and Artificial Flavors, Sodium Tripolyphosphate, Caffeine, Gum Arabic, " + N_END,
+            "mint": N + "Natural Flavors, Sodium Tripolyphosphate, Caffeine, Gum Arabic, " + N_END,
         },
     },
 }
@@ -126,7 +132,8 @@ def is_dark(f):
 def flavor_name(f):
     """Flavor name in one color, or in several colors when the flavor defines parts."""
     if "parts" in f:
-        return " ".join(f'<span style="color:{c}">{t}</span>' for t, c in f["parts"])
+        sep = "<br>" if f.get("stack") else " "       # stack long two-word names on two lines
+        return sep.join(f'<span style="color:{c}">{t}</span>' for t, c in f["parts"])
     return f["name"]
 
 
@@ -297,7 +304,7 @@ def lineup_page(v):
     fronts = "".join(f'<div>{front(f, v)}</div>' for f in FLAVORS)
     return f'''<section class="page">
 <p class="pt">BRIGHT GUM &nbsp;|&nbsp; FLAVOR LINEUP &nbsp;|&nbsp; ALL FRONTS</p>
-<p class="ps">The eye matches the flavor: Peppermint royal blue, Spearmint emerald, Blue Raspberry azure, Raspberry red, Watermelon melon red, Pickle dill green. Dark grey boxes are the caffeinated line: Cotton Candy has a sky-blue eye, with "Cotton" in sky blue and "Candy" in pink.</p>
+<p class="ps">The eye matches the flavor: Peppermint royal blue, Spearmint emerald, Blue Raspberry azure, Raspberry red, Watermelon melon red, Pickle dill green. Dark grey boxes are the caffeinated line: Cotton Candy has a sky-blue eye, with "Cotton" in sky blue and "Candy" in pink. Mint is a peppermint and spearmint blend, with "Peppermint" in blue and "Spearmint" in green.</p>
 <p class="pn">Preview only, shown at 78% size. Print the flavor pages that follow for true 1:1 labels.</p>
 <div class="stack zoom">{fronts}</div>
 </section>'''
