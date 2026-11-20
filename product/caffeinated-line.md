@@ -4,21 +4,21 @@
 dark graphite-grey background with the white bright wordmark, so it can't be mistaken
 for the regular white boxes on a shelf.
 
-Flavors: **Cotton Candy** and **Mint** (a peppermint and spearmint blend).
+Flavors: **Cotton Candy**, **Peppermint** and **Spearmint**.
 
-| | Cotton Candy | Mint |
-|---|---|---|
-| Box | Graphite grey (`#1E2126`), white wordmark | Same |
-| Logo eye | Sky blue `#6EC6F5` | Peppermint blue `#6C8CFF` |
-| Flavor name | "Cotton" in sky blue, "Candy" in pink `#FF8DC7` | "Peppermint" in blue `#6C8CFF`, "Spearmint" in green `#3CC08E` |
-| Background lines | Sky blue and pink | Blue and green |
-| Badge | "CAFFEINATED, 40 mg per piece" | Same |
-| Caffeine | **40 mg per piece** (about half a small cup of coffee) | Same |
+| | Cotton Candy | Peppermint (caffeinated) | Spearmint (caffeinated) |
+|---|---|---|---|
+| Box | Graphite grey (`#1E2126`), white wordmark | Same | Same |
+| Logo eye and badge | Sky blue `#6EC6F5` | Blue `#6C8CFF` | Green `#3CC08E` |
+| Flavor name | "Cotton" in sky blue, "Candy" in pink `#FF8DC7` | Blue | Green |
+| Background lines | Sky blue and pink | Blue | Green |
+| Badge | "CAFFEINATED, 40 mg per piece" | Same | Same |
+| Caffeine | **40 mg per piece** (about half a small cup of coffee) | Same | Same |
 
-The blue and green on the Mint box are lighter versions of the regular
-Peppermint and Spearmint colors, so they stay readable on the dark box. Both
-boxes are the last pages of `packaging/bright-cartons.pdf` and
-`packaging/no-xylitol/bright-cartons-no-xylitol.pdf`. Grey options are in
+The blue and green on the caffeinated mint boxes are lighter versions of the
+regular Peppermint and Spearmint colors, so they stay readable on the dark box.
+The three caffeinated boxes are the last pages of `packaging/bright-cartons.pdf`
+and `packaging/no-xylitol/bright-cartons-no-xylitol.pdf`. Grey options are in
 `packaging/caffeinated-grey-options.png`.
 
 > **Status: untested.** Like the other sheets, this is a development formula on
@@ -56,10 +56,10 @@ tastes milder, but its coating may add an ingredient to the label.
 paper with the message printed on the inside, plus a sealed inner pack. See
 "Wrapper options" in `formula-sheets.md`.
 
-## Sheet: Mint, caffeinated (xylitol)
+## Sheets: Peppermint and Spearmint, caffeinated (xylitol)
 
-A blend of the two mint flavors. Mint also covers caffeine's bitterness better
-than a sweet flavor does.
+Two separate flavors with the same recipe apart from the flavor line. Mint also
+covers caffeine's bitterness better than a sweet flavor does.
 
 | Ingredient | Function | % | g per stick | kg per 100 kg batch |
 |---|---|---:|---:|---:|
@@ -68,22 +68,26 @@ than a sweet flavor does.
 | Sorbitol (powder) | Bulking sweetener | 17.00 | 0.459 | 17.00 |
 | Calcium carbonate | Polish (whitening) | 4.00 | 0.108 | 4.00 |
 | Glycerin | Flexibility | 3.00 | 0.081 | 3.00 |
-| Mint flavor: 1.3% peppermint oil + 0.9% spearmint oil + 0.3% menthol | Flavor and cooling | 2.50 | 0.068 | 2.50 |
+| Mint flavor (see below) | Flavor and cooling | 2.50 | 0.068 | 2.50 |
 | Sodium tripolyphosphate | Whitening | 1.50 | 0.041 | 1.50 |
 | **Caffeine (anhydrous, food grade)** | **40 mg per piece** | **1.50** | **0.0405** | **1.50** |
 | Sunflower lecithin | Mixing aid | 0.30 | 0.008 | 0.30 |
 | Sucralose (50/50 free/encapsulated) | Sweetness; also masks bitterness | 0.20 | 0.005 | 0.20 |
 | **Total** | | **100.00** | **2.700** | **100.00** |
 
-**Label ingredient line:**
+**The flavor line:**
+- **Peppermint:** 2.0% peppermint oil (*Mentha piperita*) + 0.5% menthol.
+- **Spearmint:** 2.2% spearmint oil (*Mentha spicata*) + 0.3% menthol.
+
+**Label ingredient line (both):**
 Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors,
 Sodium Tripolyphosphate, Caffeine, Sunflower Lecithin, Sucralose.
 
-**No-xylitol version:** use the Cotton Candy no-xylitol sheet below with the mint
-flavor in place of cotton candy (2.0% liquid mint flavor plus 1.5% encapsulated
-mint flavor). Label line: Sorbitol, Gum Base, Mannitol, Glycerin, Calcium
-Carbonate, Natural Flavors, Sodium Tripolyphosphate, Caffeine, Gum Arabic,
-Sunflower Lecithin, Sucralose, Acesulfame Potassium.
+**No-xylitol versions:** use the Cotton Candy no-xylitol sheet below with mint
+flavor in place of cotton candy (2.0% liquid plus 1.5% encapsulated). Label
+line: Sorbitol, Gum Base, Mannitol, Glycerin, Calcium Carbonate, Natural
+Flavors, Sodium Tripolyphosphate, Caffeine, Gum Arabic, Sunflower Lecithin,
+Sucralose, Acesulfame Potassium.
 
 ## Sheet: Cotton Candy, caffeinated (no xylitol)
 
@@ -131,8 +135,9 @@ Ways to lower that risk:
 - Market it to adults only: college students, gyms, people studying or working
   late. No cartoon characters, no kid-focused ads, no sampling to minors.
 - Consider a less childlike name for the caffeinated version, or launch the
-  caffeinated line with **Mint** first and keep Cotton Candy caffeine-free. Mint
-  doesn't read as a kids' flavor, so it carries much less of this risk.
+  caffeinated line with **Peppermint and Spearmint** first and keep Cotton Candy
+  caffeine-free. Mint doesn't read as a kids' flavor, so it carries much less of
+  this risk.
 
 **2. Caffeine's FDA status in gum needs checking.** Caffeine is listed as
 generally recognized as safe only for cola-type drinks at up to 0.02%

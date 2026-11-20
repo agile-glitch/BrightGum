@@ -8,7 +8,7 @@ const VARIANTS = [
   { dir: __dirname, stem: 'bright-cartons' },
   { dir: path.join(__dirname, 'no-xylitol'), stem: 'bright-cartons-no-xylitol' },
 ];
-const ids = ['peppermint', 'spearmint', 'blue-raspberry', 'raspberry', 'watermelon', 'pickle', 'cotton-candy', 'mint'];
+const ids = ['peppermint', 'spearmint', 'blue-raspberry', 'raspberry', 'watermelon', 'pickle', 'cotton-candy', 'peppermint-caffeinated', 'spearmint-caffeinated'];
 
 (async () => {
   const browser = await chromium.launch();

@@ -32,10 +32,11 @@ FLAVORS = [
     {"id": "cotton-candy", "name": "Cotton Candy", "color": "#6EC6F5", "sodium": ("15mg", "1%"),
      "theme": "dark", "caffeine": "40 mg",
      "parts": [("Cotton", "#6EC6F5"), ("Candy", "#FF8DC7")]},
-    # Caffeinated Mint: peppermint + spearmint blend. Lighter blue and green so they read on the dark box.
-    {"id": "mint", "name": "Mint", "color": "#6C8CFF", "sodium": ("15mg", "1%"),
-     "theme": "dark", "caffeine": "40 mg", "stack": True,
-     "parts": [("Peppermint", "#6C8CFF"), ("Spearmint", "#3CC08E")]},
+    # Caffeinated mints. Lighter blue and green than the regular boxes so they read on the dark box.
+    {"id": "peppermint-caffeinated", "name": "Peppermint", "color": "#6C8CFF", "sodium": ("15mg", "1%"),
+     "theme": "dark", "caffeine": "40 mg"},
+    {"id": "spearmint-caffeinated", "name": "Spearmint", "color": "#3CC08E", "sodium": ("15mg", "1%"),
+     "theme": "dark", "caffeine": "40 mg"},
 ]
 
 DARK_BG = "#1E2126"      # graphite grey (caffeinated line)
@@ -65,7 +66,8 @@ VARIANTS = {
                       "Sunflower Lecithin, Sucralose.",
             "cotton-candy": X + "Natural and Artificial Flavors, Sodium Tripolyphosphate, Caffeine, "
                             "Sunflower Lecithin, Sucralose.",
-            "mint": X + "Natural Flavors, Sodium Tripolyphosphate, Caffeine, Sunflower Lecithin, Sucralose.",
+            "peppermint-caffeinated": X + "Natural Flavors, Sodium Tripolyphosphate, Caffeine, Sunflower Lecithin, Sucralose.",
+            "spearmint-caffeinated": X + "Natural Flavors, Sodium Tripolyphosphate, Caffeine, Sunflower Lecithin, Sucralose.",
         },
     },
     "no-xylitol": {
@@ -83,7 +85,8 @@ VARIANTS = {
                           "Malic Acid, " + N_END,
             "pickle": N + "Natural Flavors, Sodium Tripolyphosphate, Gum Arabic, Sodium Bicarbonate, Salt, " + N_END,
             "cotton-candy": N + "Natural and Artificial Flavors, Sodium Tripolyphosphate, Caffeine, Gum Arabic, " + N_END,
-            "mint": N + "Natural Flavors, Sodium Tripolyphosphate, Caffeine, Gum Arabic, " + N_END,
+            "peppermint-caffeinated": N + "Natural Flavors, Sodium Tripolyphosphate, Caffeine, Gum Arabic, " + N_END,
+            "spearmint-caffeinated": N + "Natural Flavors, Sodium Tripolyphosphate, Caffeine, Gum Arabic, " + N_END,
         },
     },
 }
@@ -142,10 +145,11 @@ def front(f, v=None):
     dark = is_dark(f)
     badge = (f'<p class="caf"><b>CAFFEINATED</b><span>{f["caffeine"]} per piece</span></p>'
              if f.get("caffeine") else "")
-    if "parts" in f and dark:      # tint the lines with the flavor's two colors
-        bg = swirls(f["parts"][0][1] + "66", f["parts"][1][1] + "66", 0.8)
+    if dark:      # tint the lines with the flavor's color (or its two colors)
+        c1, c2 = (f["parts"][0][1], f["parts"][1][1]) if "parts" in f else (f["color"], f["color"])
+        bg = swirls(c1 + "66", c2 + "66", 0.8)
     else:
-        bg = swirls(DARK_LINE if dark else "#E3E6EC")
+        bg = swirls("#E3E6EC")
     return f'''<div class="label front{' dark' if dark else ''}" style="--flavor:{f['color']}">
 {bg}
 <div class="f-top">
@@ -275,7 +279,7 @@ body {{ font-family: 'Lato', 'Inter', Arial, sans-serif; color: {INK}; backgroun
         padding: 2pt 0 2.2pt; border-radius: 4pt; display: flex; flex-direction: column; align-items: center; }}
 .claims .caf b {{ font-size: 5.6pt; font-weight: 900; letter-spacing: 0.07em; line-height: 1.15; white-space: nowrap; }}
 .claims .caf span {{ font-size: 4.8pt; font-weight: 700; line-height: 1.15; margin: 0; color: {DARK_BG}; white-space: nowrap; }}
-.zoom {{ zoom: 0.78; }}
+.stack.zoom {{ zoom: 0.7; grid-template-columns: 3in 3in 3in; }}
 """
 
 HEAD = ('<!doctype html><html><head><meta charset="utf-8"><title>bright gum cartons</title>'
@@ -304,8 +308,8 @@ def lineup_page(v):
     fronts = "".join(f'<div>{front(f, v)}</div>' for f in FLAVORS)
     return f'''<section class="page">
 <p class="pt">BRIGHT GUM &nbsp;|&nbsp; FLAVOR LINEUP &nbsp;|&nbsp; ALL FRONTS</p>
-<p class="ps">The eye matches the flavor: Peppermint royal blue, Spearmint emerald, Blue Raspberry azure, Raspberry red, Watermelon melon red, Pickle dill green. Dark grey boxes are the caffeinated line: Cotton Candy has a sky-blue eye, with "Cotton" in sky blue and "Candy" in pink. Mint is a peppermint and spearmint blend, with "Peppermint" in blue and "Spearmint" in green.</p>
-<p class="pn">Preview only, shown at 78% size. Print the flavor pages that follow for true 1:1 labels.</p>
+<p class="ps">The eye matches the flavor: Peppermint royal blue, Spearmint emerald, Blue Raspberry azure, Raspberry red, Watermelon melon red, Pickle dill green. Dark grey boxes are the caffeinated line: Cotton Candy has a sky-blue eye, with "Cotton" in sky blue and "Candy" in pink. Caffeinated Peppermint is blue and caffeinated Spearmint is green.</p>
+<p class="pn">Preview only, shown at 70% size. Print the flavor pages that follow for true 1:1 labels.</p>
 <div class="stack zoom">{fronts}</div>
 </section>'''
 
