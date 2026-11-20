@@ -94,17 +94,18 @@ def logo(eye, width_in, ink=INK):
             f'<path fill="{eye}" d="{LOGO["eye"]}"/></svg>')
 
 
-def swirls(stroke="#E3E6EC"):
-    """Light grey sweeping lines, like the mockup's background."""
-    paths = []
+def swirls(stroke="#E3E6EC", stroke2=None, width=0.7):
+    """Sweeping background lines, like the mockup. Two colors give a flavor its own look."""
+    a, b = [], []
     for i in range(7):
         o = i * 9
-        paths.append(f'<path d="M-10,{170 + o} C 70,{120 + o} 150,{40 + o * 0.6} 310,{10 + o * 0.5}"/>')
+        a.append(f'<path d="M-10,{170 + o} C 70,{120 + o} 150,{40 + o * 0.6} 310,{10 + o * 0.5}"/>')
     for i in range(6):
         o = i * 11
-        paths.append(f'<path d="M{120 + o},250 C {150 + o},170 {210 + o * 0.5},90 310,{60 + o * 0.7}"/>')
+        b.append(f'<path d="M{120 + o},250 C {150 + o},170 {210 + o * 0.5},90 310,{60 + o * 0.7}"/>')
     return ('<svg class="swirl" viewBox="0 0 300 240" preserveAspectRatio="none" aria-hidden="true">'
-            f'<g fill="none" stroke="{stroke}" stroke-width="0.7">' + "".join(paths) + "</g></svg>")
+            f'<g fill="none" stroke-width="{width}"><g stroke="{stroke}">{"".join(a)}</g>'
+            f'<g stroke="{stroke2 or stroke}">{"".join(b)}</g></g></svg>')
 
 
 def barcode(seed):
@@ -132,9 +133,14 @@ def flavor_name(f):
 def front(f, v=None):
     v = v or VARIANTS["xylitol"]
     dark = is_dark(f)
-    badge = f'<p class="caf">CAFFEINATED · {f["caffeine"]}</p>' if f.get("caffeine") else ""
+    badge = (f'<p class="caf"><b>CAFFEINATED</b><span>{f["caffeine"]} per piece</span></p>'
+             if f.get("caffeine") else "")
+    if "parts" in f and dark:      # tint the lines with the flavor's two colors
+        bg = swirls(f["parts"][0][1] + "66", f["parts"][1][1] + "66", 0.8)
+    else:
+        bg = swirls(DARK_LINE if dark else "#E3E6EC")
     return f'''<div class="label front{' dark' if dark else ''}" style="--flavor:{f['color']}">
-{swirls(DARK_LINE if dark else "#E3E6EC")}
+{bg}
 <div class="f-top">
   <div class="brand">{logo(f['color'], 1.62, DARK_INK if dark else INK)}<span class="tm">TM</span></div>
   <div class="claims"><b>Whitening</b><b>Sugar-Free</b>{badge}</div>
@@ -257,8 +263,11 @@ body {{ font-family: 'Lato', 'Inter', Arial, sans-serif; color: {INK}; backgroun
 .dark .warn {{ color: #D5D8DE; }}
 .dark .upc {{ background: #fff; color: {INK}; padding: 2pt 3pt; align-self: flex-start; border-radius: 1.5pt; }}
 .dark .nf {{ background: #fff; color: {INK}; border-color: #fff; }}
-.caf {{ margin-top: 4pt; font-size: 5.4pt; font-weight: 900; letter-spacing: 0.08em; color: {DARK_BG};
-        background: var(--flavor); padding: 1.6pt 4pt; border-radius: 6pt; white-space: nowrap; }}
+/* Caffeine badge: exactly as wide as the claim lines above it */
+.caf {{ margin-top: 4pt; width: 0; min-width: 100%; text-align: center; color: {DARK_BG}; background: var(--flavor);
+        padding: 2pt 0 2.2pt; border-radius: 4pt; display: flex; flex-direction: column; align-items: center; }}
+.claims .caf b {{ font-size: 5.6pt; font-weight: 900; letter-spacing: 0.07em; line-height: 1.15; white-space: nowrap; }}
+.claims .caf span {{ font-size: 4.8pt; font-weight: 700; line-height: 1.15; margin: 0; color: {DARK_BG}; white-space: nowrap; }}
 .zoom {{ zoom: 0.78; }}
 """
 
