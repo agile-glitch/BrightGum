@@ -27,6 +27,7 @@ and PDFs, rebuild the labels and cost study, and save to GitHub. See
 | | `formula-sheets-long-lasting.md` | **Long-lasting versions** of every recipe (two-stage flavor and sweetener release), plus a timed chew test |
 | | `formula-sheets-no-xylitol.md` | **No-xylitol versions** of every recipe (sorbitol-based, built long-lasting), with an honest comparison |
 | | `caffeinated-line.md` | **Caffeinated line (dark boxes):** Cotton Candy, Peppermint and Spearmint recipes, caffeine amount and the rules to know |
+| | `ingredients-in-major-gums.md` | **What's in the major gum brands:** their ingredient lists, what each chemical does, which are under scrutiny, and how bright compares |
 | | `formula.md` | Draft recipe (xylitol ≥ 1 g/stick + whitening), flavor variations, questions for co-packers |
 | | `wrapper-messages.md` | **120 positive messages** for the inside of the wrapper (current focus), plus the Bible-verse edition saved for later |
 | `finance/` | `bright-gum-cost-study.pdf` | **Cost and pricing study** (6 pages): cost to start, cost per carton, own factory vs. contract manufacturer, what to charge, break-even |
