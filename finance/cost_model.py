@@ -154,7 +154,7 @@ def main():
         return {"launch": launch, "scale": scale,
                 "launch_total": sum(launch.values()), "scale_total": sum(scale.values())}
 
-    base = "Xylitol, standard"
+    base = "No xylitol"          # bright's main recipe; the xylitol recipes are alternatives
     c = {name: cogs(name) for name in RECIPES}
     L, S = c[base]["launch_total"], c[base]["scale_total"]
 

@@ -7,10 +7,10 @@ Dark boxes mark the caffeinated line: inverted colors (white wordmark on ink),
 with the flavor name allowed to use two colors (see Cotton Candy).
 
 Two versions of the cartons, written to separate files:
-  xylitol     -> packaging/bright-cartons.html
-  no-xylitol  -> packaging/no-xylitol/bright-cartons-no-xylitol.html
+  no-xylitol (main)    -> packaging/bright-cartons.html
+  xylitol (alternative) -> packaging/xylitol/bright-cartons-xylitol.html
 
-Usage:  python3 packaging/build_cartons.py [xylitol|no-xylitol|all]
+Usage:  python3 packaging/build_cartons.py [no-xylitol|xylitol|all]
 Then:   node packaging/render.js   (HTML -> print PDF and PNG previews)
 """
 import json
@@ -49,9 +49,11 @@ X = "Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, "
 N = "Sorbitol, Gum Base, Mannitol, Glycerin, Calcium Carbonate, "
 N_END = "Sunflower Lecithin, Sucralose, Acesulfame Potassium."
 
+MAIN = "no-xylitol"     # the main version; xylitol is kept as an alternative
+
 VARIANTS = {
     "xylitol": {
-        "dir": OUT, "stem": "bright-cartons", "sheet": "product/formula-sheets.md (v1)",
+        "dir": OUT / "xylitol", "stem": "bright-cartons-xylitol", "sheet": "product/formula-sheets-xylitol.md",
         "front_sub": "XYLITOL", "back_sub": "XYLITOL GUM",
         "back_line": "1 g+ xylitol in every piece.", "calories": "0",
         "ingredients": {
@@ -71,8 +73,8 @@ VARIANTS = {
         },
     },
     "no-xylitol": {
-        "dir": OUT / "no-xylitol", "stem": "bright-cartons-no-xylitol",
-        "sheet": "product/formula-sheets-no-xylitol.md",
+        "dir": OUT, "stem": "bright-cartons",
+        "sheet": "product/formula-sheets.md (main)",
         "front_sub": "A MESSAGE IN<br>EVERY WRAPPER", "back_sub": "SUGAR-FREE GUM",
         "back_line": "A positive message inside every wrapper.", "calories": "5",
         "ingredients": {
@@ -141,7 +143,7 @@ def flavor_name(f):
 
 
 def front(f, v=None):
-    v = v or VARIANTS["xylitol"]
+    v = v or VARIANTS[MAIN]
     dark = is_dark(f)
     badge = (f'<p class="caf"><b>CAFFEINATED</b><span>{f["caffeine"]} per piece</span></p>'
              if f.get("caffeine") else "")
@@ -164,7 +166,7 @@ def front(f, v=None):
 
 
 def back(f, v=None):
-    v = v or VARIANTS["xylitol"]
+    v = v or VARIANTS[MAIN]
     na, na_dv = f["sodium"]
     dark = is_dark(f)
     caf = (f'<p class="xy">{f["caffeine"]} caffeine per piece.</p><p class="warn">{CAFFEINE_NOTE}</p>'
@@ -325,5 +327,5 @@ def build(name):
 
 if __name__ == "__main__":
     which = sys.argv[1] if len(sys.argv) > 1 else "all"
-    for name in (VARIANTS if which == "all" else [which]):
+    for name in ([MAIN] + [k for k in VARIANTS if k != MAIN] if which == "all" else [which]):
         build(name)

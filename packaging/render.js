@@ -5,8 +5,8 @@ const fs = require('fs');
 const path = require('path');
 
 const VARIANTS = [
-  { dir: __dirname, stem: 'bright-cartons' },
-  { dir: path.join(__dirname, 'no-xylitol'), stem: 'bright-cartons-no-xylitol' },
+  { dir: __dirname, stem: 'bright-cartons' },                                  // main: no xylitol
+  { dir: path.join(__dirname, 'xylitol'), stem: 'bright-cartons-xylitol' },  // alternative: xylitol
 ];
 const ids = ['peppermint', 'spearmint', 'blue-raspberry', 'raspberry', 'watermelon', 'pickle', 'cotton-candy', 'peppermint-caffeinated', 'spearmint-caffeinated'];
 

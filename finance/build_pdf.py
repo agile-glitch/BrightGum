@@ -54,7 +54,7 @@ tiles = f'''<div class="tiles">
 findings = f'''<h2>What the numbers say</h2>
 <ol class="find">
 <li><b>Use a contract manufacturer, not your own factory.</b> Your own line costs about {k(cap["typical"])} to set up and about {d0(M["factory_monthly_total"])} a month to run. It only pays off above roughly {fb["at_launch_fee"] / 1e6:.1f} to {fb["at_scale_fee"] / 1e6:.1f} million cartons a year, which is close to everything a small line can make.</li>
-<li><b>Ingredients are the small part.</b> They are about {d2(cg["launch"]["Ingredients"])} of the {d2(L)} first-run cost. The manufacturer's fee and the packaging make up most of the rest. Removing xylitol saves only about 5 cents a carton.</li>
+<li><b>Ingredients are the small part.</b> They are about {d2(cg["launch"]["Ingredients"])} of the {d2(L)} first-run cost. The manufacturer's fee and the packaging make up most of the rest. bright's main recipe has no xylitol; adding it would cost only about 5 cents more a carton.</li>
 <li><b>Run size is the biggest lever.</b> A {M["launch_run"]:,}-carton run costs about {d2(L)} a carton. At {M["scale_run"]:,} cartons and bulk ingredient prices it falls to about {d2(S)}.</li>
 <li><b>Sell the first run directly.</b> At {d2(M["recommended_price"])}, you make {d2(ch[INPERSON]["margin_launch"])} a carton selling in person, {d2(ch[DIRECT]["margin_launch"])} selling to local stores and {d2(ch[ONLINE]["margin_launch"])} on online 6-packs. Through a distributor you would lose {d2(-ch[DIST]["margin_launch"])} a carton until costs come down.</li>
 <li><b>Break-even takes volume.</b> Year one roughly breaks even on running costs at about {round(y1["breakeven_cartons"], -2):,.0f} cartons sold directly. A regional retail business breaks even at about {round(y2["breakeven_cartons"], -3):,.0f} cartons a year.</li>
@@ -97,14 +97,14 @@ comp = table(["Part of the cost", "First run", "At scale", "What it covers"], [
 ], "num2", ["Cost per carton", d2(L), d2(S), f"Likely range: ${M['cogs_range']['launch'][0]:.2f} to ${M['cogs_range']['launch'][1]:.2f} first run; ${M['cogs_range']['scale'][0]:.2f} to ${M['cogs_range']['scale'][1]:.2f} at scale"])
 ing = M["ingredients"][M["base_recipe"]]
 top = sorted(ing["rows"], key=lambda r: -r["startup"])[:6]
-ingt = table(["Ingredient (standard xylitol recipe)", "Share of recipe", "$/kg small lots", "$/kg bulk", "Per carton, first run", "Per carton, at scale"],
+ingt = table(["Ingredient (main recipe, no xylitol)", "Share of recipe", "$/kg small lots", "$/kg bulk", "Per carton, first run", "Per carton, at scale"],
              [[r["ingredient"], f"{r['pct']:.1f}%", d2(M["prices"][r["ingredient"]]["startup"]), d2(M["prices"][r["ingredient"]]["scale"]), d2(r["startup"]), d2(r["scale"])] for r in top],
              "num5", ["All ingredients", "100%", "", "", d2(ing["startup"]), d2(ing["scale"])])
 rec = table(["Recipe", "Ingredients, first run", "Ingredients, at scale", "Whole carton, first run", "Whole carton, at scale"],
             [[n, d2(M["ingredients"][n]["startup"]), d2(M["ingredients"][n]["scale"]), d2(M["cogs"][n]["launch_total"]), d2(M["cogs"][n]["scale_total"])] for n in M["ingredients"]], "num4")
 page("What one carton costs to make", bars + comp + "<h2>The ingredients that cost the most</h2>" + ingt
-     + "<h2>Does removing xylitol save money?</h2>" + rec
-     + "<p class='note'>Only a little. The no-xylitol recipe costs about the same as the standard xylitol recipe and about 5 cents less than the long-lasting xylitol recipe. Small-lot sorbitol is priced almost as high as small-lot xylitol; at bulk prices the saving is still only a few cents. The stronger reasons to drop xylitol are easier manufacturing and a more stable stick.</p>")
+     + "<h2>Main recipe vs. the xylitol alternatives</h2>" + rec
+     + "<p class='note'>bright's main recipe has no xylitol. It costs about the same as the standard xylitol recipe and about 5 cents less than the long-lasting xylitol recipe, which is the fair comparison because the main recipe is also built long-lasting. The bigger reasons for dropping xylitol are easier manufacturing, a more stable stick and a wider choice of manufacturers, not cost.</p>")
 
 # ---------- Page 4: packaging and own factory ----------
 pack = table(["Cartons ordered", "Price per printed carton", "Notes"], [
@@ -172,7 +172,7 @@ ask = '''<div class="two">
 <div class="box"><h3>Next steps</h3><ul>
 <li>Get three manufacturer quotes; they replace the weakest numbers here</li>
 <li>Get a custom quote for your 3.00 x 2.40 x 0.35 in carton</li>
-<li>Confirm import duty on xylitol with a customs broker; tariffs changed in 2026</li>
+<li>Confirm import duty on any imported ingredients with a customs broker; tariffs changed in 2026</li>
 <li>Update finance/cost_model.py with the quotes and rebuild this study</li>
 </ul></div></div>'''
 import cost_model

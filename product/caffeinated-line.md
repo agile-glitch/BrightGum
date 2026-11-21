@@ -18,15 +18,18 @@ Flavors: **Cotton Candy**, **Peppermint** and **Spearmint**.
 The blue and green on the caffeinated mint boxes are lighter versions of the
 regular Peppermint and Spearmint colors, so they stay readable on the dark box.
 The three caffeinated boxes are the last pages of `packaging/bright-cartons.pdf`
-and `packaging/no-xylitol/bright-cartons-no-xylitol.pdf`. Grey options are in
+and `packaging/xylitol/bright-cartons-xylitol.pdf`. Grey options are in
 `packaging/caffeinated-grey-options.png`.
+
+> **Main recipes are the no-xylitol sheets** below. The xylitol sheets are kept
+> as alternatives, matching `formula-sheets-xylitol.md`.
 
 > **Status: untested.** Like the other sheets, this is a development formula on
 > paper for a manufacturer to fine-tune.
 
 ---
 
-## Sheet: Cotton Candy, caffeinated (xylitol)
+## Sheet: Cotton Candy, caffeinated (xylitol, alternative)
 
 The standard xylitol recipe with cotton candy flavor and caffeine.
 
@@ -56,7 +59,7 @@ tastes milder, but its coating may add an ingredient to the label.
 paper with the message printed on the inside, plus a sealed inner pack. See
 "Wrapper options" in `formula-sheets.md`.
 
-## Sheets: Peppermint and Spearmint, caffeinated (xylitol)
+## Sheets: Peppermint and Spearmint, caffeinated (xylitol, alternative)
 
 Two separate flavors with the same recipe apart from the flavor line. Mint also
 covers caffeine's bitterness better than a sweet flavor does.
@@ -83,15 +86,15 @@ covers caffeine's bitterness better than a sweet flavor does.
 Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors,
 Sodium Tripolyphosphate, Caffeine, Sunflower Lecithin, Sucralose.
 
-**No-xylitol versions:** use the Cotton Candy no-xylitol sheet below with mint
+**No-xylitol versions (main):** use the Cotton Candy no-xylitol sheet below with mint
 flavor in place of cotton candy (2.0% liquid plus 1.5% encapsulated). Label
 line: Sorbitol, Gum Base, Mannitol, Glycerin, Calcium Carbonate, Natural
 Flavors, Sodium Tripolyphosphate, Caffeine, Gum Arabic, Sunflower Lecithin,
 Sucralose, Acesulfame Potassium.
 
-## Sheet: Cotton Candy, caffeinated (no xylitol)
+## Sheet: Cotton Candy, caffeinated (no xylitol, main)
 
-The no-xylitol long-lasting recipe from `formula-sheets-no-xylitol.md`, with
+The main (no-xylitol) long-lasting recipe from `formula-sheets.md`, with
 cotton candy flavor and caffeine.
 
 | Ingredient | Function | % | g per stick | kg per 100 kg batch |
@@ -117,7 +120,7 @@ Flavors, Sodium Tripolyphosphate, Caffeine, Gum Arabic, Sunflower Lecithin,
 Sucralose, Acesulfame Potassium.
 
 Nutrition is the same as the other flavors: caffeine adds no calories. The
-xylitol version labels 0 calories; the no-xylitol version labels 5.
+main (no-xylitol) version labels 5 calories; the xylitol version labels 0.
 
 ---
 

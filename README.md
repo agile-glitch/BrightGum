@@ -1,6 +1,6 @@
 # bright gum
 
-**A whitening xylitol gum with a positive message inside every wrapper.**
+**A sugar-free whitening gum with a positive message inside every wrapper.**
 *Something to smile about.*
 
 ![bright logo](brand/logo/bright-logo-primary.svg)
@@ -20,15 +20,14 @@ and PDFs, rebuild the labels and cost study, and save to GitHub. See
 | | `bright-logo-on-blue.svg`, `-on-green.svg`, `-reversed.svg` | Backup versions for colored or dark backgrounds only |
 | | `source/`, `trace_logo.py`, `logo_paths.json` | The chosen logo images, the script that traces them, and the traced shapes that the boxes, cost study and studio all draw from |
 | `packaging/` | `bright-cartons.pdf` | **Print-ready 1:1 carton labels** (front + back) for Peppermint, Spearmint, Blue Raspberry, Raspberry, Watermelon, Pickle, plus the caffeinated dark boxes (Cotton Candy, Peppermint and Spearmint), and a lineup page. The eye color matches each flavor. |
-| | `no-xylitol/bright-cartons-no-xylitol.pdf` | The same six cartons with xylitol removed: "A message in every wrapper" takes its place |
+| | `xylitol/bright-cartons-xylitol.pdf` | **Alternative:** the same boxes for the xylitol recipes, with "Xylitol" on front and back |
 | | `package-dimensions.md` | Real sizes of common 15-stick gum packs, and the recommended production carton size |
 | | `build_cartons.py`, `render.js` | Regenerate the labels: `python3 packaging/build_cartons.py && node packaging/render.js` |
-| `product/` | `formula-sheets.md` | **v1 recipes for every flavor**: grams per stick, batch quantities, label ingredient lines, calculated nutrition |
-| | `formula-sheets-long-lasting.md` | **Long-lasting versions** of every recipe (two-stage flavor and sweetener release), plus a timed chew test |
-| | `formula-sheets-no-xylitol.md` | **No-xylitol versions** of every recipe (sorbitol-based, built long-lasting), with an honest comparison |
+| `product/` | `formula-sheets.md` | **Main recipes (no xylitol)** for every flavor: sorbitol-based and built long-lasting. Grams per stick, batch quantities, label ingredient lines, nutrition, wrapper options, tests and the timed chew test |
+| | `formula-sheets-xylitol.md`, `formula-sheets-xylitol-long-lasting.md` | **Alternative:** the xylitol versions of every recipe, kept in case you want them later |
 | | `caffeinated-line.md` | **Caffeinated line (dark boxes):** Cotton Candy, Peppermint and Spearmint recipes, caffeine amount and the rules to know |
 | | `ingredients-in-major-gums.md` | **What's in the major gum brands:** their ingredient lists, what each chemical does, which are under scrutiny, and how bright compares |
-| | `formula.md` | Draft recipe (xylitol ≥ 1 g/stick + whitening), flavor variations, questions for co-packers |
+| | `formula.md` | First draft (written around xylitol, now superseded by the sheets); still useful for its questions for co-packers |
 | | `wrapper-messages.md` | **120 positive messages** for the inside of the wrapper (current focus), plus the Bible-verse edition saved for later |
 | `finance/` | `bright-gum-cost-study.pdf` | **Cost and pricing study** (6 pages): cost to start, cost per carton, own factory vs. contract manufacturer, what to charge, break-even |
 | | `bright-gum-cost-study.pptx` | The same study as a 12-slide PowerPoint |
@@ -42,7 +41,8 @@ and PDFs, rebuild the labels and cost study, and save to GitHub. See
 
 - **Format:** 15-stick carton, 3.00 × 2.40 × 0.35 in
 - **Flavors:** Peppermint · Spearmint · Blue Raspberry · Raspberry · Watermelon · Pickle · caffeinated dark boxes: Cotton Candy, Peppermint and Spearmint
-- **Sugar-free**, xylitol as the first ingredient, stain-lifting whitening polish
+- **Sugar-free**, sorbitol-based (no xylitol), long-lasting flavor, stain-lifting whitening polish
+- **No** aspartame, dyes or soy
 - **Every wrapper:** a teaser outside, a message inside
 
 ## Top 3 things to do next

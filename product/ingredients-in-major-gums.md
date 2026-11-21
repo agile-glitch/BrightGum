@@ -176,18 +176,18 @@ Not found: Extra Polar Ice or Peppermint, Orbit Peppermint, Trident Spearmint
 | **Titanium dioxide** | Banned in EU food since 2022; US petition pending; some state label laws. | No |
 | **BHT** | FDA safety reassessment opened May 2026. No ban. | **Possibly, inside the gum base.** See section 5. |
 | **Aspartame** | "Possibly carcinogenic" classification in 2023 on limited evidence; intake limits unchanged. Needs a phenylalanine warning. | No. bright uses sucralose. |
-| **Xylitol** | A 2024 study in the *European Heart Journal* linked high blood levels of xylitol to more heart attacks and strokes. It was observational, in a high-risk group, and doesn't prove cause. Regulators haven't acted. | **Yes: bright's main ingredient in the xylitol versions.** See section 5. |
-| **Sucralose, Ace-K** | Recently re-reviewed in Europe; both kept or raised their safe intake levels. | Yes (sucralose in all; Ace-K in the long-lasting and no-xylitol recipes) |
+| **Xylitol** | A 2024 study in the *European Heart Journal* linked high blood levels of xylitol to more heart attacks and strokes. It was observational, in a high-risk group, and doesn't prove cause. Regulators haven't acted. | No. bright's main recipes are xylitol-free; only the alternative xylitol version uses it. |
+| **Sucralose, Ace-K** | Recently re-reviewed in Europe; both kept or raised their safe intake levels. | Yes (sucralose and Ace-K in the main recipes) |
 | **Soy lecithin** | A major allergen that must be declared. | No. bright uses sunflower lecithin. |
 
 ---
 
 ## 5. How bright compares
 
-| | Mainstream sugar-free (Extra, Orbit, Trident, 5) | Xylitol brands (PUR, Spry, Epic) | bright (standard xylitol recipe) |
+| | Mainstream sugar-free (Extra, Orbit, Trident, 5) | Xylitol brands (PUR, Spry, Epic) | bright (main recipe) |
 |---|---|---|---|
-| Main sweetener | Sorbitol | Xylitol | Xylitol (40%), then sorbitol |
-| Lasting sweetener | Aspartame + Ace-K | None | Sucralose |
+| Main sweetener | Sorbitol | Xylitol | Sorbitol (no xylitol) |
+| Lasting sweetener | Aspartame + Ace-K | None | Encapsulated sucralose + Ace-K |
 | Phenylalanine warning | Yes | No | No |
 | Artificial colors | Usually | No | No |
 | Titanium dioxide | Trident White | One Epic listing | No |
@@ -216,10 +216,9 @@ Not found: Extra Polar Ice or Peppermint, Orbit Peppermint, Trident Spearmint
    It's a recognized stain-lifting ingredient in toothpaste and some gums, but
    ask the manufacturer what their whitening bases use, and consider
    **baking soda plus calcium carbonate** as a simpler, more familiar pairing.
-5. **Keep the xylitol heart study on your radar.** One observational study
-   doesn't establish harm, and xylitol's dental benefit is well supported. But
-   bright's xylitol recipes put 1 g in every stick as the headline feature. This
-   is one more reason the no-xylitol version is worth keeping ready.
+5. **bright's main recipes avoid the xylitol question entirely.** They're
+   sorbitol-based, like the mainstream brands, so the 2024 heart study only
+   matters if you bring back the xylitol alternative.
 6. **Mainstream gum lasts because of aspartame and Ace-K,** the lasting
    sweeteners. bright's long-lasting recipes do the same job with encapsulated
    sucralose and Ace-K, without aspartame.

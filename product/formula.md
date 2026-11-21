@@ -5,10 +5,11 @@ Gum is made on specialized mixing, extruding and rolling lines, and almost every
 new gum brand starts this way: you own the brand, the recipe targets and the
 packaging, and they make it.
 
-> **Updated:** the finished v1 recipes for all three flavors (exact grams, batch
-> quantities, label ingredient lines and nutrition) are in
-> [`formula-sheets.md`](formula-sheets.md). Where the two differ, the sheets win:
-> they drop all colors and use sunflower lecithin instead of soy.
+> **Superseded.** This is the first draft, written around xylitol. bright's
+> main recipes now have **no xylitol** and are in [`formula-sheets.md`](formula-sheets.md);
+> the xylitol versions are in [`formula-sheets-xylitol.md`](formula-sheets-xylitol.md).
+> Where this draft differs from the sheets, the sheets win. The co-packer
+> questions and wrapper notes below still apply.
 
 **These percentages are a development starting point, not a finished recipe.**
 The co-packer will adjust them on their equipment, run shelf-life tests and give

@@ -1,6 +1,8 @@
 # bright gum: food regulations checklist (US)
 
-This is what applies to selling a sugar-free xylitol gum in the United States.
+This is what applies to selling a sugar-free gum in the United States. bright's
+main recipes are sorbitol-based (no xylitol); notes marked *xylitol version*
+apply only if you use the xylitol alternative.
 It's organized as a checklist so you can tick items off.
 
 > **I'm not a lawyer or a regulatory consultant.** This is a map of what to
@@ -40,7 +42,8 @@ Your co-packer will handle most of this, but you should know what to ask for.
 
 - [ ] **Gum base** must be made of substances listed in **21 CFR 172.615**
       (chewing gum base).
-- [ ] **Xylitol** is an approved food additive (21 CFR 172.395).
+- [ ] **Sorbitol** (21 CFR 184.1835) and **mannitol** (21 CFR 180.25) are approved
+      for food. *Xylitol version:* xylitol is an approved food additive (21 CFR 172.395).
 - [ ] **Sodium tripolyphosphate** (21 CFR 182.1810) and **calcium carbonate**
       (21 CFR 184.1191) are GRAS ("generally recognized as safe").
 - [ ] **Colors** must be FDA-listed (21 CFR Parts 73/74). Spirulina extract is
@@ -81,8 +84,8 @@ your website. Influencers you pay or send free product must disclose it
 
 ## 5. Recommended warnings (not legally required, but standard)
 
-- [ ] **"Keep away from dogs. Xylitol is toxic to dogs."** It builds trust, and
-      vets will notice.
+- [ ] *Xylitol version only:* **"Keep away from dogs. Xylitol is toxic to dogs."**
+      It builds trust, and vets will notice. Not needed for the main recipes.
 - [ ] **"Excess consumption may have a laxative effect."** It's required for
       sorbitol only at much higher levels (21 CFR 101.17), but standard on
       sugar-alcohol gum.
@@ -135,13 +138,13 @@ color rules differ. Treat each new country as a new label review.
 ## Quick label wording for your carton
 
 **Front:**
-> bright ☺ · **Peppermint** · Sugar-Free Gum · **Whitening\*** · **Xylitol** ·
-> Does not promote tooth decay · 15 Sticks · Net Wt __ oz (__ g)
+> bright ☺ · **Peppermint** · Sugar-Free Gum · **Whitening\*** ·
+> A message in every wrapper · 15 Sticks · Net Wt __ oz (__ g)
 
 **Back:**
-> Ingredients: Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural
-> Flavors, Sodium Tripolyphosphate, Sunflower Lecithin, Sucralose.
-> · Keep away from dogs. Xylitol is toxic to dogs. · Excess
+> Ingredients: Sorbitol, Gum Base, Mannitol, Glycerin, Calcium Carbonate, Natural
+> Flavors, Sodium Tripolyphosphate, Gum Arabic, Sunflower Lecithin, Sucralose,
+> Acesulfame Potassium. · Excess
 > consumption may have a laxative effect. · Distributed by bright gum Co., City,
 > ST ZIP · BrightGumCo.com · [Nutrition Facts] · [UPC]
 

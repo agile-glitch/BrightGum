@@ -1,8 +1,10 @@
-# bright gum: long-lasting formula sheets (v2-LL)
+# bright gum: long-lasting xylitol formula sheets (alternative)
+
+> **Alternative version.** bright's main recipes have no xylitol and are in
+> [`formula-sheets.md`](formula-sheets.md); they're built long-lasting too.
 
 A separate set of recipes built for **flavor that lasts longer**. The standard
-recipes stay in [`formula-sheets.md`](formula-sheets.md); nothing there is
-replaced. Send a manufacturer both and let a side-by-side chew test decide.
+xylitol recipes are in [`formula-sheets-xylitol.md`](formula-sheets-xylitol.md). Send a manufacturer both and let a side-by-side chew test decide.
 
 > **Status: untested.** These are development formulas on paper. "Long-lasting"
 > is the design goal, not a measured result. The timed chew test at the end of
@@ -240,7 +242,7 @@ low-migration inks**. The wrapper printer will specify these.
 
 ## Standard vs. long-lasting at a glance
 
-| | Standard (`formula-sheets.md`) | Long-lasting (this sheet) |
+| | Standard (`formula-sheets-xylitol.md`) | Long-lasting (this sheet) |
 |---|---|---|
 | Flavor | All liquid, 2.5–2.8% | Liquid 1.8–2.0% + encapsulated 1.5–2.0% |
 | Slow-release sweetener (as supplied) | About 0.3% | 0.8–1.0% |

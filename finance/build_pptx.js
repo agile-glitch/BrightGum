@@ -156,7 +156,7 @@ const INPERSON = 'In person (campus table, events)', ONLINE = 'Online 6-pack, sh
     { x: 8.4, y: 2.5, w: 4.0, h: 4.0, fontSize: 17, paraSpaceAfter: 10, objectName: 'Carton cost points' });
 
   // ---- 6. Xylitol -----------------------------------------------------------------------------
-  s = content('Costs', 'Xylitol barely changes the cost', 'Whole-carton cost for the three recipes. The no-xylitol recipe costs about the same as the standard xylitol recipe and about 5 cents less than the long-lasting xylitol recipe. The better reasons to drop xylitol are easier manufacturing and a more stable stick, not cost.');
+  s = content('Costs', 'Xylitol barely changes the cost', 'Whole-carton cost for the three recipes. bright\'s main recipe has no xylitol. It costs about the same as the standard xylitol recipe and about 5 cents less than the long-lasting xylitol recipe, the fair comparison since the main recipe is also built long-lasting. Xylitol was dropped for easier manufacturing and a more stable stick, not cost.');
   const recs = Object.keys(M.cogs);
   s.addChart(pres.charts.BAR, [
     { name: 'First run', labels: recs, values: recs.map((r) => Math.round(M.cogs[r].launch_total * 100) / 100) },
@@ -169,7 +169,7 @@ const INPERSON = 'In person (campus table, events)', ONLINE = 'Online 6-pack, sh
   card(s, 8.1, 1.65, 4.63, 5.0, 'Xylitol notes card');
   text(s, 'About 5¢', { x: 8.4, y: 1.9, w: 4.0, h: 0.75, fontSize: 40, bold: true, color: C.accent1, objectName: 'Xylitol saving' });
   text(s, 'saved per carton by removing xylitol from the long-lasting recipe', { x: 8.4, y: 2.7, w: 4.0, h: 0.7, fontSize: 14, color: C.text2, objectName: 'Xylitol saving label' });
-  bullets(s, ['Ingredients are a small share of the total, so swapping one changes little', 'Dropping xylitol makes the gum easier to manufacture and the stick more stable', 'Keeping it keeps the dental story for shoppers who look for xylitol'],
+  bullets(s, ['Ingredients are a small share of the total, so swapping one changes little', 'Dropping xylitol makes the gum easier to manufacture and the stick more stable', 'The xylitol recipes stay on file as an alternative'],
     { x: 8.4, y: 3.6, w: 4.0, h: 2.9, fontSize: 16, paraSpaceAfter: 10, objectName: 'Xylitol points' });
 
   // ---- 7. Packaging ---------------------------------------------------------------------------
@@ -275,7 +275,7 @@ const INPERSON = 'In person (campus table, events)', ONLINE = 'Online 6-pack, sh
   });
   card(s, 6.815, 1.65, 5.915, 5.0, 'Next steps card');
   text(s, 'Next steps', { x: 7.165, y: 1.85, w: 5.2, h: 0.45, fontSize: 20, bold: true, color: C.accent1, objectName: 'Next steps heading' });
-  bullets(s, ['Get three manufacturer quotes at their minimum, 50,000 and 250,000 cartons', 'Ask about the development fee, formula ownership and wrapper minimum orders', 'Get a custom quote for the 3.00 x 2.40 x 0.35 in carton', 'Confirm import duty on xylitol with a customs broker', 'Put the quotes into the model and rebuild this study'],
+  bullets(s, ['Get three manufacturer quotes at their minimum, 50,000 and 250,000 cartons', 'Ask about the development fee, formula ownership and wrapper minimum orders', 'Get a custom quote for the 3.00 x 2.40 x 0.35 in carton', 'Confirm import duty on imported ingredients with a customs broker', 'Put the quotes into the model and rebuild this study'],
     { x: 7.165, y: 2.55, w: 5.2, h: 3.9, fontSize: 17, paraSpaceAfter: 10, objectName: 'Next steps points' });
 
   await pres.writeFile({ fileName: OUT });

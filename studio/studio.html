@@ -181,7 +181,7 @@ function modal({ title, text, input, okLabel = "OK", danger = false }) {
 // ---------- file list ----------
 const ICON = { md: "TEXT", pdf: "PDF", png: "IMG", jpg: "IMG", jpeg: "IMG", webp: "IMG", svg: "SVG", pptx: "PPT", html: "HTML", py: "PY", js: "JS", json: "DATA", csv: "DATA" };
 const ext = (p) => (p.includes(".") ? p.split(".").pop().toLowerCase() : "");
-const FOLDER_NAMES = { "": "Project", brand: "Brand", "brand/logo": "Logo", packaging: "Packaging (boxes)", "packaging/no-xylitol": "Packaging: no xylitol", product: "Product (recipes, messages)", finance: "Finance (cost study)", regulations: "Regulations", marketing: "Marketing", studio: "Studio (this app)" };
+const FOLDER_NAMES = { "": "Project", brand: "Brand", "brand/logo": "Logo", packaging: "Packaging (boxes)", "packaging/xylitol": "Packaging: xylitol (alternative)", product: "Product (recipes, messages)", finance: "Finance (cost study)", regulations: "Regulations", marketing: "Marketing", studio: "Studio (this app)" };
 
 function renderTree() {
   const q = $("#search").value.trim().toLowerCase();
@@ -345,7 +345,7 @@ $("#newBtn").onclick = newFile;
 
 // ---------- home ----------
 function renderHome() {
-  const pick = [["README.md", "Start here", "A guide to every folder"], ["packaging/bright-cartons.pdf", "Box labels", "Print-ready, six flavors"], ["product/formula-sheets.md", "Recipes", "Standard xylitol formulas"], ["product/wrapper-messages.md", "Wrapper messages", "120 positive messages"], ["finance/bright-gum-cost-study.pdf", "Cost study", "Costs, prices, break-even"], ["marketing/marketing-plan.md", "Marketing plan", "Audience, launch, pricing"]]
+  const pick = [["README.md", "Start here", "A guide to every folder"], ["packaging/bright-cartons.pdf", "Box labels", "Print-ready, all nine boxes"], ["product/formula-sheets.md", "Recipes", "Main recipes, no xylitol"], ["product/wrapper-messages.md", "Wrapper messages", "120 positive messages"], ["finance/bright-gum-cost-study.pdf", "Cost study", "Costs, prices, break-even"], ["marketing/marketing-plan.md", "Marketing plan", "Audience, launch, pricing"]]
     .filter(([p]) => state.files.some((f) => f.path === p));
   $("#view").innerHTML = `<div class="empty"><h2>Pick a file to look at or edit</h2>
     <p>Choose any file on the left. Text files open ready to read. Use <b>Edit</b> to change them and <b>Save</b> (or Ctrl+S / ⌘S) to keep your changes.

@@ -348,7 +348,7 @@
    1.0
   ]
  },
- "base_recipe": "Xylitol, standard",
+ "base_recipe": "No xylitol",
  "startup_items": [
   {
    "item": "Formula development with the manufacturer",
@@ -435,12 +435,12 @@
  },
  "first_run": {
   "low": 20000.0,
-  "typical": 27964.497400000004,
+  "typical": 28204.508500000004,
   "high": 38000.0
  },
  "startup_total": {
   "low": 48472.49999999999,
-  "typical": 93511.67201,
+  "typical": 93787.68477499999,
   "high": 174800.0
  },
  "contingency": 0.15,
@@ -569,145 +569,145 @@
   "2.49": {
    "In person (campus table, events)": {
     "net": 2.32526,
-    "margin_launch": 0.9270351299999999,
-    "margin_scale": 1.61152935,
-    "pct_launch": 0.3986802035041242,
-    "pct_scale": 0.6930534004799463
+    "margin_launch": 0.915034575,
+    "margin_scale": 1.62360645,
+    "pct_launch": 0.39351925161057255,
+    "pct_scale": 0.6982472712728899
    },
    "Direct to local stores": {
     "net": 1.494,
-    "margin_launch": 0.09577512999999982,
-    "margin_scale": 0.78026935,
-    "pct_launch": 0.06410651271753669,
-    "pct_scale": 0.522268641231593
+    "margin_launch": 0.08377457499999985,
+    "margin_scale": 0.7923464499999999,
+    "pct_launch": 0.05607401271753672,
+    "pct_scale": 0.530352376171352
    },
    "Online 6-pack, shipped by you": {
     "net": 1.2844566666666666,
-    "margin_launch": -0.1137682033333336,
-    "margin_scale": 0.5707260166666666,
-    "pct_launch": -0.08857301790380909,
-    "pct_scale": 0.44433263610813384
+    "margin_launch": -0.12576875833333356,
+    "margin_scale": 0.5828031166666665,
+    "pct_launch": -0.09791592164780458,
+    "pct_scale": 0.45373513314319663
    },
    "Small shops through Faire": {
     "net": 1.2699,
-    "margin_launch": -0.12832487000000015,
-    "margin_scale": 0.55616935,
-    "pct_launch": -0.10105116150878034,
-    "pct_scale": 0.4379631073312859
+    "margin_launch": -0.14032542500000011,
+    "margin_scale": 0.56824645,
+    "pct_launch": -0.11050116150878031,
+    "pct_scale": 0.44747338373100237
    },
    "Distributor to grocery chains": {
     "net": 0.9633312,
-    "margin_launch": -0.4348936700000001,
-    "margin_scale": 0.24960055000000003,
-    "pct_launch": -0.451447716008783,
-    "pct_scale": 0.25910149074378575
+    "margin_launch": -0.4468942250000001,
+    "margin_scale": 0.26167765,
+    "pct_launch": -0.46390506712540824,
+    "pct_scale": 0.27163830051388344
    }
   },
   "2.99": {
    "In person (campus table, events)": {
     "net": 2.81226,
-    "margin_launch": 1.41403513,
-    "margin_scale": 2.09852935,
-    "pct_launch": 0.5028109527568575,
-    "pct_scale": 0.7462074452575509
+    "margin_launch": 1.402034575,
+    "margin_scale": 2.11060645,
+    "pct_launch": 0.49854372462005647,
+    "pct_scale": 0.7505018917169821
    },
    "Direct to local stores": {
     "net": 1.794,
-    "margin_launch": 0.39577512999999986,
-    "margin_scale": 1.08026935,
-    "pct_launch": 0.22061044035674462,
-    "pct_scale": 0.6021568283166109
+    "margin_launch": 0.3837745749999999,
+    "margin_scale": 1.09234645,
+    "pct_launch": 0.2139211677814938,
+    "pct_scale": 0.608888768115942
    },
    "Online 6-pack, shipped by you": {
     "net": 1.7699566666666666,
-    "margin_launch": 0.37173179666666645,
-    "margin_scale": 1.0562260166666666,
-    "pct_launch": 0.21002310602707774,
-    "pct_scale": 0.5967524722827489
+    "margin_launch": 0.3597312416666665,
+    "margin_scale": 1.0683031166666666,
+    "pct_launch": 0.2032429654586646,
+    "pct_scale": 0.6035758596726473
    },
    "Small shops through Faire": {
     "net": 1.5249,
-    "margin_launch": 0.12667512999999975,
-    "margin_scale": 0.8111693499999999,
-    "pct_launch": 0.08307110630205243,
-    "pct_scale": 0.5319492097842481
+    "margin_launch": 0.11467457499999978,
+    "margin_scale": 0.8232464499999999,
+    "pct_launch": 0.07520137386058089,
+    "pct_scale": 0.5398691389599317
    },
    "Distributor to grocery chains": {
     "net": 1.1567712000000003,
-    "margin_launch": -0.24145366999999984,
-    "margin_scale": 0.4430405500000003,
-    "pct_launch": -0.20873070664276547,
-    "pct_scale": 0.3829975625257615
+    "margin_launch": -0.2534542249999998,
+    "margin_scale": 0.45511765000000026,
+    "pct_launch": -0.21910488867634303,
+    "pct_scale": 0.3934379158125653
    }
   },
   "3.49": {
    "In person (campus table, events)": {
     "net": 3.29926,
-    "margin_launch": 1.9010351299999997,
-    "margin_scale": 2.58552935,
-    "pct_launch": 0.5762004601031746,
-    "pct_scale": 0.7836694743669792
+    "margin_launch": 1.8890345749999997,
+    "margin_scale": 2.59760645,
+    "pct_launch": 0.5725631126373792,
+    "pct_scale": 0.7873300224898916
    },
    "Direct to local stores": {
     "net": 2.094,
-    "margin_launch": 0.6957751299999997,
-    "margin_scale": 1.3802693499999998,
-    "pct_launch": 0.3322708357211078,
-    "pct_scale": 0.659154417382999
+    "margin_launch": 0.6837745749999997,
+    "margin_scale": 1.3923464499999998,
+    "pct_launch": 0.3265399116523399,
+    "pct_scale": 0.6649218958930276
    },
    "Online 6-pack, shipped by you": {
     "net": 2.255456666666667,
-    "margin_launch": 0.8572317966666667,
-    "margin_scale": 1.5417260166666669,
-    "pct_launch": 0.38007016908623087,
-    "pct_scale": 0.6835538183693768
+    "margin_launch": 0.8452312416666667,
+    "margin_scale": 1.5538031166666668,
+    "pct_launch": 0.37474949271174945,
+    "pct_scale": 0.6889084324386636
    },
    "Small shops through Faire": {
     "net": 1.7798999999999998,
-    "margin_launch": 0.38167512999999964,
-    "margin_scale": 1.0661693499999998,
-    "pct_launch": 0.21443627731895032,
-    "pct_scale": 0.5990051969211753
+    "margin_launch": 0.36967457499999967,
+    "margin_scale": 1.0782464499999997,
+    "pct_launch": 0.20769401370863516,
+    "pct_scale": 0.6057904657565031
    },
    "Distributor to grocery chains": {
     "net": 1.3502112000000004,
-    "margin_launch": -0.048013669999999786,
-    "margin_scale": 0.6364805500000004,
-    "pct_launch": -0.03556011829852972,
-    "pct_scale": 0.47139332720688454
+    "margin_launch": -0.060014224999999755,
+    "margin_scale": 0.6485576500000003,
+    "pct_launch": -0.04444802783446007,
+    "pct_scale": 0.48033792787380236
    }
   }
  },
  "need": {
   "In person (campus table, events)": {
-   "breakeven_launch": 1.5382185523613967,
-   "breakeven_scale": 0.8354524127310061,
-   "target_launch": 2.495251317590692,
-   "target_scale": 1.3239744182067077
+   "breakeven_launch": 1.550539450718686,
+   "breakeven_scale": 0.8230529260780288,
+   "target_launch": 2.5157861481861747,
+   "target_scale": 1.3033086071184123
   },
   "Direct to local stores": {
-   "breakeven_launch": 2.3303747833333337,
-   "breakeven_scale": 1.1895510833333334,
-   "target_launch": 3.883957972222223,
-   "target_scale": 1.982585138888889
+   "breakeven_launch": 2.350375708333334,
+   "breakeven_scale": 1.1694225833333336,
+   "target_launch": 3.9172928472222233,
+   "target_scale": 1.9490376388888895
   },
   "Online 6-pack, shipped by you": {
-   "breakeven_launch": 2.6071660178510134,
-   "breakeven_scale": 1.9022286131136288,
-   "target_launch": 3.567155629934776,
-   "target_scale": 2.392259955372469
+   "breakeven_launch": 2.619524982835565,
+   "breakeven_scale": 1.8897908170271203,
+   "target_launch": 3.5877539049090297,
+   "target_scale": 2.371530295228288
   },
   "Small shops through Faire": {
-   "breakeven_launch": 2.741617392156863,
-   "breakeven_scale": 1.3994718627450982,
-   "target_launch": 4.569362320261439,
-   "target_scale": 2.3324531045751637
+   "breakeven_launch": 2.765147892156863,
+   "breakeven_scale": 1.375791274509804,
+   "target_launch": 4.608579820261439,
+   "target_scale": 2.29298545751634
   },
   "Distributor to grocery chains": {
-   "breakeven_launch": 3.614104812861869,
-   "breakeven_scale": 1.8448372880479733,
-   "target_launch": 6.023508021436449,
-   "target_scale": 3.0747288134132886
+   "breakeven_launch": 3.645123617142266,
+   "breakeven_scale": 1.81362063172043,
+   "target_launch": 6.075206028570444,
+   "target_scale": 3.0227010528673834
   }
  },
  "scenarios": {
@@ -720,12 +720,12 @@
    },
    "avg_net": 2.1964953333333335,
    "revenue": 43929.90666666667,
-   "unit_cost": 1.3982248700000002,
-   "gross_profit": 15965.409266666666,
+   "unit_cost": 1.4102254250000001,
+   "gross_profit": 15725.398166666666,
    "marketing": 0.0,
    "overhead": 18000,
-   "profit": -2034.5907333333344,
-   "breakeven_cartons": 22548.748609384224
+   "profit": -2274.601833333334,
+   "breakeven_cartons": 22892.902054658098
   },
   "At scale: regional retail": {
    "cartons": 250000,
@@ -736,12 +736,12 @@
    },
    "avg_net": 1.4092583866666668,
    "revenue": 352314.5966666667,
-   "unit_cost": 0.71373065,
-   "gross_profit": 173881.9341666667,
+   "unit_cost": 0.7016535500000001,
+   "gross_profit": 176901.2091666667,
    "marketing": 52847.1895,
    "overhead": 60000,
-   "profit": 61034.744666666695,
-   "breakeven_cartons": 123931.35575499786
+   "profit": 64054.01966666669,
+   "breakeven_cartons": 120915.06619700853
   }
  },
  "target_margin": 0.4

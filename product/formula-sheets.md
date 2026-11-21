@@ -1,44 +1,60 @@
-# bright gum: formula sheets (v1)
+# bright gum: formula sheets (main recipes)
 
-One sheet per flavor, ready to send to a contract gum manufacturer
-(co-packer). All flavors share **one base recipe** and differ only in
-flavor and a few small additions. That keeps purchasing, testing and production
-simple.
+**These are bright's main recipes: no xylitol.** Sorbitol is the main
+sweetener, the standard for sugar-free stick gum, so nearly every gum
+manufacturer has a proven base to start from. The recipes are built
+**long-lasting from the start**, with flavor and sweetener released in two
+stages.
 
-> These are development formulas: precise starting points that a co-packer's
-> food scientist will run on their own line and fine-tune (texture, flavor
-> strength, shelf life). Nutrition values are **calculated estimates**; the
-> final label uses the co-packer's lab analysis.
+Everything else that makes bright what it is stays the same: the whitening
+ingredients, no dyes, no major allergens and a positive message in every
+wrapper.
 
-> **Want flavor that lasts longer?** See the separate long-lasting versions of
-> every recipe in [`formula-sheets-long-lasting.md`](formula-sheets-long-lasting.md).
+- **Boxes:** `packaging/bright-cartons.pdf`
+- **Caffeinated recipes** (Cotton Candy, Peppermint, Spearmint): `caffeinated-line.md`
+- **Xylitol versions,** kept as alternatives: `formula-sheets-xylitol.md` and
+  `formula-sheets-xylitol-long-lasting.md`, with boxes in `packaging/xylitol/`
 
-## What changed from the first draft
+> **Status: untested.** These are development formulas on paper. A
+> manufacturer will fine-tune them on their own line. Flavor duration has to be
+> measured with the timed chew test at the end of this sheet. Nutrition values
+> are calculated estimates; the final label uses lab analysis.
 
-1. **No colors in any flavor.** All three gums are naturally white. A whitening
-   gum shouldn't stain teeth or tongues, and the natural options for blue and
-   green don't hold up well (spirulina blue fades with acid, and turmeric for
-   green stains teeth). **The flavor color lives on the box, in the eye.**
-   Customer message: *"No dyes. Nothing that stains."*
-2. **Sunflower lecithin instead of soy lecithin.** It does the same job, but
-   soy is a major allergen and sunflower isn't. With this swap, bright has
-   **no major allergens** and needs no "Contains:" line.
-3. **Pickle uses less sweetener** (savory flavors taste wrong when too sweet).
+## Why no xylitol
 
-## Shared specs (all flavors)
+| | Xylitol (alternative) | Sorbitol (main) |
+|---|---|---|
+| Ingredient cost | About 5 to 6 cents more per carton | Lower |
+| Manufacturing | Harder: high-xylitol stick gum can turn hard and brittle, and fewer manufacturers make it | Easier: the industry-standard recipe |
+| Flavor duration | Set by the slow-release flavor and sweeteners | The same |
+| First-minute taste | Sweeter and cooler | Slightly less sweet; the recipe makes up for it with sweeteners |
+| Dental story | 1 g of xylitol per stick | Still sugar-free, which doesn't promote tooth decay, but no xylitol benefit |
+| Who it appeals to | Shoppers who look for xylitol (a small group) | Everyone who buys sugar-free gum |
+| Box wording | "Xylitol" on front and back | "A message in every wrapper" |
+
+Removing xylitol doesn't change how long the flavor lasts; the slow-release
+flavor and sweeteners do that. **A middle option** if you miss xylitol's clean,
+cool taste: keep 10 to 15% for flavor only, list it in the ingredients and leave
+it off the front of the box. It adds only 1 to 2 cents a carton.
+
+## Shared specs
 
 | | |
 |---|---|
-| Format | Stick ("slab") gum, about 7.1 × 1.9 × 0.2 cm |
-| Stick weight | **2.70 g** |
-| Pack | 15 sticks per carton → **40.5 g (1.43 oz) net** |
-| Xylitol | **1.08 g per stick** (40%), the first ingredient |
-| Whitening system | Calcium carbonate (polish) + sodium tripolyphosphate (stain lift and stain block) |
+| Stick weight | 2.70 g |
+| Pack | 15 sticks per carton, 40.5 g (1.43 oz) net |
+| Main sweetener | Sorbitol |
+| Lasting sweetness | Encapsulated sucralose and acesulfame potassium (no aspartame) |
+| Whitening system | Calcium carbonate + sodium tripolyphosphate |
 | Sugar | 0 g (sugar-free) |
 | Colors | None |
-| Major allergens | None |
-| **Wrapper** | **Foil-lined paper** keeps flavor in best. **Lower-cost option:** plain paper with the message printed inside, plus a sealed foil-lined inner pack or overwrap per carton. See "Wrapper options." |
+| Major allergens | None (sunflower lecithin, not soy) |
+| **Wrapper** | Foil-lined paper, or plain paper with the message printed inside plus a sealed inner pack. See "Wrapper options" below. |
 | Target shelf life | 18 months, to be confirmed by storage tests |
+
+Encapsulated flavors and sweeteners are bought ready-made. The percentages are
+"as supplied," including their coating: encapsulated flavor is about 20% flavor
+on 80% gum arabic, and encapsulated sweeteners are about 30% sweetener.
 
 ---
 
@@ -46,48 +62,49 @@ simple.
 
 | Ingredient | Function | % | g per stick | kg per 100 kg batch |
 |---|---|---:|---:|---:|
-| Xylitol (powder, fine grade) | Main sweetener, dental benefit | 40.00 | 1.080 | 40.00 |
-| Gum base (sugar-free grade) | Chew | 30.00 | 0.810 | 30.00 |
-| Sorbitol (powder) | Bulking sweetener, softness | 18.50 | 0.500 | 18.50 |
-| Calcium carbonate (food grade, low-lead) | Polish (whitening) | 4.00 | 0.108 | 4.00 |
-| Glycerin (vegetable) | Keeps the stick flexible | 3.00 | 0.081 | 3.00 |
-| Peppermint flavor: 2.0% peppermint oil (*Mentha piperita*) + 0.5% menthol | Flavor and cooling | 2.50 | 0.068 | 2.50 |
-| Sodium tripolyphosphate (STPP) | Stain lift and stain block (whitening) | 1.50 | 0.041 | 1.50 |
-| Sunflower lecithin | Mixing aid, softener | 0.30 | 0.008 | 0.30 |
-| Sucralose (50% free / 50% encapsulated) | Sweetness boost, long-lasting taste | 0.20 | 0.005 | 0.20 |
+| **Sorbitol** (powder) | Main sweetener and bulk | 52.60 | 1.420 | 52.60 |
+| Gum base, long-flavor-release grade | Chew; holds flavor longer | 28.00 | 0.756 | 28.00 |
+| Mannitol | Keeps the stick smooth and not sticky | 5.00 | 0.135 | 5.00 |
+| Glycerin | Flexibility | 4.00 | 0.108 | 4.00 |
+| Calcium carbonate | Polish (whitening) | 4.00 | 0.108 | 4.00 |
+| Peppermint flavor, liquid: 1.6% peppermint oil + 0.4% menthol | First burst of flavor | 2.00 | 0.054 | 2.00 |
+| Encapsulated peppermint flavor with menthol (spray-dried on gum arabic) | Slow-release flavor and cooling | 1.50 | 0.041 | 1.50 |
+| Sodium tripolyphosphate | Whitening | 1.50 | 0.041 | 1.50 |
+| Sunflower lecithin | Mixing aid | 0.30 | 0.008 | 0.30 |
+| Sucralose (free) | Sweetness in the first minute | 0.10 | 0.003 | 0.10 |
+| Encapsulated sucralose (as supplied, about 30% sucralose) | Slow-release sweetness | 0.50 | 0.014 | 0.50 |
+| Encapsulated acesulfame potassium (as supplied, about 30% active) | Slow-release sweetness; works with sucralose | 0.50 | 0.014 | 0.50 |
 | **Total** | | **100.00** | **2.700** | **100.00** |
 
 **Wrapper:** foil-lined paper keeps flavor in best. A lower-cost option is plain paper with the message printed on the inside, plus a sealed foil-lined inner pack or clear overwrap around the carton. See "Wrapper options" below.
 
 **Label ingredient line:**
-Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors,
-Sodium Tripolyphosphate, Sunflower Lecithin, Sucralose.
+Sorbitol, Gum Base, Mannitol, Glycerin, Calcium Carbonate, Natural Flavors, Sodium Tripolyphosphate, Gum Arabic, Sunflower Lecithin, Sucralose, Acesulfame Potassium.
 
 ---
 
 ## Sheet 2: Spearmint (eye color: emerald `#046A4A`)
 
-Same recipe as Peppermint, with spearmint oil in place of peppermint oil.
-Spearmint is sweeter and softer than peppermint, so it uses less menthol.
-
 | Ingredient | Function | % | g per stick | kg per 100 kg batch |
 |---|---|---:|---:|---:|
-| Xylitol | Main sweetener, dental benefit | 40.00 | 1.080 | 40.00 |
-| Gum base | Chew | 30.00 | 0.810 | 30.00 |
-| Sorbitol (powder) | Bulking sweetener, softness | 18.50 | 0.500 | 18.50 |
+| **Sorbitol** (powder) | Main sweetener and bulk | 52.60 | 1.420 | 52.60 |
+| Gum base, long-flavor-release grade | Chew; holds flavor longer | 28.00 | 0.756 | 28.00 |
+| Mannitol | Keeps the stick smooth and not sticky | 5.00 | 0.135 | 5.00 |
+| Glycerin | Flexibility | 4.00 | 0.108 | 4.00 |
 | Calcium carbonate | Polish (whitening) | 4.00 | 0.108 | 4.00 |
-| Glycerin | Flexibility | 3.00 | 0.081 | 3.00 |
-| Spearmint flavor: 2.2% spearmint oil (*Mentha spicata*) + 0.3% menthol | Flavor and light cooling | 2.50 | 0.068 | 2.50 |
+| Spearmint flavor, liquid: 1.8% spearmint oil + 0.2% menthol | First burst of flavor | 2.00 | 0.054 | 2.00 |
+| Encapsulated spearmint flavor (spray-dried on gum arabic) | Slow-release flavor | 1.50 | 0.041 | 1.50 |
 | Sodium tripolyphosphate | Whitening | 1.50 | 0.041 | 1.50 |
 | Sunflower lecithin | Mixing aid | 0.30 | 0.008 | 0.30 |
-| Sucralose (50/50 free/encapsulated) | Sweetness | 0.20 | 0.005 | 0.20 |
+| Sucralose (free) | Sweetness in the first minute | 0.10 | 0.003 | 0.10 |
+| Encapsulated sucralose (as supplied, about 30% sucralose) | Slow-release sweetness | 0.50 | 0.014 | 0.50 |
+| Encapsulated acesulfame potassium (as supplied, about 30% active) | Slow-release sweetness; works with sucralose | 0.50 | 0.014 | 0.50 |
 | **Total** | | **100.00** | **2.700** | **100.00** |
 
 **Wrapper:** foil-lined paper keeps flavor in best. A lower-cost option is plain paper with the message printed on the inside, plus a sealed foil-lined inner pack or clear overwrap around the carton. See "Wrapper options" below.
 
 **Label ingredient line:**
-Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors,
-Sodium Tripolyphosphate, Sunflower Lecithin, Sucralose.
+Sorbitol, Gum Base, Mannitol, Glycerin, Calcium Carbonate, Natural Flavors, Sodium Tripolyphosphate, Gum Arabic, Sunflower Lecithin, Sucralose, Acesulfame Potassium.
 
 ---
 
@@ -95,63 +112,51 @@ Sodium Tripolyphosphate, Sunflower Lecithin, Sucralose.
 
 | Ingredient | Function | % | g per stick | kg per 100 kg batch |
 |---|---|---:|---:|---:|
-| Xylitol | Main sweetener, dental benefit | 40.00 | 1.080 | 40.00 |
-| Gum base | Chew | 30.00 | 0.810 | 30.00 |
-| Sorbitol (powder) | Bulking sweetener | 17.90 | 0.483 | 17.90 |
+| **Sorbitol** (powder) | Main sweetener and bulk | 51.80 | 1.399 | 51.80 |
+| Gum base, long-flavor-release grade | Chew; holds flavor longer | 28.00 | 0.756 | 28.00 |
+| Mannitol | Keeps the stick smooth and not sticky | 5.00 | 0.135 | 5.00 |
+| Glycerin | Flexibility | 4.00 | 0.108 | 4.00 |
 | Calcium carbonate | Polish (whitening) | 4.00 | 0.108 | 4.00 |
-| Glycerin | Flexibility | 3.00 | 0.081 | 3.00 |
-| Blue raspberry flavor (heat-stable, for gum) | Flavor | 2.80 | 0.076 | 2.80 |
+| Blue raspberry flavor, liquid | First burst of flavor | 2.00 | 0.054 | 2.00 |
+| Encapsulated blue raspberry flavor (spray-dried on gum arabic) | Slow-release flavor | 2.00 | 0.054 | 2.00 |
 | Sodium tripolyphosphate | Whitening | 1.50 | 0.041 | 1.50 |
-| **Malic acid, encapsulated** | Tart "pop" | 0.30 | 0.008 | 0.30 |
+| Malic acid, encapsulated | Tart note; also keeps fruit flavor going | 0.30 | 0.008 | 0.30 |
 | Sunflower lecithin | Mixing aid | 0.30 | 0.008 | 0.30 |
-| Sucralose (50/50 free/encapsulated) | Sweetness | 0.20 | 0.005 | 0.20 |
+| Sucralose (free) | Sweetness in the first minute | 0.10 | 0.003 | 0.10 |
+| Encapsulated sucralose (as supplied, about 30% sucralose) | Slow-release sweetness | 0.50 | 0.014 | 0.50 |
+| Encapsulated acesulfame potassium (as supplied, about 30% active) | Slow-release sweetness; works with sucralose | 0.50 | 0.014 | 0.50 |
 | **Total** | | **100.00** | **2.700** | **100.00** |
-
-**Why so little acid, and why encapsulated?** Acid softens enamel, which works
-against the dental promise. 0.3% gives a quick tart hit at first chew, then the
-saliva from chewing buffers it. Encapsulated acid releases while you chew instead
-of sitting on your teeth. Ask the flavor supplier for a **"low-acid"
-blue-raspberry profile** built for gum.
 
 **Wrapper:** foil-lined paper keeps flavor in best. A lower-cost option is plain paper with the message printed on the inside, plus a sealed foil-lined inner pack or clear overwrap around the carton. See "Wrapper options" below.
 
 **Label ingredient line:**
-Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural and Artificial
-Flavors, Sodium Tripolyphosphate, Malic Acid, Sunflower Lecithin, Sucralose.
-
-*(If the flavor supplier gives you an all-natural blue-raspberry flavor, this
-becomes "Natural Flavors.")*
+Sorbitol, Gum Base, Mannitol, Glycerin, Calcium Carbonate, Natural and Artificial Flavors, Gum Arabic, Sodium Tripolyphosphate, Malic Acid, Sunflower Lecithin, Sucralose, Acesulfame Potassium.
 
 ---
 
 ## Sheet 4: Raspberry (eye color: raspberry red `#C2185B`)
 
-Same recipe as Blue Raspberry, but with a **natural raspberry flavor**, so the
-label can say "Natural Flavors."
-
 | Ingredient | Function | % | g per stick | kg per 100 kg batch |
 |---|---|---:|---:|---:|
-| Xylitol | Main sweetener, dental benefit | 40.00 | 1.080 | 40.00 |
-| Gum base | Chew | 30.00 | 0.810 | 30.00 |
-| Sorbitol (powder) | Bulking sweetener | 17.90 | 0.483 | 17.90 |
+| **Sorbitol** (powder) | Main sweetener and bulk | 51.80 | 1.399 | 51.80 |
+| Gum base, long-flavor-release grade | Chew; holds flavor longer | 28.00 | 0.756 | 28.00 |
+| Mannitol | Keeps the stick smooth and not sticky | 5.00 | 0.135 | 5.00 |
+| Glycerin | Flexibility | 4.00 | 0.108 | 4.00 |
 | Calcium carbonate | Polish (whitening) | 4.00 | 0.108 | 4.00 |
-| Glycerin | Flexibility | 3.00 | 0.081 | 3.00 |
-| Natural raspberry flavor (heat-stable, for gum) | Flavor | 2.80 | 0.076 | 2.80 |
+| Natural raspberry flavor, liquid | First burst of flavor | 2.00 | 0.054 | 2.00 |
+| Encapsulated natural raspberry flavor (spray-dried on gum arabic) | Slow-release flavor | 2.00 | 0.054 | 2.00 |
 | Sodium tripolyphosphate | Whitening | 1.50 | 0.041 | 1.50 |
-| Malic acid, encapsulated | Tart, fresh-berry note | 0.30 | 0.008 | 0.30 |
+| Malic acid, encapsulated | Tart note; also keeps fruit flavor going | 0.30 | 0.008 | 0.30 |
 | Sunflower lecithin | Mixing aid | 0.30 | 0.008 | 0.30 |
-| Sucralose (50/50 free/encapsulated) | Sweetness | 0.20 | 0.005 | 0.20 |
+| Sucralose (free) | Sweetness in the first minute | 0.10 | 0.003 | 0.10 |
+| Encapsulated sucralose (as supplied, about 30% sucralose) | Slow-release sweetness | 0.50 | 0.014 | 0.50 |
+| Encapsulated acesulfame potassium (as supplied, about 30% active) | Slow-release sweetness; works with sucralose | 0.50 | 0.014 | 0.50 |
 | **Total** | | **100.00** | **2.700** | **100.00** |
-
-**Flavor brief for the supplier:** "Natural red raspberry for chewing gum. Ripe,
-jammy berry, not candy. Low-acid profile, heat-stable to 60 °C." Like every bright
-gum it's **white, with no color added**; the red lives on the box.
 
 **Wrapper:** foil-lined paper keeps flavor in best. A lower-cost option is plain paper with the message printed on the inside, plus a sealed foil-lined inner pack or clear overwrap around the carton. See "Wrapper options" below.
 
 **Label ingredient line:**
-Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors,
-Sodium Tripolyphosphate, Malic Acid, Sunflower Lecithin, Sucralose.
+Sorbitol, Gum Base, Mannitol, Glycerin, Calcium Carbonate, Natural Flavors, Gum Arabic, Sodium Tripolyphosphate, Malic Acid, Sunflower Lecithin, Sucralose, Acesulfame Potassium.
 
 ---
 
@@ -159,64 +164,55 @@ Sodium Tripolyphosphate, Malic Acid, Sunflower Lecithin, Sucralose.
 
 | Ingredient | Function | % | g per stick | kg per 100 kg batch |
 |---|---|---:|---:|---:|
-| Xylitol | Main sweetener, dental benefit | 40.00 | 1.080 | 40.00 |
-| Gum base | Chew | 30.00 | 0.810 | 30.00 |
-| Sorbitol (powder) | Bulking sweetener | 17.75 | 0.479 | 17.75 |
+| **Sorbitol** (powder) | Main sweetener and bulk | 52.25 | 1.411 | 52.25 |
+| Gum base, long-flavor-release grade | Chew; holds flavor longer | 28.00 | 0.756 | 28.00 |
+| Mannitol | Keeps the stick smooth and not sticky | 5.00 | 0.135 | 5.00 |
+| Glycerin | Flexibility | 4.00 | 0.108 | 4.00 |
 | Calcium carbonate | Polish (whitening) | 3.50 | 0.095 | 3.50 |
-| Glycerin | Flexibility | 3.00 | 0.081 | 3.00 |
-| Dill pickle flavor (dill weed + brine notes, no vinegar) | Flavor | 2.50 | 0.068 | 2.50 |
+| Dill pickle flavor, liquid (no vinegar) | First burst of flavor | 1.80 | 0.049 | 1.80 |
+| Encapsulated dill pickle flavor (spray-dried on gum arabic) | Slow-release flavor | 1.50 | 0.041 | 1.50 |
 | Sodium tripolyphosphate | Whitening | 1.50 | 0.041 | 1.50 |
-| **Sodium bicarbonate** (baking soda) | Salty-friendly polish; neutralizes acid | 1.00 | 0.027 | 1.00 |
-| **Salt** (fine flake) | Real pickle taste | 0.30 | 0.008 | 0.30 |
+| Sodium bicarbonate | Salty-friendly polish; neutralizes acid | 1.00 | 0.027 | 1.00 |
+| Salt (fine flake) | Pickle taste; carries savory flavor longer | 0.30 | 0.008 | 0.30 |
 | Sunflower lecithin | Mixing aid | 0.30 | 0.008 | 0.30 |
-| Sucralose (50/50) | Light sweetness only | 0.15 | 0.004 | 0.15 |
+| Sucralose (free) | Sweetness in the first minute | 0.05 | 0.001 | 0.05 |
+| Encapsulated sucralose (as supplied, about 30% sucralose) | Slow-release sweetness | 0.40 | 0.011 | 0.40 |
+| Encapsulated acesulfame potassium (as supplied, about 30% active) | Slow-release sweetness; works with sucralose | 0.40 | 0.011 | 0.40 |
 | **Total** | | **100.00** | **2.700** | **100.00** |
-
-**Flavor brief for the supplier:** "Dill pickle for chewing gum. Fresh dill,
-cucumber and brine character. **No vinegar or added acid**; the sour impression
-should come from the flavor itself. Heat-stable to 60 °C." Calcium carbonate is
-cut slightly because the baking soda also polishes.
 
 **Wrapper:** foil-lined paper keeps flavor in best. A lower-cost option is plain paper with the message printed on the inside, plus a sealed foil-lined inner pack or clear overwrap around the carton. See "Wrapper options" below.
 
 **Label ingredient line:**
-Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural Flavors,
-Sodium Tripolyphosphate, Sodium Bicarbonate, Salt, Sunflower Lecithin, Sucralose.
+Sorbitol, Gum Base, Mannitol, Glycerin, Calcium Carbonate, Natural Flavors, Sodium Tripolyphosphate, Gum Arabic, Sodium Bicarbonate, Salt, Sunflower Lecithin, Sucralose, Acesulfame Potassium.
 
 ---
 
 ## Sheet 6: Watermelon (eye color: melon red `#D62839`)
 
-Same base as Raspberry, with a watermelon flavor. Watermelon tastes best a little
-less tart than berry, so it uses less acid, plus a touch of cooling to make it
-taste "juicy."
-
 | Ingredient | Function | % | g per stick | kg per 100 kg batch |
 |---|---|---:|---:|---:|
-| Xylitol | Main sweetener, dental benefit | 40.00 | 1.080 | 40.00 |
-| Gum base | Chew | 30.00 | 0.810 | 30.00 |
-| Sorbitol (powder) | Bulking sweetener | 18.00 | 0.486 | 18.00 |
+| **Sorbitol** (powder) | Main sweetener and bulk | 51.80 | 1.399 | 51.80 |
+| Gum base, long-flavor-release grade | Chew; holds flavor longer | 28.00 | 0.756 | 28.00 |
+| Mannitol | Keeps the stick smooth and not sticky | 5.00 | 0.135 | 5.00 |
+| Glycerin | Flexibility | 4.00 | 0.108 | 4.00 |
 | Calcium carbonate | Polish (whitening) | 4.00 | 0.108 | 4.00 |
-| Glycerin | Flexibility | 3.00 | 0.081 | 3.00 |
-| Natural watermelon flavor (heat-stable, for gum) | Flavor | 2.70 | 0.073 | 2.70 |
+| Natural watermelon flavor, liquid | First burst of flavor | 2.00 | 0.054 | 2.00 |
+| Encapsulated natural watermelon flavor (spray-dried on gum arabic) | Slow-release flavor | 2.00 | 0.054 | 2.00 |
 | Sodium tripolyphosphate | Whitening | 1.50 | 0.041 | 1.50 |
 | Malic acid, encapsulated | Light tart note | 0.20 | 0.005 | 0.20 |
+| Cooling agent (WS-23, flavor-grade) | Juicy, fresh finish that outlasts the flavor | 0.10 | 0.003 | 0.10 |
 | Sunflower lecithin | Mixing aid | 0.30 | 0.008 | 0.30 |
-| Sucralose (50/50 free/encapsulated) | Sweetness | 0.20 | 0.005 | 0.20 |
-| Cooling agent (WS-23, flavor-grade) | "Juicy," refreshing finish with no mint taste | 0.10 | 0.003 | 0.10 |
+| Sucralose (free) | Sweetness in the first minute | 0.10 | 0.003 | 0.10 |
+| Encapsulated sucralose (as supplied, about 30% sucralose) | Slow-release sweetness | 0.50 | 0.014 | 0.50 |
+| Encapsulated acesulfame potassium (as supplied, about 30% active) | Slow-release sweetness; works with sucralose | 0.50 | 0.014 | 0.50 |
 | **Total** | | **100.00** | **2.700** | **100.00** |
-
-**Flavor brief for the supplier:** "Natural watermelon for chewing gum. Fresh-cut
-melon, juicy and green-rind fresh, not candy. Low-acid, heat-stable to 60 °C."
-WS-23 is a common flavor-industry cooling compound that adds freshness without
-mint flavor. It's synthetic, so the label says "Natural and Artificial Flavors."
-To keep "Natural Flavors" on the box, leave the cooling agent out. Like every bright gum, it's **white, with no color added**.
 
 **Wrapper:** foil-lined paper keeps flavor in best. A lower-cost option is plain paper with the message printed on the inside, plus a sealed foil-lined inner pack or clear overwrap around the carton. See "Wrapper options" below.
 
 **Label ingredient line:**
-Xylitol, Gum Base, Sorbitol, Calcium Carbonate, Glycerin, Natural and Artificial
-Flavors, Sodium Tripolyphosphate, Malic Acid, Sunflower Lecithin, Sucralose.
+Sorbitol, Gum Base, Mannitol, Glycerin, Calcium Carbonate, Natural and Artificial Flavors, Gum Arabic, Sodium Tripolyphosphate, Malic Acid, Sunflower Lecithin, Sucralose, Acesulfame Potassium.
+
+---
 
 ---
 
@@ -248,59 +244,64 @@ low-migration inks**. The wrapper printer will specify these.
 
 ## Estimated nutrition (per stick, 2.7 g)
 
-How it's calculated: xylitol 2.4 kcal/g, sorbitol 2.6 kcal/g, glycerin
-4.3 kcal/g. Gum base isn't digested, so it adds no calories. Sodium comes from
-STPP (31% sodium), baking soda (27%) and salt (39%). Calcium comes from calcium
-carbonate (40% calcium).
+| | All flavors | On the label |
+|---|---:|---:|
+| Calories (calculated) | 4.4 | **5** |
+| Total carbohydrate | 1.7 g | **2 g** |
+| Sugar alcohols | 1.5–1.6 g | **2 g** |
+| Total sugars | 0 g | **0 g** |
+| Sodium | 12.7 mg (Pickle 23 mg) | **15 mg** (Pickle **25 mg**) |
+| Calcium | 43 mg (Pickle 38 mg) | **40 mg (3% DV)** |
 
-| | Peppermint | Spearmint | Blue Raspberry | Raspberry | Pickle | Watermelon |
-|---|---:|---:|---:|---:|---:|---:|
-| Calories (calculated) | 4.2 | 4.2 | 4.2 | 4.2 | 4.2 | 4.2 |
-| **Calories on label** (under 5 rounds to 0) | **0** | **0** | **0** | **0** | **0** | **0** |
-| Total carbohydrate | 1.7 g → **2 g** | 1.7 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** |
-| Sugar alcohols | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** | 1.6 g → **2 g** |
-| Total sugars | **0 g** | **0 g** | **0 g** | **0 g** | **0 g** | **0 g** |
-| Sodium | 12.7 mg → **15 mg** | 12.7 mg → **15 mg** | 12.7 mg → **15 mg** | 12.7 mg → **15 mg** | 23.3 mg → **25 mg** | 12.7 mg → **15 mg** |
-| Calcium | 43 mg → **40 mg (3% DV)** | 43 mg → **40 mg (3% DV)** | 43 mg → **40 mg (3% DV)** | 43 mg → **40 mg (3% DV)** | 38 mg → **40 mg (3% DV)** | 43 mg → **40 mg (3% DV)** |
-| Total fat, protein | 0 g | 0 g | 0 g | 0 g | 0 g | 0 g |
+The calculated calories (4.4) sit just under the line where labels switch from 0
+to 5, so the mockup boxes show the more cautious **5 calories**, which is also
+what mainstream sugar-free stick gums list. Lab analysis decides the final
+number.
 
-Two things to confirm with your label reviewer:
+## Claims on the box
 
-- **Calcium shows up** (3% of the Daily Value) because of the calcium carbonate,
-  so it must be listed on the panel.
-- Because the gum rounds to 0 calories, check whether the **"sugar-free"** claim
-  needs a "not a reduced calorie food" statement next to it.
+- **"Sugar-Free"** applies.
+- **"Does not promote tooth decay"** is an FDA-authorized health claim that also
+  covers sorbitol, so it stays available without xylitol (21 CFR 101.80). It's
+  currently left off the box fronts by choice.
+- **"Whitening"** needs stain-removal test data first.
+- **"Long-lasting"** needs the timed chew test first.
+- The box says **"A message in every wrapper"** where the xylitol versions say
+  "Xylitol": the one thing no other gum on the shelf offers.
 
 ## Raw materials for a first run
 
-Example: **10,000 cartons** = 150,000 sticks = **405 kg** of finished gum
-(order about 5% extra to cover production losses).
+Example: **10,000 cartons** = 150,000 sticks = **405 kg** of finished gum per
+flavor. Order about 5% extra to cover production losses.
 
 | Ingredient | Peppermint (kg) | Spearmint (kg) | Blue Raspberry (kg) | Raspberry (kg) | Pickle (kg) | Watermelon (kg) |
 |---|---:|---:|---:|---:|---:|---:|
-| Xylitol | 162.0 | 162.0 | 162.0 | 162.0 | 162.0 | 162.0 |
-| Gum base | 121.5 | 121.5 | 121.5 | 121.5 | 121.5 | 121.5 |
-| Sorbitol | 74.9 | 74.9 | 72.5 | 72.5 | 71.9 | 72.9 |
+| Sorbitol | 213.0 | 213.0 | 209.8 | 209.8 | 211.6 | 209.8 |
+| Gum base, long-flavor-release grade | 113.4 | 113.4 | 113.4 | 113.4 | 113.4 | 113.4 |
+| Mannitol | 20.2 | 20.2 | 20.2 | 20.2 | 20.2 | 20.2 |
+| Glycerin | 16.2 | 16.2 | 16.2 | 16.2 | 16.2 | 16.2 |
 | Calcium carbonate | 16.2 | 16.2 | 16.2 | 16.2 | 14.2 | 16.2 |
-| Glycerin | 12.2 | 12.2 | 12.2 | 12.2 | 12.2 | 12.2 |
-| Flavor | 10.1 | 10.1 | 11.3 | 11.3 | 10.1 | 10.9 |
-| STPP | 6.1 | 6.1 | 6.1 | 6.1 | 6.1 | 6.1 |
-| Sodium bicarbonate | — | — | — | — | 4.1 | — |
-| Malic acid (encap.) | — | — | 1.2 | 1.2 | — | 0.8 |
-| Salt | — | — | — | — | 1.2 | — |
+| Flavor, liquid | 8.1 | 8.1 | 8.1 | 8.1 | 7.3 | 8.1 |
+| Encapsulated flavor | 6.1 | 6.1 | 8.1 | 8.1 | 6.1 | 8.1 |
+| Sodium tripolyphosphate | 6.1 | 6.1 | 6.1 | 6.1 | 6.1 | 6.1 |
 | Sunflower lecithin | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
-| Sucralose | 0.8 | 0.8 | 0.8 | 0.8 | 0.6 | 0.8 |
-| Cooling agent (WS-23) | — | — | — | — | — | 0.4 |
+| Sucralose | 0.4 | 0.4 | 0.4 | 0.4 | 0.2 | 0.4 |
+| Encapsulated sucralose | 2.0 | 2.0 | 2.0 | 2.0 | 1.6 | 2.0 |
+| Encapsulated acesulfame potassium | 2.0 | 2.0 | 2.0 | 2.0 | 1.6 | 2.0 |
+| Malic acid, encapsulated | — | — | 1.2 | 1.2 | — | 0.8 |
+| Sodium bicarbonate | — | — | — | — | 4.0 | — |
+| Salt | — | — | — | — | 1.2 | — |
+| Cooling agent | — | — | — | — | — | 0.4 |
 
 ## How stick gum is made (what to expect at the co-packer)
 
 1. **Soften the gum base** in a heated sigma-blade mixer (about 50–55 °C).
-2. Add **glycerin, lecithin and about half the polyols** (xylitol and sorbitol);
+2. Add **glycerin, lecithin and about half the sorbitol and mannitol**;
    mix until smooth.
-3. Add the remaining polyols plus the **powders** (calcium carbonate, STPP, and
+3. Add the remaining sorbitol plus the **powders** (calcium carbonate, sodium tripolyphosphate, and
    for Pickle the baking soda and salt).
-4. Add **flavor and sucralose last** (they're heat-sensitive), then the
-   **encapsulated acid** for Blue Raspberry and Raspberry. Short final mix.
+4. Add the **liquid flavor and free sucralose last** (they're heat-sensitive), then the
+   **encapsulated flavor, sweeteners and acid**. Short final mix, so the coatings stay intact.
 5. **Extrude and roll** into a thin sheet dusted with powdered sorbitol, then
    score into sticks.
 6. **Condition** 24–48 hours at controlled temperature and humidity so sticks
@@ -316,5 +317,25 @@ Example: **10,000 cartons** = 150,000 sticks = **405 kg** of finished gum
 | Nutrition analysis | Real numbers for the Nutrition Facts panel |
 | Heavy metals (lead, cadmium, arsenic, mercury) | Calcium carbonate and Prop 65 compliance |
 | Microbial | Standard food-safety release |
-| Shelf life (accelerated + real-time) | Confirm 18 months: texture, flavor, xylitol crystallization |
+| Shelf life (accelerated + real-time) | Confirm 18 months: texture, flavor, stickiness |
 | Consumer taste panel | Flavor strength, sweetness and texture, especially Pickle |
+| **Timed chew test** | Required evidence before printing "long-lasting" (see below) |
+
+## Timed chew test (how to prove "long-lasting")
+
+Ask the manufacturer to run this on pilot samples, or run it yourself on campus.
+
+- **Who:** 10–15 people.
+- **Samples:** the bright recipe and one leading store-bought gum of the
+  same flavor, unlabeled. If you're still comparing, add the xylitol version too.
+- **How:** chew one stick. Rate **flavor strength** and **sweetness** from 0 to
+  10 at 30 seconds, then at 1, 2, 3, 5, 7, 10, 15 and 20 minutes.
+- **Targets (suggested):**
+  - Mints: flavor still 5/10 or higher at 10 minutes.
+  - Fruit and Pickle: flavor still 4/10 or higher at 8 minutes.
+  - Every flavor: at least as long as the store-bought gum.
+- **Also check:** the first minute tastes at least as strong as the store-bought
+  gum.
+
+Until this test is done, don't print "long-lasting" on a box or use it in ads.
+Like "whitening," it's a claim you need evidence for.

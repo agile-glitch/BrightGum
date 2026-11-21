@@ -2,7 +2,7 @@
 
 ## The one-line pitch
 
-> **bright is a whitening xylitol gum with a positive message inside every
+> **bright is a sugar-free whitening gum with a positive message inside every
 > wrapper.**
 
 Every other gum sells *fresh breath*. bright sells **a small good moment**:
@@ -23,7 +23,7 @@ Start with communities you can reach in person, where word of mouth travels.
 | **College students** (your home base) | Chew gum constantly, share everything on social media, love a quirky flavor | Campus, dorms, rec center, student orgs, TikTok | bright (everyday) |
 | **Gym-goers** | Already chew gum while lifting; respond to encouragement | Rec center, local gyms, fitness creators | bright (everyday) |
 | **Churches & youth groups** | Verse-a-day is meaningful; buy in bulk for events, camps and gifts | Youth pastors, Christian bookstores, church cafés | **bright faith** |
-| **Dentists & hygienists** | Xylitol is already something they recommend; they hand out gum | Local dental offices (free samples for their front desk) | either |
+| **Dentists & hygienists** | Already recommend sugar-free gum after meals; they hand out gum | Local dental offices (free samples for their front desk) | either |
 
 **Shared trait:** they all *give gum to other people*. That's built into your
 commercials (the hand-off), so lean on it: **the gum is a way to share a kind
@@ -31,9 +31,9 @@ word.**
 
 ## 2. Positioning against the shelf
 
-| | Extra / Orbit / Trident | Xylitol brands (PUR, Spry, Epic) | **bright** |
+| | Extra / Orbit / Trident | Health-store brands (PUR, Spry, Simply Gum) | **bright** |
 |---|---|---|---|
-| Main promise | Fresh breath, long-lasting flavor | Healthy, aspartame-free | **Whitening + xylitol + a message** |
+| Main promise | Fresh breath, long-lasting flavor | Healthy, aspartame-free | **Whitening + a message, with no aspartame or dyes** |
 | Feel | Mass-market | Health-store | **Warm, fun, shareable** |
 | Reason to talk about it | None | Ingredients | **Every stick is different** |
 
@@ -115,7 +115,7 @@ thing nobody else does**: the message.
 - **Seasonal editions.** Exam week ("You've studied enough. Breathe."),
   Christmas (bright faith verses), Mental Health Awareness Month.
 - **Dentist's office starter pack.** 50 cartons at cost and a counter display.
-  It earns credibility for the whitening and xylitol story.
+  It earns credibility for the whitening and sugar-free story.
 
 ## 7. What to measure
 
@@ -135,4 +135,5 @@ thing nobody else does**: the message.
 - Don't suggest the gum improves workouts, energy or mood. The *message*
   encourages people; the gum doesn't make them stronger.
 - Paid or gifted influencers must disclose (#ad, #gifted).
-- Show a **dog warning** on the website product page (xylitol).
+- If you ever sell the xylitol version, show a **dog warning** on its website
+  product page (xylitol is toxic to dogs).
